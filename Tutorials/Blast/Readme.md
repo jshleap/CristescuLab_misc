@@ -43,11 +43,11 @@ BLAST or Basic Local Alignment Search Tool, is an alignment service available at
 1. Preprocessing
 <img src="https://raw.githubusercontent.com/jshleap/CristescuLab_misc/master/Tutorials/Blast/img/pre_processing.png" alt="alt text" width="3000">
 2. Seeding
-![alt text](https://raw.githubusercontent.com/jshleap/CristescuLab_misc/master/Tutorials/Blast/img/Seeding-step.png)
+<img src="https://raw.githubusercontent.com/jshleap/CristescuLab_misc/master/Tutorials/Blast/img/Seeding-step.png" alt="alt text" width="3000">
 3. Extension
-![alt text](https://raw.githubusercontent.com/jshleap/CristescuLab_misc/master/Tutorials/Blast/img/extension_step.png)
+<img src="https://raw.githubusercontent.com/jshleap/CristescuLab_misc/master/Tutorials/Blast/img/extension_step.png" alt="alt text" width="3000">
 4. Evaluation
-![alt text](https://raw.githubusercontent.com/jshleap/CristescuLab_misc/master/Tutorials/Blast/img/evaluation_step.png)
+<img src="https://raw.githubusercontent.com/jshleap/CristescuLab_misc/master/Tutorials/Blast/img/evaluation_step.png" alt="alt text" width="3000">
 
 Let's check their [webpage](https://blast.ncbi.nlm.nih.gov/Blast.cgi) and run an example blast
 
