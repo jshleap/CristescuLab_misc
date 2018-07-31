@@ -18,12 +18,12 @@ Before we start, make sure you went over your bash notes, since we will be using
 I will discuss only the `blastn` (nucleotide blast) for time sake, but will comment on other types of blasts briefly.
 
 ## Outline of the tutorial
-1. [Introduction to BLAST: Types of databases, searches (this is brief, remember to brush up on this)](#Introduction-to-BLAST)
-2. [Downloading databases from NCBI FTP with `update_blastdb.pl`](#Downloading-databases-from-NCBI-FTP-with-update_blastdb.pl)
-3. [Basic `blastn` search](#Basic-blastn-search)
-4. [Creating local databases with `makeblastdb`](#Creating-local-databases-with-makeblastdb)
-5. [Tunning `blastn` parameters](#Tunning-blastn-parameters)
-6. [Basic bash manipulation of output](##Basic-bash-manipulation-of-output)
+1. [Introduction to BLAST: Types of databases, searches (this is brief, remember to brush up on this)](#introduction-to-BLAST)
+2. [Downloading databases from NCBI FTP with `update_blastdb.pl`](#downloading-databases-from-NCBI-FTP-with-update_blastdb.pl)
+3. [Basic `blastn` search](#basic-blastn-search)
+4. [Creating local databases with `makeblastdb`](#creating-local-databases-with-makeblastdb)
+5. [Tunning `blastn` parameters](#tunning-blastn-parameters)
+6. [Basic bash manipulation of output](#basic-bash-manipulation-of-output)
 
 ## Before we start
 Log in into your Compute Canada account, create a folder for this tutorial (e.g Blast_tutorial), and open an interactive shell with salloc as we explained last tutorial with 2GB of memory. in the terminal type (remember to change the account for your own group if you are not in Cristescu lab):
