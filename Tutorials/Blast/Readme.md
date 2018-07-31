@@ -23,7 +23,7 @@ I will discuss only the `blastn` (nucleotide blast) for time sake, but will comm
 3. [Basic `blastn` search](#Basic-blastn-search)
 4. [Creating local databases with `makeblastdb`](#Creating-local-databases-with-makeblastdb)
 5. [Tunning `blastn` parameters](#Tunning-blastn-parameters)
-6. [Basic bash manipulation of output](#Basic-bash-manipulation-of-output)
+6. [Basic bash manipulation of output](##Basic-bash-manipulation-of-output)
 
 ## Before we start
 Log in into your Compute Canada account, create a folder for this tutorial (e.g Blast_tutorial), and open an interactive shell with salloc as we explained last tutorial with 2GB of memory. in the terminal type (remember to change the account for your own group if you are not in Cristescu lab):
