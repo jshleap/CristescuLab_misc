@@ -276,5 +276,13 @@ cut -f 2  output.blast > filewithacc.txt
 Lastly (for this session), you can filter the values of columns that couldn't be controlled directly. An example of this is the query coverage. To do this we will use an extremely flexible and useful command called `awk`:
 
 ```
-blastn -db cystic_fib.db -query /path/to/query/nameoffasta.fasta -perc_identity 90 -outfmt "6 qaccver saccver pident evalue qcovs ssciname stitle" | awk " $5 >= 90 "
+blastn -db cystic_fib.db -query /path/to/query/nameoffasta.fasta -perc_identity 90 -outfmt "6 qaccver saccver pident evalue qcovs ssciname stitle" | awk ' $5 >= 90 '
 ```
+
+This command will take the column number 5 (pident) and will print only the lines where is greater or equal than 90.
+
+Play around with it!!
+
+## Well, that is all for now, let's work a little bit on this and I'll take questions you might still have!!! cheers!
+
+
