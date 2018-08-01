@@ -211,7 +211,7 @@ Ha! there it is... now let's check of what we have here. There are 12 columns:
 11. evalue 
 12. bitscore
 
-These are the default columns, however, we can modify this however we want. Let's imagine that we want the query name (qaccver), the hit name (saccver), the percent identity (pident), the e-valublastn -help| grep -A 25 "*** Formatting options"e, and the query coverage:
+These are the default columns, however, we can modify this however we want. Let's imagine that we want the query name (qaccver), the hit name (saccver), the percent identity (pident), the e-value, and the query coverage:
 
 ```
 blastn -db cystic_fib.db -query /path/to/query/nameoffasta.fasta -evalue 1e-115 -max_target_seqs 5 -outfmt "6 qaccver saccver pident evalue qcovs"
