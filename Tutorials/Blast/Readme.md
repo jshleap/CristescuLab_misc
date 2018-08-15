@@ -285,4 +285,6 @@ Play around with it!!
 
 ## Well, that is all for now, let's work a little bit on this and I'll take questions you might still have!!! cheers!
 
-
+# EXCERCISE
+In the second section of this tutorial, we would work a case study. Imagine that you have been asked to check if there are fishes in a pond. You then sampled water from the pond, filtered, extrated the DNA and amplify a 12S fragment that is of higher specificity to fish. You sequenced it using Illumina, and followed all the bioinformatic pipelines to clean it, dereplicate them, etc. You can find the resulting fasta file [HERE](https://raw.githubusercontent.com/jshleap/CristescuLab_misc/master/Tutorials/Blast/files/pond_sample.fasta). Using what you know of blast, can you tell if there are fishes in there? How confident are you in your results? explain **HINT: use the evalue, percent identity and query coverage to guide part of your justification**
+For this exercise we will use the nucleotide database. If you are a member of the Cristescu lab, this will be in the Database folder at `~/projects/def-mcristes/Databases/NCBI`. If you are not a member, try to use the path, if it does not work, work with somebody from the cristescu lab, to obtain the blasts you want, or download the nt databse beforehand (it takes quite a bit of time).
