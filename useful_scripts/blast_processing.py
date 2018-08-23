@@ -47,16 +47,25 @@ def parse_blast(fn, filters={}, top_n_hits=None, output_filtered=False):
     :param fn: Filename of the blast to parse
     :return: Dataframe with the information
     """
-    names = 'qseqid sseqid pident evalue qcovs qlen length staxid stitle'
-    df = pd.read_table(fn, sep='\t', header=None, names=names.split())
+
+    df = pd.read_table(fn, sep='\t', header=None)
+    if df.shape[1] > 6:
+        names = 'qseqid sseqid pident evalue qcovs qlen length staxid stitle'
+        names = names.split()
+        by = 'evalue pident qcovs qlen length'.split()
+        asc = [True, False, False, False, False]
+    else:
+        names = 'qseqid sseqid pident evalue qcovs stitle'.split()
+        by = 'evalue pident qcovs'.split()
+        asc = [True, False, False]
+    df.rename(dict(zip(range(len(names)), names)), inplace=True)
     if filters:
         query = ' & '.join(
             ['(%s > %d)' % (k, v) if k != 'evalue' else '(%s < %e)' % (k, v)
              for k, v in filters.items()])
         df = df.query(query)
     if top_n_hits is not None:
-        args = dict(by='evalue pident qcovs qlen length'.split(),
-                    ascending=[True, False, False, False, False])
+        args = dict(by=by, ascending=asc)
         df = df.sort_values(**args).groupby('qseqid').head(top_n_hits)
     if df.stitle.str.count(';').mean() > 2:
         # Lineage present, incorporate it
@@ -142,6 +151,7 @@ def main(blast_file, pident=None, eval=None, qcov=None, qlen=None, length=None,
         plot_tax(df, ntop, taxlevel=taxlevel, tax_for_pattern=tax_for_pattern,
                  pattern=pattern, suffix=suffix_for_plot, min_reads=min_reads)
 
+
 if __name__ == '__main__':
     opts = optparse.OptionParser(usage='%prog [options] blast_file')
     opts.add_option('--fasta_fn', '-f', action='store',
@@ -162,7 +172,7 @@ if __name__ == '__main__':
     opts.add_option('--taxlevel', '-t', action='store',default='species',
                     help='Taxonomic level to display [default: %default]')
     opts.add_option('--min_reads', '-r', action='store', type=int, default=0,
-                    help=('Minimum number of reads to reatin group '
+                    help=('Minimum number of reads to retain group '
                           '[default: %default]'))
     opts.add_option('--plot', '-P', action='store_true', default=False,
                     help='Make a barchart with your group [default: %default]')
@@ -177,3 +187,7 @@ if __name__ == '__main__':
     opts.add_option('--ntop', '-n', action='store', type=int, default=None,
                     help='Number of hits per query [default: %default]')
 
+    opt, arg = opts.parse_args()
+    main(arg[1], opt.pident, opt.eval, opt.qcov, opt.qlen, opt.length,
+         opt.output_filtered, opt.taxlevel, opt.min_reads, opt.plot,
+         opt.tax_for_pattern, opt.pattern, opt.suffix_for_plot, opt.ntop)
