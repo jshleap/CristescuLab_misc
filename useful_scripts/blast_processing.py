@@ -145,14 +145,16 @@ def plot_tax(df, n, taxlevel='species', tax_for_pattern=None, pattern=None,
         prefix += '_%s' % suffix
     cols = [taxlevel, 'qseqid']
     toplot = df.reindex(columns=cols)
-    ntaxa = toplot.loc[:, taxlevel].nunique()
-    color = matplotlib.cm.inferno_r(np.linspace(.0, 1., ntaxa))
+    #ntaxa = toplot.loc[:, taxlevel].nunique()
+    #color = matplotlib.cm.inferno_r(np.linspace(.0, 1., ntaxa))
     toplot = toplot.groupby([taxlevel]).count()
-    toplot = toplot[toplot.qseqid > min_reads].unstack()
+    toplot = toplot[toplot.qseqid > min_reads]
     fig, ax = plt.subplots()
-    toplot.plot(kind='bar', stacked=False, color=color, ax=ax)
-    ax.set_xlabel("Sites")
-    ax.set_ylabel("Number of reads")
+    toplot.plot(kind='barh', stacked=False, ax=ax, fontsize=12, legend=False)
+                # color=color)
+    ax.set_xlabel("Number of reads", fontsize=12)
+    ax.set_ylabel(taxlevel, fontsize=12)
+    ax.tick_params(axis='both', which='major', labelsize=10)
     plt.tight_layout()
     plt.savefig('%s.pdf' % prefix)
     plt.close()
