@@ -39,10 +39,12 @@ from subprocess import Popen, PIPE
 SIX = ['kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 
 
-def get_sps(line, coi=False):
-    if coi:
-        return line.split('|')[1]
-    elif '|' in line:
+def get_sps_coi(line):
+    return line.split('|')[1]
+
+
+def get_sps(line):
+    if '|' in line:
         return ' '.join(line.split('|')[2].split()[:2])
     elif 'Fish' in line:
        return line.split()[0]
@@ -55,11 +57,14 @@ def parse_blast(fn, filters={}, top_n_hits=None, output_filtered=False,
     """
     Parse a blast file, and filter it if required
 
+    :param coi: Use COI fromat to parse species
+    :param output_filtered: Output the filtered dataframe
+    :param top_n_hits: Number of top blast hits to retain
     :param filters: Doctionary with the filters to include
     :param fn: Filename of the blast to parse
     :return: Dataframe with the information
     """
-
+    fnc = {True: get_sps_coi, False: get_sps}
     df = pd.read_table(fn, sep='\t', header=None)
     if df.shape[1] > 6:
         names = 'qseqid sseqid pident evalue qcovs qlen length staxid stitle'
@@ -76,25 +81,26 @@ def parse_blast(fn, filters={}, top_n_hits=None, output_filtered=False,
             ['(%s > %d)' % (k, v) if k != 'evalue' else '(%s < %e)' % (k, v)
              for k, v in filters.items()])
         df = df.query(query)
-    print(df.head())
     if top_n_hits is not None:
         args = dict(by=by, ascending=asc)
         df = df.sort_values(**args).groupby('qseqid').head(top_n_hits)
-    if df.stitle.str.count(';').mean() > 2:
+    if df.stitle.str.count(';').mean() > 3:
         # Lineage present, incorporate it
         ndf = df.stitle.str.split(' ', expand=True)
         ndf = ndf.loc[:1].str.split(';', expand=True)
         # Assume 7 level taxonomy
-        ndf.rename(columns=dict(zip(range(1,8), SIX)), inplace=True)
+        ndf.rename(columns=dict(zip(range(1, 8), SIX)), inplace=True)
         # Join the dataframes
         df = pd.concat([df, ndf], axis=1)
+
     else:
         # Assume that species is in the first two fields of stitle
-        #def get_sps(x): return ' '.join(x.strip().split()[:2])
-        df['species'] = df.stitle.apply(get_sps, coi=coi)
+        # def get_sps(x): return ' '.join(x.strip().split()[:2])
+        df['species'] = df.stitle.apply(fnc[coi])
     if output_filtered:
         outfn = fn[:fn.rfind('.')]
         df.to_csv(outfn, sep='\t', index=False, header=False)
+    print(df.head())
     return df
 
 
@@ -123,6 +129,7 @@ def plot_tax(df, n, taxlevel='species', tax_for_pattern=None, pattern=None,
              suffix=None, min_reads=10):
     """
     Create a diversity bar chart
+    :param min_reads: Minimum reads per taxonomic level to retain it.
     :param df: Filtered blast datafrae
     :param n: number of records to retain
     :param taxlevel: Taxonomic level to display
@@ -153,12 +160,32 @@ def plot_tax(df, n, taxlevel='species', tax_for_pattern=None, pattern=None,
 
 def main(blast_file, pident=None, eval=None, qcov=None, qlen=None, length=None,
          output_filtered=False, taxlevel='species', min_reads=0, plot=False,
-         tax_for_pattern=None, pattern=None, suffix_for_plot=None, ntop=None):
+         tax_for_pattern=None, pattern=None, suffix_for_plot=None, ntop=None,
+         use_coi=False):
+    """
+    Execute the code
+
+    :param blast_file: File with blast results
+    :param pident: Minimum percent identity to retain
+    :param eval: Maximum evalue to retain
+    :param qcov: Minimum Query coverage to retain
+    :param qlen: Minimum query length to retain
+    :param length: Minimum alignment length to retain
+    :param output_filtered: Output the filtered dataframe to file
+    :param taxlevel: Taxonomic level to display
+    :param min_reads: Minimum reads per taxonomic level to retain it.
+    :param plot: Plot a barchart of number of reads per taxonomic level
+    :param tax_for_pattern: Taxonomic level to restrict by pattern
+    :param pattern: pattern to restrict the plotting
+    :param suffix_for_plot: Output suffix (before extension)
+    :param ntop: Number of blast top hits to retain
+    :param use_coi: Use COI formatting to parse species
+    """
     filters = dict(zip('pident evalue qcovs qlen length'.split(),
                        [pident,   eval,   qcov,   qlen,   length]))
     filters = {k: v for k, v in filters.items() if v is not None}
     kwargs = dict(filters=filters, output_filtered=output_filtered,
-                  top_n_hits=ntop)
+                  top_n_hits=ntop, coi=use_coi)
     df = parse_blast(blast_file, **kwargs)
     get_reads_per_group(df, taxlevel=taxlevel, min_reads=min_reads)
     if plot:
@@ -206,4 +233,5 @@ if __name__ == '__main__':
     opt, arg = opts.parse_args()
     main(arg[0], opt.pident, opt.eval, opt.qcov, opt.qlen, opt.length,
          opt.output_filtered, opt.taxlevel, opt.min_reads, opt.plot,
-         opt.tax_for_pattern, opt.pattern, opt.suffix_for_plot, opt.ntop)
+         opt.tax_for_pattern, opt.pattern, opt.suffix_for_plot, opt.ntop,
+         opt.use_coi)
