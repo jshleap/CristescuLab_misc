@@ -3,6 +3,7 @@ from itertools import zip_longest
 from datetime import datetime
 from tqdm import tqdm
 import requests
+import json
 import time
 import sys
 
@@ -18,15 +19,20 @@ def get_batch(line):
     :return: tsv string with accession and lineage
     """
     def loop(r):
-        j = r.json()
-        records = j['bold_records']['records']
-        tsv=''
-        for acc in records:
-            tax = records[acc]['taxonomy']
-            lineage = ';'.join(kingdom + [
-                tax[level]['taxon']['name'] if level in tax else ''
-                for level in SIX])
-            tsv += '%s\t%s\n' % (acc, lineage)
+        try:
+            j = r.json()
+            records = j['bold_records']['records']
+            tsv=''
+            for acc in records:
+                tax = records[acc]['taxonomy']
+                lineage = ';'.join(kingdom + [
+                    tax[level]['taxon']['name'] if level in tax else ''
+                    for level in SIX])
+                tsv += '%s\t%s\n' % (acc, lineage)
+        except json.decoder.JSONDecodeError as err:
+            print(err)
+            with open('failed.dump', 'a') as f:
+                f.write('\n'.join(line.split('|')))
         return tsv
 
     line = '|'.join([x.strip() for x in line if x is not None])
