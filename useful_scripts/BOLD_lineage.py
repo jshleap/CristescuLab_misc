@@ -32,9 +32,10 @@ def get_batch(line):
             return tsv
         except json.decoder.JSONDecodeError as err:
             print(err)
+            print('Decode error with status', r.status_code)
             with open('failed.dump', 'a') as f:
                 f.write('\n'.join(line.split('|')))
-
+    print('Processing from', line[0], 'to', line[-1])
     line = '|'.join([x.strip() for x in line if x is not None])
     url = 'http://www.boldsystems.org/index.php/API_Public/specimen'
     payload = dict(ids=line, format='json')
@@ -57,6 +58,7 @@ def get_batch(line):
             print('Request failed, dumping failed accessions to failed.dump')
             with open('failed.dump', 'a') as f:
                 f.write('\n'.join(line.split('|')))
+            tsv = None
     return tsv
 
 
