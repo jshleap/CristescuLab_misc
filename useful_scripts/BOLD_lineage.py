@@ -29,11 +29,11 @@ def get_batch(line):
                     tax[level]['taxon']['name'] if level in tax else ''
                     for level in SIX])
                 tsv += '%s\t%s\n' % (acc, lineage)
+            return tsv
         except json.decoder.JSONDecodeError as err:
             print(err)
             with open('failed.dump', 'a') as f:
                 f.write('\n'.join(line.split('|')))
-        return tsv
 
     line = '|'.join([x.strip() for x in line if x is not None])
     url = 'http://www.boldsystems.org/index.php/API_Public/specimen'
