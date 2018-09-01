@@ -83,4 +83,4 @@ with open(ifn, 'r') as input_file, open(ofn, 'w') as output_file :
     tsv = Parallel(n_jobs=cpus)(delayed(get_batch)(
         current_line) for current_line in tqdm(grouper(
         input_file, number_of_lines), total=iterations))
-    output_file.write(''.join(tsv))
+    output_file.write(''.join([x for x in tsv if x is not None]))
