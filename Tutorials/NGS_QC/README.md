@@ -37,10 +37,12 @@ So let's run it!:
 
 `fastqc file1_R1.fastq.gz`
 
-This must have created an html file as well as a zipped folder. Use `rsync`, `scp`, [FileZilla](https://filezilla-project.org/), or your favorite file transfer protocol to get the html to your own computer.
-## Create files and folders
+This must have created an html file as well as a zipped folder. Use `rsync`, `scp`, [FileZilla](https://filezilla-project.org/), or your favorite file transfer protocol to get the html to your own computer, and open it in a browser.
 
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
+## Basic Statistics
+This table will give you basic information about your reads:
+1. 
+
 
 ## Switch to another file
 
@@ -173,7 +175,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA1OTM4MzMxLDE4ODk0NjYzOTEsMTIxMT
-gxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkxODgz
-NTRdfQ==
+eyJoaXN0b3J5IjpbLTE1NzMzMjgzNzgsOTA1OTM4MzMxLDE4OD
+k0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2
+NDMwLC0yMjkxODgzNTRdfQ==
 -->
