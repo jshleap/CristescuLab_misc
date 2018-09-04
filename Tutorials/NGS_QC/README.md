@@ -9,6 +9,7 @@ At the end of this tutorial you shoud be able to:
 3. Remove adapters and primers 
 4. Make simple quality trimming for reads
 
+This tutorial assumes that you have a basic knowledge in bash, and that you have an account and know how to connect to the compute canada clusters. If you dont, I reccomend you 
 ## Getting the statistics with fastqc
 
 The statitics of any fastq file is easily obtained by the fastqc program. This program inludes a set of statistical test and modules to test for
@@ -148,6 +149,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTM1MTY4MDksLTE1Mjg2NjY0MzAsLT
-IyOTE4ODM1NF19
+eyJoaXN0b3J5IjpbMjEyMTQ5ODM4MSwtMTUyODY2NjQzMCwtMj
+I5MTg4MzU0XX0=
 -->
