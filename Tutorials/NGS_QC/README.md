@@ -10,6 +10,9 @@ At the end of this tutorial you shoud be able to:
 4. Make simple quality trimming for reads
 
 This tutorial assumes that you have a basic knowledge in bash, and that you have an account and know how to connect to the Compute Canada clusters. If you dont, I reccomend you go over the [BASH tutorial](https://github.com/jshleap/CristescuLab_misc/blob/master/Tutorials/Bash/Bash_Tutorial.ipynb) and you read the [Compute Canada documentation](https://docs.computecanada.ca/wiki/Compute_Canada_Documentation).
+
+### Outline of the tutorial
+1. 
 ## To start
 To start, let's download [this file](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1.fastq.gz) to your account in Compute Canada. Also, load the following modules fastqc:
 
@@ -44,9 +47,7 @@ This table will give you basic information about your reads:
 1. **Filename**: The name of the file being analyzed
 2. **File type**: The type of information the file contains
 3. **Encoding**: How are the quality scores encoded
-
-Sanger / Illumina 1.9
-
+4. 
 Total Sequences
 
 108364
@@ -193,7 +194,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Nzk0NDIxMjUsOTA1OTM4MzMxLDE4OD
-k0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2
-NDMwLC0yMjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbMTIyNDYxNzMzOSw5MDU5MzgzMzEsMTg4OT
+Q2NjM5MSwxMjExODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2NjY0
+MzAsLTIyOTE4ODM1NF19
 -->
