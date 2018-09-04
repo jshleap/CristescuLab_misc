@@ -8,7 +8,7 @@ At the end of this tutorial you shoud be able to:
 2. Identify problems in NGS datasets
 3. Remove adapters and primers 
 4. Make simple quality trimming for reads
-5. 
+
 
 # Files
 
@@ -149,5 +149,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MDI0NTg3MSwtMjI5MTg4MzU0XX0=
+eyJoaXN0b3J5IjpbLTE1Mjg2NjY0MzAsLTIyOTE4ODM1NF19
 -->
