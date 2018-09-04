@@ -41,7 +41,25 @@ This must have created an html file as well as a zipped folder. Use `rsync`, `sc
 
 ## Basic Statistics
 This table will give you basic information about your reads:
-1. 
+1. **Filename**: The name of the file being analyzed
+2. **File type**: The type of information the file contains
+3. **Encoding**: How are the quality scores encoded
+
+Sanger / Illumina 1.9
+
+Total Sequences
+
+108364
+
+Sequences flagged as poor quality
+
+0
+
+Sequence length
+
+300
+
+%GC
 
 
 ## Switch to another file
@@ -175,7 +193,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzMzMjgzNzgsOTA1OTM4MzMxLDE4OD
+eyJoaXN0b3J5IjpbLTE5Nzk0NDIxMjUsOTA1OTM4MzMxLDE4OD
 k0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2
 NDMwLC0yMjkxODgzNTRdfQ==
 -->
