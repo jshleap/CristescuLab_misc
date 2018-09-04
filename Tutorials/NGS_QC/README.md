@@ -53,20 +53,10 @@ This table will give you basic information about your reads:
 1. **Filename**: The name of the file being analyzed
 2. **File type**: The type of information the file contains
 3. **Encoding**: How are the quality scores encoded
-4. 
-Total Sequences
-
-108364
-
-Sequences flagged as poor quality
-
-0
-
-Sequence length
-
-300
-
-%GC
+4. **Total Sequences**: umber of reads in your file
+5. **Sequences flagged as poor quality**: Number of sequences with very low quality thoughout
+6. **Sequence length**: Average sequence length
+7. **%GC
 
 
 ## Switch to another file
@@ -200,7 +190,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIwNjY5ODY1LDkwNTkzODMzMSwxODg5ND
-Y2MzkxLDEyMTE4MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2NjQz
-MCwtMjI5MTg4MzU0XX0=
+eyJoaXN0b3J5IjpbLTE5MjQ2NTI0MTUsOTA1OTM4MzMxLDE4OD
+k0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2
+NDMwLC0yMjkxODgzNTRdfQ==
 -->
