@@ -5,9 +5,10 @@
 At the end of this tutorial you shoud be able to:
 
 1. Understand the QC statistics used in FASTQC
-2. Remove adapters and primers 
-3. Make simple quality trimming for reads
-4. 
+2. Identify problems in NGS datasets
+3. Remove adapters and primers 
+4. Make simple quality trimming for reads
+5. 
 
 # Files
 
@@ -148,5 +149,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyOTE4ODM1NF19
+eyJoaXN0b3J5IjpbMTk0MDI0NTg3MSwtMjI5MTg4MzU0XX0=
 -->
