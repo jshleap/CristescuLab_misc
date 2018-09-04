@@ -56,8 +56,10 @@ This table will give you basic information about your reads:
 4. **Total Sequences**: umber of reads in your file
 5. **Sequences flagged as poor quality**: Number of sequences with very low quality thoughout
 6. **Sequence length**: Average sequence length
-7. **%GC
+7. **%GC**: Percentage of GC content
 
+### Encoding
+En
 
 ## Switch to another file
 
@@ -190,7 +192,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjQ2NTI0MTUsOTA1OTM4MzMxLDE4OD
-k0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2
-NDMwLC0yMjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbLTc3ODA2NzYxMCw5MDU5MzgzMzEsMTg4OT
+Q2NjM5MSwxMjExODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2NjY0
+MzAsLTIyOTE4ODM1NF19
 -->
