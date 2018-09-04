@@ -37,7 +37,7 @@ So let's run it!:
 
 `fastqc file1_R1.fastq.gz`
 
-
+This must have created an html file as well as a zipped folder. Use `rsync`
 ## Create files and folders
 
 The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
@@ -173,6 +173,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4OTQ2NjM5MSwxMjExODEwMjcsLTIwND
-A2MDM4NzAsLTE1Mjg2NjY0MzAsLTIyOTE4ODM1NF19
+eyJoaXN0b3J5IjpbLTE3ODcwMjEzMTUsMTg4OTQ2NjM5MSwxMj
+ExODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2NjY0MzAsLTIyOTE4
+ODM1NF19
 -->
