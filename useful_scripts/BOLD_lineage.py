@@ -8,7 +8,7 @@ import sys
 
 SIX = ['phylum', 'class', 'order', 'family', 'genus', 'species']
 kingdom=['Eukaryota']
-number_of_lines = 25
+number_of_lines = 25 if len(sys.argv) < 4 else int(sys.argv[4])
 
 
 def get_batch(line):
@@ -20,7 +20,7 @@ def get_batch(line):
     def loop(r):
         j = r.json()
         records = j['bold_records']['records']
-        tsv=''
+        tsv = ''
         for acc in records:
             tax = records[acc]['taxonomy']
             lineage = ';'.join(kingdom + [
@@ -50,7 +50,7 @@ def get_batch(line):
         else:
             print('Request failed, dumping failed accessions to failed.dump')
             with open('failed.dump', 'a') as f:
-                f.write('\n'.join(line.split('|')))
+                f.write('%s\n' % '\n'.join(line.split('|')))
     return tsv
 
 
