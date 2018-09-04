@@ -20,7 +20,20 @@ module load trimmomatic/0.36
 
 ## Getting the statistics with fastqc
 
-The statitics of any fastq file is easily obtained by the fastqc program. This program inludes a set of statistical test and modules to test for quality.
+The statitics of any fastq file is easily obtained by the fastqc program. This program inludes a set of statistical test and modules to test for quality. From their README file:
+
+> FastQC is an application which takes a FastQ file and runs a series
+of tests on it to generate a comprehensive QC report.  This will
+tell you if there is anything unusual about your sequence.  Each
+test is flagged as a pass, warning or fail depending on how far it
+departs from what you'd expect from a normal large dataset with no
+significant biases.  It's important to stress that warnings or even
+failures do not necessarily mean that there is a problem with your
+data, only that it is unusual.  It is possible that the biological
+nature of your sample means that you would expect this particular
+bias in your results.
+
+So let
 
 ## Create files and folders
 
@@ -157,6 +170,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyOTAyNTU3NCwxMjExODEwMjcsLTIwND
-A2MDM4NzAsLTE1Mjg2NjY0MzAsLTIyOTE4ODM1NF19
+eyJoaXN0b3J5IjpbLTE5NjgwNzM1NjksMTIxMTgxMDI3LC0yMD
+QwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkxODgzNTRdfQ==
 -->
