@@ -61,7 +61,6 @@ This table will give you basic information about your reads:
 ### Encoding
 Encoding is the way the quality of the bases are written. There are many encodings, but the most popular are Sanger
 
-![Encodings courtesy of ](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj22eWprKLdAhXkT98KHchhBaUQjRx6BAgBEAU&url=https://www.slideshare.net/suryasaha/sequencing-46505442&psig=AOvVaw1aPV2MRZtp-R5eLhOV15xt&ust=1536184759918752)
 https://en.wikipedia.org/wiki/FASTQ_format#Encoding
 
 ## Switch to another file
@@ -195,7 +194,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4OT
-Q2NjM5MSwxMjExODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2NjY0
-MzAsLTIyOTE4ODM1NF19
+eyJoaXN0b3J5IjpbMTUzMjQwODA5NiwtNDc2NjQ3ODU2LDkwNT
+kzODMzMSwxODg5NDY2MzkxLDEyMTE4MTAyNywtMjA0MDYwMzg3
+MCwtMTUyODY2NjQzMCwtMjI5MTg4MzU0XX0=
 -->
