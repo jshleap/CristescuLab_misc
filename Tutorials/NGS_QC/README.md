@@ -1,6 +1,6 @@
 # NGS Quality Control Tutorial
 
-## Objectives / learning outcomes:
+### Objectives / learning outcomes:
 
 At the end of this tutorial you shoud be able to:
 
@@ -9,10 +9,9 @@ At the end of this tutorial you shoud be able to:
 3. Remove adapters and primers 
 4. Make simple quality trimming for reads
 
+## Getting the statistics with fastqc
 
-# Files
-
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+The statitics of any fastq file is easily obtained by the fastqc program. This program inludes a set of statistical test and modules to test for
 
 ## Create files and folders
 
@@ -149,5 +148,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjg2NjY0MzAsLTIyOTE4ODM1NF19
+eyJoaXN0b3J5IjpbLTEzMTM1MTY4MDksLTE1Mjg2NjY0MzAsLT
+IyOTE4ODM1NF19
 -->
