@@ -11,7 +11,9 @@ At the end of this tutorial you shoud be able to:
 
 This tutorial assumes that you have a basic knowledge in bash, and that you have an account and know how to connect to the Compute Canada clusters. If you dont, I reccomend you go over the [BASH tutorial](https://github.com/jshleap/CristescuLab_misc/blob/master/Tutorials/Bash/Bash_Tutorial.ipynb) and you read the [Compute Canada documentation](https://docs.computecanada.ca/wiki/Compute_Canada_Documentation).
 ## To start
-To start, let's download [this file](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1.fastq.gz) to your account in Compute Canada. 
+To start, let's download [this file](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1.fastq.gz) to your account in Compute Canada. Also, load the following modules fastqc:
+
+`module load fastqc/0.11.5`
 
 
 ## Getting the statistics with fastqc
@@ -153,6 +155,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA3ODA5NTEzLDEyMTE4MTAyNywtMjA0MD
-YwMzg3MCwtMTUyODY2NjQzMCwtMjI5MTg4MzU0XX0=
+eyJoaXN0b3J5IjpbLTE4MjE3MjkwMTUsMTIxMTgxMDI3LC0yMD
+QwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkxODgzNTRdfQ==
 -->
