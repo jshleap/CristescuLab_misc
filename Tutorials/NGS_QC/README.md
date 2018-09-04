@@ -13,8 +13,8 @@ This tutorial assumes that you have a basic knowledge in bash, and that you have
 
 ### Outline of the tutorial
 1. [To start: A couple of things we need before we start the tutorial](#to-start)
-2.  
-3. 
+2. [Getting the statistics with fastqc](#getting-the-statistics-with-fastqc)
+3. [Basic Statistics](#basic_statistics)
 
 ## To start
 To start, let's download [this file](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1.fastq.gz) to your account in Compute Canada. Also, load the following modules fastqc:
@@ -197,7 +197,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzU3MDk0MzQsOTA1OTM4MzMxLDE4OD
+eyJoaXN0b3J5IjpbLTExMDQ1MzkzNDMsOTA1OTM4MzMxLDE4OD
 k0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2
 NDMwLC0yMjkxODgzNTRdfQ==
 -->
