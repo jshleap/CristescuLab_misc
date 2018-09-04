@@ -13,12 +13,14 @@ This tutorial assumes that you have a basic knowledge in bash, and that you have
 ## To start
 To start, let's download [this file](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1.fastq.gz) to your account in Compute Canada. Also, load the following modules fastqc:
 
-`module load fastqc/0.11.5`
-
+```
+module load fastqc/0.11.5
+module load trimmomatic/0.36
+```
 
 ## Getting the statistics with fastqc
 
-The statitics of any fastq file is easily obtained by the fastqc program. This program inludes a set of statistical test and modules to test for
+The statitics of any fastq file is easily obtained by the fastqc program. This program inludes a set of statistical test and modules to test for quality.
 
 ## Create files and folders
 
@@ -155,6 +157,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjE3MjkwMTUsMTIxMTgxMDI3LC0yMD
-QwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbMTYyOTAyNTU3NCwxMjExODEwMjcsLTIwND
+A2MDM4NzAsLTE1Mjg2NjY0MzAsLTIyOTE4ODM1NF19
 -->
