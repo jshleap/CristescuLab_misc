@@ -14,9 +14,11 @@ This tutorial assumes that you have a basic knowledge in bash, and that you have
 ### Outline of the tutorial
 1. [To start: A couple of things we need before we start the tutorial](#to-start)
 2. [Getting the statistics with fastqc](#getting-the-statistics-with-fastqc)
-3. [Basic Statistics](#basic_statistics)
+3. [Basic Statistics](#basic-statistics)
+4. 
 
 ## To start
+
 To start, let's download [this file](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1.fastq.gz) to your account in Compute Canada. Also, load the following modules fastqc:
 
 ```
@@ -46,6 +48,7 @@ So let's run it!:
 This must have created an html file as well as a zipped folder. Use `rsync`, `scp`, [FileZilla](https://filezilla-project.org/), or your favorite file transfer protocol to get the html to your own computer, and open it in a browser.
 
 ## Basic Statistics
+
 This table will give you basic information about your reads:
 1. **Filename**: The name of the file being analyzed
 2. **File type**: The type of information the file contains
@@ -197,7 +200,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDQ1MzkzNDMsOTA1OTM4MzMxLDE4OD
-k0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2
-NDMwLC0yMjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbMzIwNjY5ODY1LDkwNTkzODMzMSwxODg5ND
+Y2MzkxLDEyMTE4MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2NjQz
+MCwtMjI5MTg4MzU0XX0=
 -->
