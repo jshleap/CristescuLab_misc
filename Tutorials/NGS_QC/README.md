@@ -59,8 +59,7 @@ This table will give you basic information about your reads:
 7. **%GC**: Percentage of GC content
 
 ### Encoding
-Encoding is the way the quality of the bases are written. In the Sanger encoding, the scores are known as Phred33
-
+Encoding is the way the quality of the bases are written. 
 https://en.wikipedia.org/wiki/FASTQ_format#Encoding
 
 ## Switch to another file
@@ -194,7 +193,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc2Njc5MzI4LDkwNTkzODMzMSwxODg5ND
-Y2MzkxLDEyMTE4MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2NjQz
-MCwtMjI5MTg4MzU0XX0=
+eyJoaXN0b3J5IjpbLTIxMDc3MjQ1NzcsOTA1OTM4MzMxLDE4OD
+k0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2
+NDMwLC0yMjkxODgzNTRdfQ==
 -->
