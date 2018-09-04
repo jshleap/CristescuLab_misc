@@ -33,7 +33,10 @@ data, only that it is unusual.  It is possible that the biological
 nature of your sample means that you would expect this particular
 bias in your results.
 
-So let
+So let's run it!:
+
+`fastqc file1_R1.fastq.gz`
+
 
 ## Create files and folders
 
@@ -170,6 +173,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjgwNzM1NjksMTIxMTgxMDI3LC0yMD
-QwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbMTg4OTQ2NjM5MSwxMjExODEwMjcsLTIwND
+A2MDM4NzAsLTE1Mjg2NjY0MzAsLTIyOTE4ODM1NF19
 -->
