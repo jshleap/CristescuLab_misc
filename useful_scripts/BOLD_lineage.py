@@ -3,6 +3,7 @@ from itertools import zip_longest
 from datetime import datetime
 from tqdm import tqdm
 import requests
+import json
 import time
 import sys
 
@@ -18,17 +19,23 @@ def get_batch(line):
     :return: tsv string with accession and lineage
     """
     def loop(r):
-        j = r.json()
-        records = j['bold_records']['records']
-        tsv = ''
-        for acc in records:
-            tax = records[acc]['taxonomy']
-            lineage = ';'.join(kingdom + [
-                tax[level]['taxon']['name'] if level in tax else ''
-                for level in SIX])
-            tsv += '%s\t%s\n' % (acc, lineage)
-        return tsv
-
+        try:
+            j = r.json()
+            records = j['bold_records']['records']
+            tsv=''
+            for acc in records:
+                tax = records[acc]['taxonomy']
+                lineage = ';'.join(kingdom + [
+                    tax[level]['taxon']['name'] if level in tax else ''
+                    for level in SIX])
+                tsv += '%s\t%s\n' % (acc, lineage)
+            return tsv
+        except json.decoder.JSONDecodeError as err:
+            print(err)
+            print('Decode error with status', r.status_code)
+            with open('failed.dump', 'a') as f:
+                f.write('\n'.join(line.split('|')))
+    #print('Processing from', line[0], 'to', line[-1])
     line = '|'.join([x.strip() for x in line if x is not None])
     url = 'http://www.boldsystems.org/index.php/API_Public/specimen'
     payload = dict(ids=line, format='json')
@@ -51,6 +58,7 @@ def get_batch(line):
             print('Request failed, dumping failed accessions to failed.dump')
             with open('failed.dump', 'a') as f:
                 f.write('%s\n' % '\n'.join(line.split('|')))
+            tsv = None
     return tsv
 
 
@@ -75,4 +83,4 @@ with open(ifn, 'r') as input_file, open(ofn, 'w') as output_file :
     tsv = Parallel(n_jobs=cpus)(delayed(get_batch)(
         current_line) for current_line in tqdm(grouper(
         input_file, number_of_lines), total=iterations))
-    output_file.write(''.join(tsv))
+    output_file.write(''.join([x for x in tsv if x is not None]))
