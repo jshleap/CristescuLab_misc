@@ -224,6 +224,7 @@ Another self-explanatory module. Here, the most commonly used adapters are scree
  In our file:
  ![enter image description here](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/adapter_content.png)
 
+## 
 # Resolving some of the Issues
 There are many programs to do QC, and many specific tools for each one. For now we are going to focus on the popular program Trimmomatic. This program does adaptve quality trimming, head and tail crop, and adaptor removal.
 
@@ -235,7 +236,7 @@ There are many programs to do QC, and many specific tools for each one. For now 
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxODY5NjMwNiw1NzMzNDI0NTksNzY5Nj
+eyJoaXN0b3J5IjpbLTU3NjgyNzY4Miw1NzMzNDI0NTksNzY5Nj
 Q1NDg0LC0xMjYxMTIzOTcwLC04ODI0NTMwMDUsLTI1NTQ0NDAw
 MiwxMDE2OTMxNTgyLC0xNjI2NzcyOTMwLDExNTYyOTI4NTYsLT
 EzMjIxMDMyOTUsLTc5NzYwNzM0LDE1MjM1MDQ0ODUsMjc4NTgy
