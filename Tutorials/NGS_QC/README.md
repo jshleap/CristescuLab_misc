@@ -73,7 +73,7 @@ But what does a quality score means? It s related to the probability of an error
 |50|1 in 100,000|99.999%|
 |60|1 in 1,000,000|99.9999%|
 
-As a rule of thumb a Phred score above 20 (99% chances to be right) is considered acceptable and above 30
+As a rule of thumb a Phred score above 20 (99% chances to be right) is considered acceptable and above 30 (99.9% chances to be right) as good.
 
 I am not going to enter the rest of the basic statistics since they are self-explanatory.
 
@@ -81,6 +81,8 @@ I am not going to enter the rest of the basic statistics since they are self-exp
 
 It's name is self explanatory. This module evaluates the quality at each base for all reads. FastQC gives you a box plot of the qualities, representing the inter-quartile range (25-75%) (yellow box), the extremes 10 and 90th percentiles are represented by the whiskers, the median value by a red line, and the mean quality by the blue line.
 ![per-base quality of file 1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_base_quality.png)
+
+Look at the figure above. What do you think is happening at the end? why?
 
 ## Rename a file
 
@@ -209,9 +211,9 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MTI3NDAyOSwxNTc2Mjc2NjYzLDg0Nz
-MxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMzc4LDE1MzI0MDgw
-OTYsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4OTQ2NjM5MSwxMj
-ExODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2NjY0MzAsLTIyOTE4
-ODM1NF19
+eyJoaXN0b3J5IjpbLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4ND
+czMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4
+MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMT
+IxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkx
+ODgzNTRdfQ==
 -->
