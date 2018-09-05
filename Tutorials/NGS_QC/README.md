@@ -240,8 +240,12 @@ This program does adaptve quality trimming, head and tail crop, and adaptor remo
  2.  [-phred33 | -phred64]: this flags tells trimmomatic the encoding of the file (see [above](#encoding))
  
  ### Change encoding option
- If you want to read your file in one encoding and output it in a different one, this options are the ones you need to use
+ If you want to read your file in one encoding and output it in a different one, this options are the ones you need to use:
+ -   TOPHRED33: Convert quality scores to Phred-33
+-   TOPHRED64: Convert quality scores to Phred-64
+This options (and all the following on CAPS) must go after the input/output files.
 
+### 
 ## Trimming tail and head
 
 ## Adaptive quality trimming
@@ -250,11 +254,11 @@ This program does adaptve quality trimming, head and tail crop, and adaptor remo
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk4NTE3Nzc2LC01NzY4Mjc2ODIsNTczMz
-QyNDU5LDc2OTY0NTQ4NCwtMTI2MTEyMzk3MCwtODgyNDUzMDA1
-LC0yNTU0NDQwMDIsMTAxNjkzMTU4MiwtMTYyNjc3MjkzMCwxMT
-U2MjkyODU2LC0xMzIyMTAzMjk1LC03OTc2MDczNCwxNTIzNTA0
-NDg1LDI3ODU4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMT
-M2NzU4MjI2MiwtMTUyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5
-MDc1MjVdfQ==
+eyJoaXN0b3J5IjpbLTQ5MDAzODUyNSwtNTc2ODI3NjgyLDU3Mz
+M0MjQ1OSw3Njk2NDU0ODQsLTEyNjExMjM5NzAsLTg4MjQ1MzAw
+NSwtMjU1NDQ0MDAyLDEwMTY5MzE1ODIsLTE2MjY3NzI5MzAsMT
+E1NjI5Mjg1NiwtMTMyMjEwMzI5NSwtNzk3NjA3MzQsMTUyMzUw
+NDQ4NSwyNzg1ODI3ODcsMTI5NTQ5MDEyNCwyMDk5OTgyNDg1LD
+EzNjc1ODIyNjIsLTE1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNjg3
+OTA3NTI1XX0=
 -->
