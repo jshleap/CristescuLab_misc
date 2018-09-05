@@ -19,6 +19,7 @@ This tutorial assumes that you have a basic knowledge in bash, and that you have
 4. [Per Base Sequence Quality](#per-base-sequence-quality)
 5. [Per tile sequence quality](#per-tile-sequence-quality)
 6. [Per sequence quality scores](#per-sequence-quality-scores)
+7. [Per base sequence content](#per-base-sequence-content)
 
 ## To start
 
@@ -129,7 +130,7 @@ From FastQC documentation:
 >#### Failure
 >An error is raised if the most frequently observed mean quality is below 20 - this equates to a 1% error rate.
 
-## Export a file
+## Per base sequence content
 
 You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
 
@@ -248,10 +249,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC00MD
-U5MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3
-NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OC
-wxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0
-NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2ND
-MwLC0yMjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbLTE1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNj
+g3OTA3NTI1LC00MDU5MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIw
+MzcwMTUsMTU3NjI3NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MT
+QsMTUxNjA3MjM3OCwxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1
+OTM4MzMxLDE4ODk0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzOD
+cwLC0xNTI4NjY2NDMwLC0yMjkxODgzNTRdfQ==
 -->
