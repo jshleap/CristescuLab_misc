@@ -59,13 +59,16 @@ This table will give you basic information about your reads:
 7. **%GC**: Percentage of GC content
 
 ### Encoding
-Encoding is the way the quality of the bases are written. There are many encodings, but the most popular are Sanger
+Encoding is the way the quality of the bases are written. There are many encodings, but the most popular are Sanger, Solexa, Ilumina 1.3+, Illumina 1.5+, and illumina 1.8+.  In summary, is a character that represents the confidence you have in a given base call.
+![Phred Score encodings descriptions, from https://en.wikipedia.org/wiki/FASTQ_format#Encoding](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/fastq_phread-base.png)
+For more information check https://en.wikipedia.org/wiki/FASTQ_format#Encoding
 
-https://en.wikipedia.org/wiki/FASTQ_format#Encoding
+I am not going to enter the rest of the basic statistics since they are self-explanatory.
 
-## Switch to another file
+### Per Base Sequence Quality
 
-All your files are listed in the file explorer. You can switch from one to another by clicking a file in the list.
+It's name is self explanatory. This module evaluates the quality at each base for all reads. FastQC gives you a box plot of the qualities, representing the inter-quartile range (25-75%) (yellow box), the extremes 10 and 90th percentiles are represented by the whiskers, the median value by a red line, and the mean quality by the blue line.
+
 
 ## Rename a file
 
@@ -194,7 +197,8 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMjQwODA5NiwtNDc2NjQ3ODU2LDkwNT
-kzODMzMSwxODg5NDY2MzkxLDEyMTE4MTAyNywtMjA0MDYwMzg3
-MCwtMTUyODY2NjQzMCwtMjI5MTg4MzU0XX0=
+eyJoaXN0b3J5IjpbLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNT
+MyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYz
+OTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC
+0yMjkxODgzNTRdfQ==
 -->
