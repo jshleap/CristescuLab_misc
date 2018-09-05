@@ -194,7 +194,7 @@ Our dummy file (since is illumina) behaves as expected:
 ![Length distribution of file1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/sequence_length_distribution.png)  
 
 ## Sequence Duplication Levels
-This m
+This module allows you to see the level of duplication of your library. Ideally, the blue and 
 
 ## Overrepresented sequences
 
@@ -211,11 +211,11 @@ This m
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3OTQ0MDI3OCwtMTMyMjEwMzI5NSwtNz
-k3NjA3MzQsMTUyMzUwNDQ4NSwyNzg1ODI3ODcsMTI5NTQ5MDEy
-NCwyMDk5OTgyNDg1LDEzNjc1ODIyNjIsLTE1Mjc3NjA3NzAsMT
-IzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5MjIzMzIsLTE4MTc5
-NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4NDczMTUzNT
-YsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4MDk2LC00
-NzY2NDc4NTZdfQ==
+eyJoaXN0b3J5IjpbMTA2MjA5NjQ5LC0xMzIyMTAzMjk1LC03OT
+c2MDczNCwxNTIzNTA0NDg1LDI3ODU4Mjc4NywxMjk1NDkwMTI0
+LDIwOTk5ODI0ODUsMTM2NzU4MjI2MiwtMTUyNzc2MDc3MCwxMj
+MxMTU2NTY5LDE2ODc5MDc1MjUsLTQwNTkyMjMzMiwtMTgxNzk2
+Mzk3NCwtMTIzMjAzNzAxNSwxNTc2Mjc2NjYzLDg0NzMxNTM1Ni
+wtMTEzOTI2NDUxNCwxNTE2MDcyMzc4LDE1MzI0MDgwOTYsLTQ3
+NjY0Nzg1Nl19
 -->
