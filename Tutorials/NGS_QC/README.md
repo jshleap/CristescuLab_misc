@@ -134,7 +134,6 @@ From FastQC documentation:
 >An error is raised if the most frequently observed mean quality is below 20 - this equates to a 1% error rate.
 
 
-
 This is the case for our File1:
 ![Per sequence quality scores of File1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_sequence_quality.png)
 
@@ -183,7 +182,10 @@ From FastQC documentation:
 
 Failure or warning in this module suggest that the sequencing should probably be repeated since a significant portion of your reads have no information in them.
 
-Since our toy file is Illumina, it shows a flat line
+Since our toy file is Illumina, it shows a flat line in the bottom of the figure:
+
+![per base N content](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_base_n_content.png)
+
 ## Sequence Length Distribution
 
 
@@ -205,11 +207,11 @@ Since our toy file is Illumina, it shows a flat line
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MTA2NzY5OSwxNTIzNTA0NDg1LDI3OD
-U4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMTM2NzU4MjI2
-MiwtMTUyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5MDc1MjUsLT
-QwNTkyMjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2
-Mjc2NjYzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMz
-c4LDE1MzI0MDgwOTYsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4
-OTQ2NjM5MV19
+eyJoaXN0b3J5IjpbLTc5NzYwNzM0LDE1MjM1MDQ0ODUsMjc4NT
+gyNzg3LDEyOTU0OTAxMjQsMjA5OTk4MjQ4NSwxMzY3NTgyMjYy
+LC0xNTI3NzYwNzcwLDEyMzExNTY1NjksMTY4NzkwNzUyNSwtND
+A1OTIyMzMyLC0xODE3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYy
+NzY2NjMsODQ3MzE1MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNz
+gsMTUzMjQwODA5NiwtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5
+NDY2MzkxXX0=
 -->
