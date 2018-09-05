@@ -194,7 +194,7 @@ Our dummy file (since is illumina) behaves as expected:
 ![Length distribution of file1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/sequence_length_distribution.png)  
 
 ## Sequence Duplication Levels
-This module allows you to see the level of duplication of your library. Ideally, the blue (total sequences) and the red (deduplicated sequences) should match. This would mean that you had a diverse library, and that each sequence has been sequenced in the proper depth. However, this assumes that 
+This module allows you to see the level of duplication of your library. Ideally, the blue (total sequences) and the red (deduplicated sequences) should match. This would mean that you had a diverse library, and that each sequence has been sequenced in the proper depth. However, this assumes that you are working with a genome of single species, and therefore the warnings and failures of this module should only be worrysome then, since it will show a bias (i.e. PCR artefacts, )
 
 ## Overrepresented sequences
 
@@ -211,11 +211,11 @@ This module allows you to see the level of duplication of your library. Ideally,
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MzQ1ODQsLTEzMjIxMDMyOTUsLTc5Nz
-YwNzM0LDE1MjM1MDQ0ODUsMjc4NTgyNzg3LDEyOTU0OTAxMjQs
-MjA5OTk4MjQ4NSwxMzY3NTgyMjYyLC0xNTI3NzYwNzcwLDEyMz
-ExNTY1NjksMTY4NzkwNzUyNSwtNDA1OTIyMzMyLC0xODE3OTYz
-OTc0LC0xMjMyMDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1MzU2LC
-0xMTM5MjY0NTE0LDE1MTYwNzIzNzgsMTUzMjQwODA5NiwtNDc2
-NjQ3ODU2XX0=
+eyJoaXN0b3J5IjpbLTEzODkwMzE4OTgsLTEzMjIxMDMyOTUsLT
+c5NzYwNzM0LDE1MjM1MDQ0ODUsMjc4NTgyNzg3LDEyOTU0OTAx
+MjQsMjA5OTk4MjQ4NSwxMzY3NTgyMjYyLC0xNTI3NzYwNzcwLD
+EyMzExNTY1NjksMTY4NzkwNzUyNSwtNDA1OTIyMzMyLC0xODE3
+OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1Mz
+U2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNzgsMTUzMjQwODA5Niwt
+NDc2NjQ3ODU2XX0=
 -->
