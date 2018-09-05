@@ -58,6 +58,9 @@ This table will give you basic information about your reads:
 6. **Sequence length**: Average sequence length
 7. **%GC**: Percentage of GC content
 
+For our file we get:
+![Basic stats for File1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/Basic_stats.png)
+
 ### Encoding
 Encoding is the way the quality of the bases are written. There are many encodings, but the most popular are Sanger, Solexa, Ilumina 1.3+, Illumina 1.5+, and illumina 1.8+.  In summary, is a character that represents the confidence you have in a given base call.
 ![Phred Score encodings descriptions, from https://en.wikipedia.org/wiki/FASTQ_format#Encoding](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/fastq_phread-base.png)
@@ -211,9 +214,9 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4ND
-czMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4
-MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMT
-IxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkx
-ODgzNTRdfQ==
+eyJoaXN0b3J5IjpbMTIzNDcyMjYzMywtMTIzMjAzNzAxNSwxNT
+c2Mjc2NjYzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcy
+Mzc4LDE1MzI0MDgwOTYsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMT
+g4OTQ2NjM5MSwxMjExODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2
+NjY0MzAsLTIyOTE4ODM1NF19
 -->
