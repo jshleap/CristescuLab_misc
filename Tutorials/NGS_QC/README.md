@@ -65,7 +65,7 @@ For more information check https://en.wikipedia.org/wiki/FASTQ_format#Encoding
 
 I am not going to enter the rest of the basic statistics since they are self-explanatory.
 
-### # Per Base Sequence Quality
+### Per Base Sequence Quality
 
 All your files are listed in the file explorer. You can switch from one to another by clicking a file in the list.
 
@@ -196,7 +196,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MzQ0MTI4NiwxNTE2MDcyMzc4LDE1Mz
+eyJoaXN0b3J5IjpbLTk5NDM0MzA0OSwxNTE2MDcyMzc4LDE1Mz
 I0MDgwOTYsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4OTQ2NjM5
 MSwxMjExODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2NjY0MzAsLT
 IyOTE4ODM1NF19
