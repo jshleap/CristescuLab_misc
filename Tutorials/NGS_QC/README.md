@@ -218,7 +218,7 @@ Check your copy of the overrerpesented sequences in the html file. Here is a scr
 #### What can you tell me about it? How would you check if is OK or not? Do it!!!Overrepresented sequences
 
 ## Adapter Content
-Another self-explanatory module. Here, the most commonly used adapters for illumina
+Another self-explanatory module. Here, the most commonly used adapters are screened for. They are mostly illumina adapters (Universal, Small 3' RNA, Small 5' RNA, Nextera) and SOLiD small RNA adapter. F
 
 # Resolving some of the Issues
 ## Trimming tail and head
@@ -229,7 +229,7 @@ Another self-explanatory module. Here, the most commonly used adapters for illum
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwODg3MTgxNCwtMjU1NDQ0MDAyLDEwMT
+eyJoaXN0b3J5IjpbLTg4MjQ1MzAwNSwtMjU1NDQ0MDAyLDEwMT
 Y5MzE1ODIsLTE2MjY3NzI5MzAsMTE1NjI5Mjg1NiwtMTMyMjEw
 MzI5NSwtNzk3NjA3MzQsMTUyMzUwNDQ4NSwyNzg1ODI3ODcsMT
 I5NTQ5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIyNjIsLTE1Mjc3
