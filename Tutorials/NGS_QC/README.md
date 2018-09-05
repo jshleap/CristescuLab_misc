@@ -148,7 +148,7 @@ This module intends to show the proportion of GC content in the reads. The blue 
 
 ![Per sequence GC contentent](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_sequence_gc_content.png)
 
-This two mode observed distribution could mean that there are multiple groups/species with markedly different GC composition ()
+This two mode observed distribution could mean that there are multiple groups/species with markedly different GC composition (e.g bacteria and eukariotes)
 ## Per base N content
 
 
@@ -173,7 +173,7 @@ This two mode observed distribution could mean that there are multiple groups/sp
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg5MjExNzE1LDEyOTU0OTAxMjQsMjA5OT
+eyJoaXN0b3J5IjpbMjc4NTgyNzg3LDEyOTU0OTAxMjQsMjA5OT
 k4MjQ4NSwxMzY3NTgyMjYyLC0xNTI3NzYwNzcwLDEyMzExNTY1
 NjksMTY4NzkwNzUyNSwtNDA1OTIyMzMyLC0xODE3OTYzOTc0LC
 0xMjMyMDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1MzU2LC0xMTM5
