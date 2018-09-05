@@ -266,9 +266,20 @@ The SLIDINGWINDOW option allows you to trimm reads based on their average qualit
 It takes two values like `SLIDINGWINDOW:4:15` which means  "Scan the read with a 4-base wide sliding window, cutting when the average quality per base drops below 15"
 
 ### Adapter trimming
-Finally, trimmomatic will take a file with the sequences  of your adapters and will trimm them out. It follows the following call: `
+Finally, trimmomatic will take a file with the sequences  of your adapters and will trimm them out. It follows the following call: `ILLUMINACLIP:<fastaWithAdaptersEtc>:<seed mismatches>:<palindrome clip
+threshold>:<simple clip threshold>`. From their docs:
+> - fastaWithAdaptersEtc: specifies the path to a fasta file containing all the adapters,
+PCR sequences etc. The naming of the various sequences within this file determines
+how they are used. See the section below or use one of the provided adapter files
+seedMismatches: specifies the maximum mismatch count which will still allow a full
+match to be performedpalindromeClipThreshold: specifies how accurate the match between the two 'adapter
+ligated' reads must be for PE palindrome read alignment.
+simpleClipThreshold: specifies how accurate the match between any adapter etc.
+sequence must be against a read.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMTMwNTkwNiwxNTA0NzU1MzAxLDg0Mz
+eyJoaXN0b3J5IjpbMjA1MjQ4NzkyOCwxNTA0NzU1MzAxLDg0Mz
 Y1ODE1LC01NzY4Mjc2ODIsNTczMzQyNDU5LDc2OTY0NTQ4NCwt
 MTI2MTEyMzk3MCwtODgyNDUzMDA1LC0yNTU0NDQwMDIsMTAxNj
 kzMTU4MiwtMTYyNjc3MjkzMCwxMTU2MjkyODU2LC0xMzIyMTAz
