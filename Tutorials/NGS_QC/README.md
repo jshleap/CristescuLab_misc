@@ -111,6 +111,10 @@ Not the best quality, but there is no systematic bias... we might be able to fix
 
 From FastQC documentation:
 
+> #### Warning
+> This module will issue a warning if any tile shows a mean Phred score more than 2 less than the mean for that base across all tiles.
+> #### Failure
+> This module will issue a warning if any tile shows a mean Phred score more than 5 less than the mean for that base across all tiles.
 
 ## Per sequence quality scores
 
@@ -235,7 +239,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNzY2MjczOCwtNDA1OTIyMzMyLC0xOD
+eyJoaXN0b3J5IjpbMTY4NzkwNzUyNSwtNDA1OTIyMzMyLC0xOD
 E3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1
 MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNzgsMTUzMjQwODA5Ni
 wtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5NDY2MzkxLDEyMTE4
