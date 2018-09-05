@@ -100,7 +100,8 @@ From the documentation of this module:
 ## Per tile sequence quality
 This a feature that is exclusive to Illumina technologies. Their flow cells typically have 8 lanes,with 2 columns and 50 tiles:
 
-<img class="center-block" src="https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/illumina_flowcell.png"></img>
+![Flow cell pattern](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/illumina_flowcell.png =650x200 
+))
 Courtesy of http://zjuwhw.github.io/2016/08/13/Illumina_sequencer.html
 
 When systematic error occur in a tile, it can indicate sequencing error such as bubbles, smudges, or dirt. When the errors occur very sparsely and not too widespread, is often OK to overlook this error. When a full lane has a problem, oftentimes is a sequencing error and this cannot be fixed with bioinformatics.
@@ -232,10 +233,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MzE1NDY4NywtNDA1OTIyMzMyLC0xOD
-E3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1
-MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNzgsMTUzMjQwODA5Ni
-wtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5NDY2MzkxLDEyMTE4
-MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2NjQzMCwtMjI5MTg4Mz
-U0XX0=
+eyJoaXN0b3J5IjpbNzYyNjQwNzEyLC00MDU5MjIzMzIsLTE4MT
+c5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4NDczMTUz
+NTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4MDk2LC
+00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMTIxMTgx
+MDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkxODgzNT
+RdfQ==
 -->
