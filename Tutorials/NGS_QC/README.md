@@ -1,4 +1,5 @@
-# NGS Quality Control Tutorial
+# NGS Quality Control Tutorial: Understanding QC
+This tutorial is intended to understand basic NGS statistics (mainly obtained with FastQC), and some of the steps required to  fix or ameliorate some of the issues. Most of the information of this tutorial have been partially taken from the FastQC documentation available [here](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/).
 
 ### Objectives / learning outcomes:
 
@@ -10,147 +11,236 @@ At the end of this tutorial you shoud be able to:
 4. Make simple quality trimming for reads
 
 This tutorial assumes that you have a basic knowledge in bash, and that you have an account and know how to connect to the Compute Canada clusters. If you dont, I reccomend you go over the [BASH tutorial](https://github.com/jshleap/CristescuLab_misc/blob/master/Tutorials/Bash/Bash_Tutorial.ipynb) and you read the [Compute Canada documentation](https://docs.computecanada.ca/wiki/Compute_Canada_Documentation).
+
+### Outline of the tutorial
+1. [To start: A couple of things we need before we start the tutorial](#to-start)
+2. [Getting the statistics with fastqc](#getting-the-statistics-with-fastqc)
+3. [Basic Statistics](#basic-statistics)
+4. [Per Base Sequence Quality](#per-base-sequence-quality)
+5. [Per tile sequence quality](#per-tile-sequence-quality)
+6. [Per sequence quality scores](#per-sequence-quality-scores)
+7. [Per base sequence content](#per-base-sequence-content)
+8. [Per sequence GC content](#per-sequence-gc-content)
+9. [Per base N content](#per-base-n-content)
+10. [Sequence Length Distribution](#sequence-length-distribution)
+11. [Sequence Duplication Levels](#sequence-duplication-levels)
+12. [Overrepresented sequences](#overrepresented-sequences)
+13. [Adapter Content](#adapter-content)
+
 ## To start
-To start, let's download this file to your account in Compute Canada.
+
+To start, let's download [this file](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1.fastq.gz) to your account in Compute Canada. Also, load the following modules fastqc:
+
+```
+module load fastqc/0.11.5
+module load trimmomatic/0.36
+```
+ The file you downloaded is a real dataset from eDNA water samples. It is amplicon sequencing of a fragment of the 12S gene using Illumina's Nextera Libraries. The PCR amplification should have an average length of 163-185, however, is highly variable due to the multi species composition of the sample.
+ 
 ## Getting the statistics with fastqc
 
-The statitics of any fastq file is easily obtained by the fastqc program. This program inludes a set of statistical test and modules to test for
+The statitics of any fastq file is easily obtained by the fastqc program. This program inludes a set of statistical test and modules to test for quality. From their README file:
 
-## Create files and folders
+> FastQC is an application which takes a FastQ file and runs a series
+of tests on it to generate a comprehensive QC report.  This will
+tell you if there is anything unusual about your sequence.  Each
+test is flagged as a pass, warning or fail depending on how far it
+departs from what you'd expect from a normal large dataset with no
+significant biases.  It's important to stress that warnings or even
+failures do not necessarily mean that there is a problem with your
+data, only that it is unusual.  It is possible that the biological
+nature of your sample means that you would expect this particular
+bias in your results.
 
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
+So let's run it!:
 
-## Switch to another file
+`fastqc file1_R1.fastq.gz`
 
-All your files are listed in the file explorer. You can switch from one to another by clicking a file in the list.
+This must have created an html file as well as a zipped folder. Use `rsync`, `scp`, [FileZilla](https://filezilla-project.org/), or your favorite file transfer protocol to get the html to your own computer, and open it in a browser.
 
-## Rename a file
+## Basic Statistics
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+This table will give you basic information about your reads:
+1. **Filename**: The name of the file being analyzed
+2. **File type**: The type of information the file contains
+3. **Encoding**: How are the quality scores encoded
+4. **Total Sequences**: umber of reads in your file
+5. **Sequences flagged as poor quality**: Number of sequences with very low quality thoughout
+6. **Sequence length**: Average sequence length
+7. **%GC**: Percentage of GC content
 
-## Delete a file
+For our file we get:
 
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
+![Basic stats for File1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/Basic_stats.png)
 
-## Export a file
+### Encoding
+Encoding is the way the quality of the bases are written. There are many encodings, but the most popular are Sanger, Solexa, Ilumina 1.3+, Illumina 1.5+, and illumina 1.8+.  In summary, is a character that represents the confidence you have in a given base call.
+![Phred Score encodings descriptions, from https://en.wikipedia.org/wiki/FASTQ_format#Encoding](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/fastq_phread-base.png)
+For more information check https://en.wikipedia.org/wiki/FASTQ_format#Encoding
 
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
+But what does a quality score means? It s related to the probability of an error:
+|Phred Quality Score |Probability of incorrect base call|Base call accuracy|
+|--- |--- |--- |
+|10|1 in 10|90%|
+|20|1 in 100|99%|
+|30|1 in 1000|99.9%|
+|40|1 in 10,000|99.99%|
+|50|1 in 100,000|99.999%|
+|60|1 in 1,000,000|99.9999%|
 
+As a rule of thumb a Phred score above 20 (99% chances to be right) is considered acceptable and above 30 (99.9% chances to be right) as good.
 
-# Synchronization
+I am not going to enter the rest of the basic statistics since they are self-explanatory.
 
-Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
+## Per Base Sequence Quality
 
-There are two types of synchronization and they can complement each other:
+It's name is self explanatory. This module evaluates the quality at each base for all reads. FastQC gives you a box plot of the qualities, representing the inter-quartile range (25-75%) (yellow box), the extremes 10 and 90th percentiles are represented by the whiskers, the median value by a red line, and the mean quality by the blue line.
+![per-base quality of file 1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_base_quality.png)
 
-- The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.
-	> To start syncing your workspace, just sign in with Google in the menu.
+From the documentation of this module:
 
-- The file synchronization will keep one file of the workspace synced with one or multiple files in **Google Drive**, **Dropbox** or **GitHub**.
-	> Before starting to sync files, you must link an account in the **Synchronize** sub-menu.
+> #### Warning 
+> A warning will be issued if the lower quartile for any base is less than 10, or if the median for any base is less than 25.
+> #### Failure
+> This module will raise a failure if the lower quartile for any base is less than 5 or if the median for any base is less than 20.
 
-## Open a file
+#### *Look at the figure above. What do you think is happening at the end? why?*
 
-You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
+## Per tile sequence quality
+This a feature that is exclusive to Illumina technologies. Their flow cells typically have 8 lanes,with 2 columns and 50 tiles:
 
-## Save a file
+![Flow cell pattern](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/illumina_flowcell.png)
 
-You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
+Courtesy of http://zjuwhw.github.io/2016/08/13/Illumina_sequencer.html
 
-## Synchronize a file
+When systematic error occur in a tile, it can indicate sequencing error such as bubbles, smudges, or dirt. When the errors occur very sparsely and not too widespread, is often OK to overlook this error. When a full lane has a problem, oftentimes is a sequencing error and this cannot be fixed with bioinformatics. The problem can occur as as well when the flowcell is overloaded.
+In our case we have:
+![Quality per tile](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_tile_quality.png)
 
-Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
+Not the best quality, but there is no systematic bias... we might be able to fix this with some quality trimming.
 
-If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.
+From FastQC documentation:
+> #### Warning
+> This module will issue a warning if any tile shows a mean Phred score more than 2 less than the mean for that base across all tiles.
+> #### Failure
+> This module will issue a warning if any tile shows a mean Phred score more than 5 less than the mean for that base across all tiles.
 
-> **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.
+## Per sequence quality scores
 
-## Manage file synchronization
+This module allows you to explore if a significant portion of your reads are of poor quality. Often times warnings occur when your sequence is shorter than your read length, and therefore the end of reads (or the end of the flowcell) is of poor quality.
 
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
-
-
-# Publication
-
-Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
-
-> Before starting to publish, you must link an account in the **Publish** sub-menu.
-
-## Publish a File
-
-You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:
-
-- Markdown: publish the Markdown text on a website that can interpret it (**GitHub** for instance),
-- HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).
-
-## Update a publication
-
-After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.
-
-> **Note:** The **Publish now** button is disabled if your file has not been published yet.
-
-## Manage file publication
-
-Since one file can be published to multiple locations, you can list and manage publish locations by clicking **File publication** in the **Publish** sub-menu. This allows you to list and remove publication locations that are linked to your file.
-
-
-# Markdown extensions
-
-StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.
-
-> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
-
-
-## SmartyPants
-
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
-
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
-
-
-## KaTeX
-
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
-
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
-
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
-
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+From FastQC documentation:
+>#### Warning
+>A warning is raised if the most frequently observed mean quality is below 27 - this equates to a 0.2% error rate.
+>#### Failure
+>An error is raised if the most frequently observed mean quality is below 20 - this equates to a 1% error rate.
 
 
-## UML diagrams
+This is the case for our File1:
+![Per sequence quality scores of File1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_sequence_quality.png)
 
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
+#### *Can you explain the figure above?*
 
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
 
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
+## Per base sequence content
+This module shows the proportion of bases in each position. In an unbiased library, the proportion of A, T, C, G, should run parallel to each other. If there is a bias, this could imply that the primers or adaptors were not remove, and therefore there would be a strong bias towards a certain composition. It could also mean that you have an over-fragmented library, creating over-represented k-mers, or a dataset that has been trimmed too aggressively. In amplicon sequencing, there tends to be biases in the composition of the given amplicon, especially when dealing with mitochondrial DNA.
 
-And this will produce a flow chart:
+From FastQC documentation:
+>#### Warning
+>This module issues a warning if the difference between A and T, or G and C is greater than 10% in any position.
+>#### Failure
+>This module will fail if the difference between A and T, or G and C is greater than 20% in any position.
 
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
+ Let's take a look at file1:
+
+![Per sequence base content for file1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_base_sequence_content.png)
+
+#### What can you tell about this file?
+
+## Per sequence GC content
+This module intends to show the proportion of GC content in the reads. The blue line represents a theoretical distribution (Normal) of your observed data. Deviations from this theoretical distribution often implies contamination of some kind (adapter/primer dimers, multiple species in the run). FastQC assumes that you are analyzing a  single genome, and therefore will issue a warning in multispecies libraries.
+From FastQC documentation:
+>#### Warning
+>A warning is raised if the sum of the deviations from the normal distribution represents more than 15% of the reads.
+>#### Failure
+>This module will indicate a failure if the sum of the deviations from the normal distribution represents more than 30% of the reads.
+>#### Common reasons for warnings
+>Warnings in this module usually indicate a problem with the library. Sharp peaks on an otherwise smooth distribution are normally the result of a specific contaminant (adapter dimers for example), which may well be picked up by the overrepresented sequences module. Broader peaks may represent contamination with a different species.
+
+ Let's take a look at out file1:
+
+![Per sequence GC contentent](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_sequence_gc_content.png)
+
+#### How would you explain the two modes (double peak)?
+
+## Per base N content
+Some sequencer technologies would produce an N when it cannot define which of the four bases it has confidence on based on the phenogram. Illumina does not produce this, and therefore the plot should be flat and the module should always pass.
+
+From FastQC documentation:
+>#### Warning
+>This module raises a warning if any position shows an N content of >5%.
+>#### Failure
+>This module will raise an error if any position shows an N content of >20%.
+
+Failure or warning in this module suggest that the sequencing should probably be repeated since a significant portion of your reads have no information in them.
+
+Since our toy file is Illumina, it shows a flat line in the bottom of the figure:
+
+![per base N content](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_base_n_content.png)
+
+## Sequence Length Distribution
+It self explanatory title describes well this module. It plots the distribution of sequence length for your reads. Illumina produces the same length throughout all the lanes, however, other sequencing platforms produce a distribution of them. This module can be safely ignore if you know that you are expecting a population of lengths in your reads. If you are using illumina and this module fails or gives you a warning, you should talk to the provider of the sequencing.
+
+Our dummy file (since is illumina) behaves as expected:
+
+![Length distribution of file1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/sequence_length_distribution.png)  
+
+## Sequence Duplication Levels
+This module allows you to see the level of duplication of your library. Ideally, the blue (total sequences) and the red (deduplicated sequences) should match. This would mean that you had a diverse library, and that each sequence has been sequenced in the proper depth. However, this assumes that you are working with a genome of single species, and therefore the warnings and failures of this module should only be worrysome then, since it will show a bias (i.e. PCR artefacts, resequencing parts of genome). In enriched libraries, you would expect some level of duplication, especially when this module only takes the first 50 bases and the first 100K sequences to run the tests. In amplicon sequencing, we expect some degree of duplication, and we should not be too agressive in cleaning this up.
+
+From FastQC docs:
+
+>#### Warning
+>This module will issue a warning if non-unique sequences make up more than 20% of the total.
+>#### FailureThis module will issue a error if non-unique sequences make up more than 50% of the total.
+In our file, we get:
+
+![Dupication levels](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/duplication_levels.png)
+
+#### Explain the figure above
+
+## Overrepresented sequences
+This cool module shows you sequences that are present in over 0.1% of your total reads. The coolest thing about it is that it will run a search for common contaminants and report them. In a single species, diverse, uncontaminated library, you should expect not to have any overrepresented library.
+
+Check your copy of the overrerpesented sequences in the html file. Here is a screenshot of the first par:
+![Overrepresented sequences for file1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/overrepresented.png)
+
+#### What can you tell me about it? How would you check if is OK or not? Do it!!!Overrepresented sequences
+
+## Adapter Content
+Another self-explanatory module. Here, the most commonly used adapters are screened for. They are mostly illumina adapters (Universal, Small 3' RNA, Small 5' RNA, Nextera) and SOLiD small RNA adapter. From the docs:
+>Any library where a reasonable proportion of the insert sizes are shorter than the read length will trigger this module. This doesn't indicate a problem as such - just that the sequences will need to be adapter trimmed before proceeding with any downstream analysis.
+ 
+ In our file:
+ ![enter image description here](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/adapter_content.png)
+
+## 
+# Resolving some of the Issues
+There are many programs to do QC, and many specific tools for each one. For now we are going to focus on the popular program Trimmomatic. This program does adaptve quality trimming, head and tail crop, and adaptor removal.
+
+## Trimming tail and head
+
+## Adaptive quality trimming
+
+## Removing adaptors and primers
+
+## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNT
-I4NjY2NDMwLC0yMjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbLTU3NjgyNzY4Miw1NzMzNDI0NTksNzY5Nj
+Q1NDg0LC0xMjYxMTIzOTcwLC04ODI0NTMwMDUsLTI1NTQ0NDAw
+MiwxMDE2OTMxNTgyLC0xNjI2NzcyOTMwLDExNTYyOTI4NTYsLT
+EzMjIxMDMyOTUsLTc5NzYwNzM0LDE1MjM1MDQ0ODUsMjc4NTgy
+Nzg3LDEyOTU0OTAxMjQsMjA5OTk4MjQ4NSwxMzY3NTgyMjYyLC
+0xNTI3NzYwNzcwLDEyMzExNTY1NjksMTY4NzkwNzUyNSwtNDA1
+OTIyMzMyXX0=
 -->
