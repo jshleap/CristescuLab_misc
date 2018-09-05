@@ -97,9 +97,13 @@ From the documentation of this module:
 
 
 ## Per tile sequence quality
-This a feature that is exclusive to Illumina technologies. Their flow cells typically have 8 lanes
+This a feature that is exclusive to Illumina technologies. Their flow cells typically have 8 lanes,with 2 columns and 50 tiles:
+
 ![Flow cell pattern](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/illumina_flowcell.png)
 Courtesy of http://zjuwhw.github.io/2016/08/13/Illumina_sequencer.html
+
+When systematic error occur in a tile, it can indicate sequencing error such as bubbles, smudges, or dirt. 
+
 ## Delete a file
 
 You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
@@ -223,10 +227,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NzY2MDAsLTQwNTkyMjMzMiwtMTgxNz
-k2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2Mjc2NjYzLDg0NzMxNTM1
-NiwtMTEzOTI2NDUxNCwxNTE2MDcyMzc4LDE1MzI0MDgwOTYsLT
-Q3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4OTQ2NjM5MSwxMjExODEw
-MjcsLTIwNDA2MDM4NzAsLTE1Mjg2NjY0MzAsLTIyOTE4ODM1NF
-19
+eyJoaXN0b3J5IjpbMTA5MDI5NjM4MCwtNDA1OTIyMzMyLC0xOD
+E3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1
+MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNzgsMTUzMjQwODA5Ni
+wtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5NDY2MzkxLDEyMTE4
+MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2NjQzMCwtMjI5MTg4Mz
+U0XX0=
 -->
