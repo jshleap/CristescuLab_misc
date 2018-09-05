@@ -17,6 +17,7 @@ This tutorial assumes that you have a basic knowledge in bash, and that you have
 3. [Basic Statistics](#basic-statistics)
 4. [Per Base Sequence Quality](#per-base-sequence-quality)
 5. [Per tile sequence quality](#per-tile-sequence-quality)
+6. [Per sequence quality scores](#per-sequence-quality-scores)
 
 ## To start
 
@@ -108,7 +109,7 @@ In our case we have:
 
 Not the best quality, but there is no systematic bias... we might be able to fix this with some quality trimming.
 
-## Delete a file
+## Per sequence quality scores
 
 You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
 
@@ -231,7 +232,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMzAxNDkxNCwtNDA1OTIyMzMyLC0xOD
+eyJoaXN0b3J5IjpbLTEyODM5NDg2NywtNDA1OTIyMzMyLC0xOD
 E3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1
 MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNzgsMTUzMjQwODA5Ni
 wtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5NDY2MzkxLDEyMTE4
