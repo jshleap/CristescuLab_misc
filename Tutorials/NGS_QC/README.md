@@ -220,7 +220,9 @@ Check your copy of the overrerpesented sequences in the html file. Here is a scr
 ## Adapter Content
 Another self-explanatory module. Here, the most commonly used adapters are screened for. They are mostly illumina adapters (Universal, Small 3' RNA, Small 5' RNA, Nextera) and SOLiD small RNA adapter. From the docs:
 >Any library where a reasonable proportion of the insert sizes are shorter than the read length will trigger this module. This doesn't indicate a problem as such - just that the sequences will need to be adapter trimmed before proceeding with any downstream analysis.
-
+ 
+ In our file:
+ ![enter image description here](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/adapter_content.png)
 # Resolving some of the Issues
 ## Trimming tail and head
 
@@ -230,11 +232,11 @@ Another self-explanatory module. Here, the most commonly used adapters are scree
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkwMTczODA2LC04ODI0NTMwMDUsLTI1NT
-Q0NDAwMiwxMDE2OTMxNTgyLC0xNjI2NzcyOTMwLDExNTYyOTI4
-NTYsLTEzMjIxMDMyOTUsLTc5NzYwNzM0LDE1MjM1MDQ0ODUsMj
-c4NTgyNzg3LDEyOTU0OTAxMjQsMjA5OTk4MjQ4NSwxMzY3NTgy
-MjYyLC0xNTI3NzYwNzcwLDEyMzExNTY1NjksMTY4NzkwNzUyNS
-wtNDA1OTIyMzMyLC0xODE3OTYzOTc0LC0xMjMyMDM3MDE1LDE1
-NzYyNzY2NjNdfQ==
+eyJoaXN0b3J5IjpbLTEyNjExMjM5NzAsLTg4MjQ1MzAwNSwtMj
+U1NDQ0MDAyLDEwMTY5MzE1ODIsLTE2MjY3NzI5MzAsMTE1NjI5
+Mjg1NiwtMTMyMjEwMzI5NSwtNzk3NjA3MzQsMTUyMzUwNDQ4NS
+wyNzg1ODI3ODcsMTI5NTQ5MDEyNCwyMDk5OTgyNDg1LDEzNjc1
+ODIyNjIsLTE1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3NT
+I1LC00MDU5MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUs
+MTU3NjI3NjY2M119
 -->
