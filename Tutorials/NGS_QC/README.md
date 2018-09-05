@@ -64,9 +64,17 @@ Encoding is the way the quality of the bases are written. There are many encodin
 For more information check https://en.wikipedia.org/wiki/FASTQ_format#Encoding
 
 But what does a quality score means? It s related to the probability of an error:
-|  |  |
-|--|--|
-|  |  |
+|Phred Quality Score |Probability of incorrect base call
+|Base call accuracy
+|
+|--- |--- |--- |
+|10|1 in 10|90%|
+|20|1 in 100|99%|
+|30|1 in 1000|99.9%|
+|40|1 in 10,000|99.99%|
+|50|1 in 100,000|99.999%|
+|60|1 in 1,000,000|99.9999%|
+
 
 
 I am not going to enter the rest of the basic statistics since they are self-explanatory.
@@ -203,8 +211,9 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NjI3NjY2Myw4NDczMTUzNTYsLTExMz
-kyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4MDk2LC00NzY2NDc4
-NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMTIxMTgxMDI3LC0yMD
-QwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbOTgxNzQ4MzQ0LDE1NzYyNzY2NjMsODQ3Mz
+E1MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNzgsMTUzMjQwODA5
+NiwtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5NDY2MzkxLDEyMT
+E4MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2NjQzMCwtMjI5MTg4
+MzU0XX0=
 -->
