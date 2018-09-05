@@ -126,15 +126,20 @@ From FastQC documentation:
 ## Per sequence quality scores
 
 This module allows you to explore if a significant portion of your reads are of poor quality. Often times warnings occur when your sequence is shorter than your read length, and therefore the end of reads (or the end of the flowcell) is of poor quality.
-This is the case for our File1:
-![Per sequence quality scores of File1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_sequence_quality.png)
 
-This warning can therefore be dealt with some tail-trimming.
 From FastQC documentation:
 >#### Warning
 >A warning is raised if the most frequently observed mean quality is below 27 - this equates to a 0.2% error rate.
 >#### Failure
 >An error is raised if the most frequently observed mean quality is below 20 - this equates to a 1% error rate.
+
+
+
+This is the case for our File1:
+![Per sequence quality scores of File1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_sequence_quality.png)
+
+#### *Can you explain the figure above?*
+
 
 ## Per base sequence content
 This module shows the proportion of bases in each position. In an unbiased library, the proportion of A, T, C, G, should run parallel to each other. If there is a bias, this could imply that the primers or adaptors were not remove, and therefore there would be a strong bias towards a certain composition. It could also mean that you have an over-fragmented library, creating over-represented k-mers, or a dataset that has been trimmed too aggressively. In amplicon sequencing, there tends to be biases in the composition of the given amplicon, especially when dealing with mitochondrial DNA. Let's take a look at file1:
@@ -183,11 +188,11 @@ From FastQC documentation:
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MTU4MjEyOSwyNzg1ODI3ODcsMTI5NT
-Q5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIyNjIsLTE1Mjc3NjA3
-NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5MjIzMzIsLT
-E4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4NDcz
-MTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4MD
-k2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMTIx
-MTgxMDI3XX0=
+eyJoaXN0b3J5IjpbNDg5ODA4Njc5LDI3ODU4Mjc4NywxMjk1ND
+kwMTI0LDIwOTk5ODI0ODUsMTM2NzU4MjI2MiwtMTUyNzc2MDc3
+MCwxMjMxMTU2NTY5LDE2ODc5MDc1MjUsLTQwNTkyMjMzMiwtMT
+gxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2Mjc2NjYzLDg0NzMx
+NTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMzc4LDE1MzI0MDgwOT
+YsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4OTQ2NjM5MSwxMjEx
+ODEwMjddfQ==
 -->
