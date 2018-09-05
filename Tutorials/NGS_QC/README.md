@@ -146,8 +146,9 @@ What can you tell about this file?
 ## Per sequence GC content
 This module intends to show the proportion of GC content in the reads. The blue line represents a theoretical distribution (Normal) of your observed data. Deviations from this theoretical distribution often implies contamination of some kind (adapter/primer dimers, multiple species in the run). FastQC assumes that you are analyzing a  single genome, and therefore will issue a warning in multispecies libraries. Let's take a look at out file1:
 
+![Per sequence GC contentent](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_sequence_gc_content.png)
 
-
+This two mode observed distribution could mean that there are multiple groups/species with markedly different GC composition ()
 ## Per base N content
 
 
@@ -172,11 +173,11 @@ This module intends to show the proportion of GC content in the reads. The blue 
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NTQ5MDEyNCwyMDk5OTgyNDg1LDEzNj
-c1ODIyNjIsLTE1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3
-NTI1LC00MDU5MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMT
-UsMTU3NjI3NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUx
-NjA3MjM3OCwxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4Mz
-MxLDE4ODk0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0x
-NTI4NjY2NDMwXX0=
+eyJoaXN0b3J5IjpbNDg5MjExNzE1LDEyOTU0OTAxMjQsMjA5OT
+k4MjQ4NSwxMzY3NTgyMjYyLC0xNTI3NzYwNzcwLDEyMzExNTY1
+NjksMTY4NzkwNzUyNSwtNDA1OTIyMzMyLC0xODE3OTYzOTc0LC
+0xMjMyMDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1MzU2LC0xMTM5
+MjY0NTE0LDE1MTYwNzIzNzgsMTUzMjQwODA5NiwtNDc2NjQ3OD
+U2LDkwNTkzODMzMSwxODg5NDY2MzkxLDEyMTE4MTAyNywtMjA0
+MDYwMzg3MF19
 -->
