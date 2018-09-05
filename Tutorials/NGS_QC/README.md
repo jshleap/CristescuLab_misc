@@ -25,7 +25,7 @@ This tutorial assumes that you have a basic knowledge in bash, and that you have
 10. [Sequence Length Distribution](#sequence-length-distribution)
 11. [Sequence Duplication Levels](#sequence-duplication-levels)
 12. [Overrepresented sequences](#overrepresented-sequences)
-13. 
+13. [Adapter Content](#adapter-content)
 
 ## To start
 
@@ -160,13 +160,10 @@ What can you tell about this file?
 Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
 
 
-# Publication
+## Adapter Content
 
-Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
 
-> Before starting to publish, you must link an account in the **Publish** sub-menu.
-
-## Publish a File
+# Re
 
 You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:
 
@@ -241,7 +238,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODc5OTQ4MjYsMTM2NzU4MjI2MiwtMT
+eyJoaXN0b3J5IjpbLTE0NTgyMDY3MTYsMTM2NzU4MjI2MiwtMT
 UyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5MDc1MjUsLTQwNTky
 MjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2Mjc2Nj
 YzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMzc4LDE1
