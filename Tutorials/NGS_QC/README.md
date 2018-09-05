@@ -106,7 +106,8 @@ When systematic error occur in a tile, it can indicate sequencing error such as 
 In our case we have:
 ![Quality per tile](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_tile_quality.png)
 
-Not the best quality, but there is no systematic bias... we might be able to fix this 
+Not the best quality, but there is no systematic bias... we might be able to fix this with some quality trimming.
+
 ## Delete a file
 
 You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
@@ -230,10 +231,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgyODUwOTQ2LC00MDU5MjIzMzIsLTE4MT
-c5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4NDczMTUz
-NTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4MDk2LC
-00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMTIxMTgx
-MDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkxODgzNT
-RdfQ==
+eyJoaXN0b3J5IjpbMTEwMzAxNDkxNCwtNDA1OTIyMzMyLC0xOD
+E3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1
+MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNzgsMTUzMjQwODA5Ni
+wtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5NDY2MzkxLDEyMTE4
+MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2NjQzMCwtMjI5MTg4Mz
+U0XX0=
 -->
