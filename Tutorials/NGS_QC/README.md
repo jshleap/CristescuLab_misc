@@ -94,7 +94,6 @@ From the documentation of this module:
 
 #### *Look at the figure above. What do you think is happening at the end? why?*
 
-
 ## Rename a file
 
 You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
@@ -222,7 +221,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NjI2MDA0MiwtMTgxNzk2Mzk3NCwtMT
+eyJoaXN0b3J5IjpbLTQwNTkyMjMzMiwtMTgxNzk2Mzk3NCwtMT
 IzMjAzNzAxNSwxNTc2Mjc2NjYzLDg0NzMxNTM1NiwtMTEzOTI2
 NDUxNCwxNTE2MDcyMzc4LDE1MzI0MDgwOTYsLTQ3NjY0Nzg1Ni
 w5MDU5MzgzMzEsMTg4OTQ2NjM5MSwxMjExODEwMjcsLTIwNDA2
