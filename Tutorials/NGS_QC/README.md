@@ -235,7 +235,7 @@ There are many programs to do QC, and many specific tools for each one. For now 
 This program does adaptve quality trimming, head and tail crop, and adaptor removal. One of the advantages of trimmomatic is that it allows you to work with pair end sequences, reatining only matching pairs. Other advantage  is that it allows partial and overlaping matches for the seaching of adapters. Before we run the program, let's check at some of the options. Here I am going to focus in pair-end reads:
  ### Efficiency and format flags
  1. -threads: this flag modifies the number of cpu threads that trimmomatic should use in the computations. A typical laptop computer have about 2 cores which should ammount to 4 available threads.
- 2.  [-phred33 | -phred64]
+ 2.  [-phred33 | -phred64]: this flags tells trimmomatic the econding of the file (see [above](#))
 
 ## Trimming tail and head
 
@@ -245,11 +245,11 @@ This program does adaptve quality trimming, head and tail crop, and adaptor remo
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMjUwMTQ2LC01NzY4Mjc2ODIsNTczMz
-QyNDU5LDc2OTY0NTQ4NCwtMTI2MTEyMzk3MCwtODgyNDUzMDA1
-LC0yNTU0NDQwMDIsMTAxNjkzMTU4MiwtMTYyNjc3MjkzMCwxMT
-U2MjkyODU2LC0xMzIyMTAzMjk1LC03OTc2MDczNCwxNTIzNTA0
-NDg1LDI3ODU4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMT
-M2NzU4MjI2MiwtMTUyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5
-MDc1MjVdfQ==
+eyJoaXN0b3J5IjpbMTE1Nzg2MjIzNiwtNTc2ODI3NjgyLDU3Mz
+M0MjQ1OSw3Njk2NDU0ODQsLTEyNjExMjM5NzAsLTg4MjQ1MzAw
+NSwtMjU1NDQ0MDAyLDEwMTY5MzE1ODIsLTE2MjY3NzI5MzAsMT
+E1NjI5Mjg1NiwtMTMyMjEwMzI5NSwtNzk3NjA3MzQsMTUyMzUw
+NDQ4NSwyNzg1ODI3ODcsMTI5NTQ5MDEyNCwyMDk5OTgyNDg1LD
+EzNjc1ODIyNjIsLTE1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNjg3
+OTA3NTI1XX0=
 -->
