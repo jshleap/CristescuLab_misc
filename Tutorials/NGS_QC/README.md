@@ -35,7 +35,8 @@ To start, let's download [this file](https://github.com/jshleap/CristescuLab_mis
 module load fastqc/0.11.5
 module load trimmomatic/0.36
 ```
- The file you downloaded is a real dataset from eDNA water 
+ The file you downloaded is a real dataset from eDNA water samples. It is amplicon sequencing of a fragment of the 12S gene. 
+ 
 ## Getting the statistics with fastqc
 
 The statitics of any fastq file is easily obtained by the fastqc program. This program inludes a set of statistical test and modules to test for quality. From their README file:
@@ -226,11 +227,11 @@ Check your copy of the overrerpesented sequences in the html file. Here is a scr
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk0OTA2OTMyLDEwMTY5MzE1ODIsLTE2Mj
-Y3NzI5MzAsMTE1NjI5Mjg1NiwtMTMyMjEwMzI5NSwtNzk3NjA3
-MzQsMTUyMzUwNDQ4NSwyNzg1ODI3ODcsMTI5NTQ5MDEyNCwyMD
-k5OTgyNDg1LDEzNjc1ODIyNjIsLTE1Mjc3NjA3NzAsMTIzMTE1
-NjU2OSwxNjg3OTA3NTI1LC00MDU5MjIzMzIsLTE4MTc5NjM5Nz
-QsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4NDczMTUzNTYsLTEx
-MzkyNjQ1MTRdfQ==
+eyJoaXN0b3J5IjpbLTI1NTQ0NDAwMiwxMDE2OTMxNTgyLC0xNj
+I2NzcyOTMwLDExNTYyOTI4NTYsLTEzMjIxMDMyOTUsLTc5NzYw
+NzM0LDE1MjM1MDQ0ODUsMjc4NTgyNzg3LDEyOTU0OTAxMjQsMj
+A5OTk4MjQ4NSwxMzY3NTgyMjYyLC0xNTI3NzYwNzcwLDEyMzEx
+NTY1NjksMTY4NzkwNzUyNSwtNDA1OTIyMzMyLC0xODE3OTYzOT
+c0LC0xMjMyMDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1MzU2LC0x
+MTM5MjY0NTE0XX0=
 -->
