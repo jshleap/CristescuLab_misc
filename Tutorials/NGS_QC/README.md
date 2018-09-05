@@ -85,7 +85,11 @@ I am not going to enter the rest of the basic statistics since they are self-exp
 It's name is self explanatory. This module evaluates the quality at each base for all reads. FastQC gives you a box plot of the qualities, representing the inter-quartile range (25-75%) (yellow box), the extremes 10 and 90th percentiles are represented by the whiskers, the median value by a red line, and the mean quality by the blue line.
 ![per-base quality of file 1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_base_quality.png)
 
+From the documentation of 
+
+
 Look at the figure above. What do you think is happening at the end? why?
+
 
 ## Rename a file
 
@@ -214,7 +218,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNDcyMjYzMywtMTIzMjAzNzAxNSwxNT
+eyJoaXN0b3J5IjpbMTE1MTI4MTE5MSwtMTIzMjAzNzAxNSwxNT
 c2Mjc2NjYzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcy
 Mzc4LDE1MzI0MDgwOTYsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMT
 g4OTQ2NjM5MSwxMjExODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2
