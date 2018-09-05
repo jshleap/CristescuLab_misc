@@ -24,6 +24,8 @@ This tutorial assumes that you have a basic knowledge in bash, and that you have
 9. [Per base N content](#per-base-n-content)
 10. [Sequence Length Distribution](#sequence-length-distribution)
 11. [Sequence Duplication Levels](#sequence-duplication-levels)
+12. [Overrepresented sequences](#overrepresented-sequences)
+13. 
 
 ## To start
 
@@ -153,7 +155,7 @@ What can you tell about this file?
 ## Sequence Duplication Levels
 
 
-## Manage file synchronization
+## Overrepresented sequences
 
 Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
 
@@ -239,7 +241,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDQ1NjY0OTgsMTM2NzU4MjI2MiwtMT
+eyJoaXN0b3J5IjpbLTE2ODc5OTQ4MjYsMTM2NzU4MjI2MiwtMT
 UyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5MDc1MjUsLTQwNTky
 MjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2Mjc2Nj
 YzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMzc4LDE1
