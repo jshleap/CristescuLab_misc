@@ -229,11 +229,13 @@ Another self-explanatory module. Here, the most commonly used adapters are scree
 Now, let's [download the pair](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R2.fastq.gz) or R2 file. Run FastQC and tell me what do you think about this second file. Compare it to the first one. What do you see?
 
 # Resolving some of the Issues
-There are many programs to do QC, and many specific tools for each one. For now we are going to focus on a few popular programs
+There are many programs to do QC, and many specific tools for each one. For now we are going to focus on a few popular programs.
 
 ## Trimmomatic
 This program does adaptve quality trimming, head and tail crop, and adaptor removal. One of the advantages of trimmomatic is that it allows you to work with pair end sequences, reatining only matching pairs. Other advantage  is that it allows partial and overlaping matches for the seaching of adapters. Before we run the program, let's check at some of the options. Here I am going to focus in pair-end reads:
- ### Efficiency and format f
+ ### Efficiency and format flags
+ 1. -threads: this flag modifies the number of cpu th
+ 2.  [-phred33 | -phred64]
 
 ## Trimming tail and head
 
@@ -243,11 +245,11 @@ This program does adaptve quality trimming, head and tail crop, and adaptor remo
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMDMyMzM0NCwtNTc2ODI3NjgyLDU3Mz
-M0MjQ1OSw3Njk2NDU0ODQsLTEyNjExMjM5NzAsLTg4MjQ1MzAw
-NSwtMjU1NDQ0MDAyLDEwMTY5MzE1ODIsLTE2MjY3NzI5MzAsMT
-E1NjI5Mjg1NiwtMTMyMjEwMzI5NSwtNzk3NjA3MzQsMTUyMzUw
-NDQ4NSwyNzg1ODI3ODcsMTI5NTQ5MDEyNCwyMDk5OTgyNDg1LD
-EzNjc1ODIyNjIsLTE1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNjg3
-OTA3NTI1XX0=
+eyJoaXN0b3J5IjpbLTIxMTM5ODIwNzMsLTU3NjgyNzY4Miw1Nz
+MzNDI0NTksNzY5NjQ1NDg0LC0xMjYxMTIzOTcwLC04ODI0NTMw
+MDUsLTI1NTQ0NDAwMiwxMDE2OTMxNTgyLC0xNjI2NzcyOTMwLD
+ExNTYyOTI4NTYsLTEzMjIxMDMyOTUsLTc5NzYwNzM0LDE1MjM1
+MDQ0ODUsMjc4NTgyNzg3LDEyOTU0OTAxMjQsMjA5OTk4MjQ4NS
+wxMzY3NTgyMjYyLC0xNTI3NzYwNzcwLDEyMzExNTY1NjksMTY4
+NzkwNzUyNV19
 -->
