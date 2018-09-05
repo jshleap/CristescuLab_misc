@@ -63,12 +63,26 @@ Encoding is the way the quality of the bases are written. There are many encodin
 ![Phred Score encodings descriptions, from https://en.wikipedia.org/wiki/FASTQ_format#Encoding](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/fastq_phread-base.png)
 For more information check https://en.wikipedia.org/wiki/FASTQ_format#Encoding
 
+But what does a quality score means? It s related to the probability of an error:
+|Phred Quality Score |Probability of incorrect base call|Base call accuracy|
+|--- |--- |--- |
+|10|1 in 10|90%|
+|20|1 in 100|99%|
+|30|1 in 1000|99.9%|
+|40|1 in 10,000|99.99%|
+|50|1 in 100,000|99.999%|
+|60|1 in 1,000,000|99.9999%|
+
+As a rule of thumb a Phred score above 20 (99% chances to be right) is considered acceptable and above 30 (99.9% chances to be right) as good.
+
 I am not going to enter the rest of the basic statistics since they are self-explanatory.
 
 ### Per Base Sequence Quality
 
 It's name is self explanatory. This module evaluates the quality at each base for all reads. FastQC gives you a box plot of the qualities, representing the inter-quartile range (25-75%) (yellow box), the extremes 10 and 90th percentiles are represented by the whiskers, the median value by a red line, and the mean quality by the blue line.
+![per-base quality of file 1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_base_quality.png)
 
+Look at the figure above. What do you think is happening at the end? why?
 
 ## Rename a file
 
@@ -197,8 +211,9 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNT
-MyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYz
-OTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC
-0yMjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4ND
+czMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4
+MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMT
+IxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkx
+ODgzNTRdfQ==
 -->
