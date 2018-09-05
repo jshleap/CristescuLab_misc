@@ -241,8 +241,8 @@ This program does adaptve quality trimming, head and tail crop, and adaptor remo
  
  ### Change encoding option
  If you want to read your file in one encoding and output it in a different one, this options are the ones you need to use:
- -   TOPHRED33: Convert quality scores to Phred-33
--   TOPHRED64: Convert quality scores to Phred-64
+- TOPHRED33: Convert quality scores to Phred-33
+- TOPHRED64: Convert quality scores to Phred-64
 This options (and all the following on CAPS) must go after the input/output files.
 
 ### Cropping
@@ -252,9 +252,9 @@ Trimmomatic has several options that can be use simultaneously or not:
 -   CROP: Cut the read to a specified length
 -   HEADCROP: Cut the specified number of bases from the start of the read
 
-LEADING and TRAILING are adaptive cropping. That means that they will cut your read's head and/or tail if they fail the specified quality
+LEADING and TRAILING are adaptive cropping. That means that they will cut your read's head and/or tail if they fail the specified quality. This differs from CROP and HEADCROP, which would cut at an specified length or specif
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNTYyNjk0OSwtNTc2ODI3NjgyLDU3Mz
+eyJoaXN0b3J5IjpbMTAwNzQwMjM1NCwtNTc2ODI3NjgyLDU3Mz
 M0MjQ1OSw3Njk2NDU0ODQsLTEyNjExMjM5NzAsLTg4MjQ1MzAw
 NSwtMjU1NDQ0MDAyLDEwMTY5MzE1ODIsLTE2MjY3NzI5MzAsMT
 E1NjI5Mjg1NiwtMTMyMjEwMzI5NSwtNzk3NjA3MzQsMTUyMzUw
