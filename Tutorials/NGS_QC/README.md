@@ -225,7 +225,8 @@ Another self-explanatory module. Here, the most commonly used adapters are scree
  ![enter image description here](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/adapter_content.png)
 
 ## Running FastQC in the paired File
-Now, let's [download the pair](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R2.fastq.gz) 
+Now, let's [download the pair](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R2.fastq.gz) or R2 file. Run FastQC and tell me what do you think about this second file. Compare it to the first one. What do you see?
+
 # Resolving some of the Issues
 There are many programs to do QC, and many specific tools for each one. For now we are going to focus on the popular program Trimmomatic. This program does adaptve quality trimming, head and tail crop, and adaptor removal.
 
@@ -237,11 +238,11 @@ There are many programs to do QC, and many specific tools for each one. For now 
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5ODE1OTE3OSwtNTc2ODI3NjgyLDU3Mz
-M0MjQ1OSw3Njk2NDU0ODQsLTEyNjExMjM5NzAsLTg4MjQ1MzAw
-NSwtMjU1NDQ0MDAyLDEwMTY5MzE1ODIsLTE2MjY3NzI5MzAsMT
-E1NjI5Mjg1NiwtMTMyMjEwMzI5NSwtNzk3NjA3MzQsMTUyMzUw
-NDQ4NSwyNzg1ODI3ODcsMTI5NTQ5MDEyNCwyMDk5OTgyNDg1LD
-EzNjc1ODIyNjIsLTE1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNjg3
-OTA3NTI1XX0=
+eyJoaXN0b3J5IjpbODY0ODEyMDM4LC01NzY4Mjc2ODIsNTczMz
+QyNDU5LDc2OTY0NTQ4NCwtMTI2MTEyMzk3MCwtODgyNDUzMDA1
+LC0yNTU0NDQwMDIsMTAxNjkzMTU4MiwtMTYyNjc3MjkzMCwxMT
+U2MjkyODU2LC0xMzIyMTAzMjk1LC03OTc2MDczNCwxNTIzNTA0
+NDg1LDI3ODU4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMT
+M2NzU4MjI2MiwtMTUyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5
+MDc1MjVdfQ==
 -->
