@@ -67,7 +67,7 @@ I am not going to enter the rest of the basic statistics since they are self-exp
 
 ### Per Base Sequence Quality
 
-All your files are listed in the file explorer. You can switch from one to another by clicking a file in the list.
+It's name is self explanatory. This module evaluates the quality at each base for all reads. FastQC gives you a 
 
 ## Rename a file
 
@@ -196,8 +196,8 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NDM0MzA0OSwxNTE2MDcyMzc4LDE1Mz
-I0MDgwOTYsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4OTQ2NjM5
-MSwxMjExODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2NjY0MzAsLT
-IyOTE4ODM1NF19
+eyJoaXN0b3J5IjpbLTE0Mjg4MzE2NDAsMTUxNjA3MjM3OCwxNT
+MyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYz
+OTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC
+0yMjkxODgzNTRdfQ==
 -->
