@@ -35,7 +35,7 @@ To start, let's download [this file](https://github.com/jshleap/CristescuLab_mis
 module load fastqc/0.11.5
 module load trimmomatic/0.36
 ```
- The file you downloaded is a real dataset from eDNA water samples. It is amplicon sequencing of a fragment of the 12S gene. 
+ The file you downloaded is a real dataset from eDNA water samples. It is amplicon sequencing of a fragment of the 12S gene using Illumina's Nextera Libraries. 
  
 ## Getting the statistics with fastqc
 
@@ -229,11 +229,11 @@ Another self-explanatory module. Here, the most commonly used adapters are scree
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MjQ1MzAwNSwtMjU1NDQ0MDAyLDEwMT
-Y5MzE1ODIsLTE2MjY3NzI5MzAsMTE1NjI5Mjg1NiwtMTMyMjEw
-MzI5NSwtNzk3NjA3MzQsMTUyMzUwNDQ4NSwyNzg1ODI3ODcsMT
-I5NTQ5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIyNjIsLTE1Mjc3
-NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5MjIzMz
-IsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4
-NDczMTUzNTZdfQ==
+eyJoaXN0b3J5IjpbMTQxMjcxMjAyOCwtODgyNDUzMDA1LC0yNT
+U0NDQwMDIsMTAxNjkzMTU4MiwtMTYyNjc3MjkzMCwxMTU2Mjky
+ODU2LC0xMzIyMTAzMjk1LC03OTc2MDczNCwxNTIzNTA0NDg1LD
+I3ODU4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMTM2NzU4
+MjI2MiwtMTUyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5MDc1Mj
+UsLTQwNTkyMjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAzNzAxNSwx
+NTc2Mjc2NjYzXX0=
 -->
