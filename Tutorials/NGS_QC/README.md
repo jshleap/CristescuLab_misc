@@ -281,13 +281,14 @@ sequence must be against a read.
 ![Adapter trimming](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/trimmomatic_adapter.png)
 
 As can be seen in the figure, there are 4 possible scenarios that trimmomatic cover:
-A. Technichal sequence is completely covere
+A. Technical sequence is completely covered by the read and therefore a simple alignment will identify it.
+B. Only a partial match between the technical sequence and the read, and therefor a short alignment is need
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMjk3NjQsLTk0OTg5NzY5MSwxNTA0Nz
-U1MzAxLDg0MzY1ODE1LC01NzY4Mjc2ODIsNTczMzQyNDU5LDc2
-OTY0NTQ4NCwtMTI2MTEyMzk3MCwtODgyNDUzMDA1LC0yNTU0ND
-QwMDIsMTAxNjkzMTU4MiwtMTYyNjc3MjkzMCwxMTU2MjkyODU2
-LC0xMzIyMTAzMjk1LC03OTc2MDczNCwxNTIzNTA0NDg1LDI3OD
-U4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMTM2NzU4MjI2
-Ml19
+eyJoaXN0b3J5IjpbMjkwMjk4NzI2LC05NDk4OTc2OTEsMTUwND
+c1NTMwMSw4NDM2NTgxNSwtNTc2ODI3NjgyLDU3MzM0MjQ1OSw3
+Njk2NDU0ODQsLTEyNjExMjM5NzAsLTg4MjQ1MzAwNSwtMjU1ND
+Q0MDAyLDEwMTY5MzE1ODIsLTE2MjY3NzI5MzAsMTE1NjI5Mjg1
+NiwtMTMyMjEwMzI5NSwtNzk3NjA3MzQsMTUyMzUwNDQ4NSwyNz
+g1ODI3ODcsMTI5NTQ5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIy
+NjJdfQ==
 -->
