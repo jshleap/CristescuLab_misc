@@ -225,6 +225,7 @@ Another self-explanatory module. Here, the most commonly used adapters are scree
  ![enter image description here](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/adapter_content.png)
 
 # Resolving some of the Issues
+
 ## Trimming tail and head
 
 ## Adaptive quality trimming
@@ -233,11 +234,11 @@ Another self-explanatory module. Here, the most commonly used adapters are scree
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY5NjQ1NDg0LC0xMjYxMTIzOTcwLC04OD
-I0NTMwMDUsLTI1NTQ0NDAwMiwxMDE2OTMxNTgyLC0xNjI2Nzcy
-OTMwLDExNTYyOTI4NTYsLTEzMjIxMDMyOTUsLTc5NzYwNzM0LD
-E1MjM1MDQ0ODUsMjc4NTgyNzg3LDEyOTU0OTAxMjQsMjA5OTk4
-MjQ4NSwxMzY3NTgyMjYyLC0xNTI3NzYwNzcwLDEyMzExNTY1Nj
-ksMTY4NzkwNzUyNSwtNDA1OTIyMzMyLC0xODE3OTYzOTc0LC0x
-MjMyMDM3MDE1XX0=
+eyJoaXN0b3J5IjpbNDA4NDA2MTA2LDc2OTY0NTQ4NCwtMTI2MT
+EyMzk3MCwtODgyNDUzMDA1LC0yNTU0NDQwMDIsMTAxNjkzMTU4
+MiwtMTYyNjc3MjkzMCwxMTU2MjkyODU2LC0xMzIyMTAzMjk1LC
+03OTc2MDczNCwxNTIzNTA0NDg1LDI3ODU4Mjc4NywxMjk1NDkw
+MTI0LDIwOTk5ODI0ODUsMTM2NzU4MjI2MiwtMTUyNzc2MDc3MC
+wxMjMxMTU2NTY5LDE2ODc5MDc1MjUsLTQwNTkyMjMzMiwtMTgx
+Nzk2Mzk3NF19
 -->
