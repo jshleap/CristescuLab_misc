@@ -104,8 +104,9 @@ Courtesy of http://zjuwhw.github.io/2016/08/13/Illumina_sequencer.html
 
 When systematic error occur in a tile, it can indicate sequencing error such as bubbles, smudges, or dirt. When the errors occur very sparsely and not too widespread, is often OK to overlook this error. When a full lane has a problem, oftentimes is a sequencing error and this cannot be fixed with bioinformatics.
 In our case we have:
+![Quality per tile](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_tile_quality.png)
 
-
+Not the best quality, but there is no systematic bias... we might be able to fix this 
 ## Delete a file
 
 You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
@@ -229,10 +230,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzIwODg0OTMsLTQwNTkyMjMzMiwtMT
-gxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2Mjc2NjYzLDg0NzMx
-NTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMzc4LDE1MzI0MDgwOT
-YsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4OTQ2NjM5MSwxMjEx
-ODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2NjY0MzAsLTIyOTE4OD
-M1NF19
+eyJoaXN0b3J5IjpbNDgyODUwOTQ2LC00MDU5MjIzMzIsLTE4MT
+c5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4NDczMTUz
+NTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4MDk2LC
+00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMTIxMTgx
+MDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkxODgzNT
+RdfQ==
 -->
