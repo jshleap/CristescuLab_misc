@@ -22,6 +22,7 @@ This tutorial assumes that you have a basic knowledge in bash, and that you have
 7. [Per base sequence content](#per-base-sequence-content)
 8. [Per sequence GC content](#per-sequence-gc-content)
 9. [Per base N content](#per-base-n-content)
+10. [Sequence Length Distribution](#sequence-length-distribution)
 
 ## To start
 
@@ -147,7 +148,7 @@ What can you tell about this file?
 
 
 
-## Save a file
+## Sequence Length Distribution
 
 You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
 
@@ -245,7 +246,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ1NzU1ODgwLDEzNjc1ODIyNjIsLTE1Mj
+eyJoaXN0b3J5IjpbNzI0OTU4NjM2LDEzNjc1ODIyNjIsLTE1Mj
 c3NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5MjIz
 MzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2My
 w4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMy
