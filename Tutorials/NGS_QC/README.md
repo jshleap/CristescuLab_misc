@@ -187,7 +187,7 @@ Since our toy file is Illumina, it shows a flat line in the bottom of the figure
 ![per base N content](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_base_n_content.png)
 
 ## Sequence Length Distribution
-
+It self explanatory title describes well this module. It plots the distribution of sequence length
 
 ## Sequence Duplication Levels
 
@@ -207,11 +207,11 @@ Since our toy file is Illumina, it shows a flat line in the bottom of the figure
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NzYwNzM0LDE1MjM1MDQ0ODUsMjc4NT
-gyNzg3LDEyOTU0OTAxMjQsMjA5OTk4MjQ4NSwxMzY3NTgyMjYy
-LC0xNTI3NzYwNzcwLDEyMzExNTY1NjksMTY4NzkwNzUyNSwtND
-A1OTIyMzMyLC0xODE3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYy
-NzY2NjMsODQ3MzE1MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNz
-gsMTUzMjQwODA5NiwtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5
-NDY2MzkxXX0=
+eyJoaXN0b3J5IjpbMTAxMzMwNTcxOCwtNzk3NjA3MzQsMTUyMz
+UwNDQ4NSwyNzg1ODI3ODcsMTI5NTQ5MDEyNCwyMDk5OTgyNDg1
+LDEzNjc1ODIyNjIsLTE1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNj
+g3OTA3NTI1LC00MDU5MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIw
+MzcwMTUsMTU3NjI3NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MT
+QsMTUxNjA3MjM3OCwxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1
+OTM4MzMxXX0=
 -->
