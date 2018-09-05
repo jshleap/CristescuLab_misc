@@ -26,6 +26,7 @@ This tutorial assumes that you have a basic knowledge in bash, and that you have
 11. [Sequence Duplication Levels](#sequence-duplication-levels)
 12. [Overrepresented sequences](#overrepresented-sequences)
 13. [Adapter Content](#adapter-content)
+14. [Running FastQC in the paired file](#running-fastqc-in-the-paired-file)
 
 ## To start
 
@@ -224,11 +225,11 @@ Another self-explanatory module. Here, the most commonly used adapters are scree
  In our file:
  ![enter image description here](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/adapter_content.png)
 
-## Running FastQC in the paired File
+## Running FastQC in the paired file
 Now, let's [download the pair](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R2.fastq.gz) or R2 file. Run FastQC and tell me what do you think about this second file. Compare it to the first one. What do you see?
 
 # Resolving some of the Issues
-There are many programs to do QC, and many specific tools for each one. For now we are going to focus on the popular program Trimmomatic. This program does adaptve quality trimming, head and tail crop, and adaptor removal.
+There are many programs to do QC, and many specific tools for each one. For now we are going to focus on the popular program Trimmomatic. This program does adaptve quality trimming, head and tail crop, and adaptor removal. One of the advantages of trimmomatic is that it allows you to work with pair an
 
 ## Trimming tail and head
 
@@ -238,7 +239,7 @@ There are many programs to do QC, and many specific tools for each one. For now 
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY0ODEyMDM4LC01NzY4Mjc2ODIsNTczMz
+eyJoaXN0b3J5IjpbOTcxMzA4OTgzLC01NzY4Mjc2ODIsNTczMz
 QyNDU5LDc2OTY0NTQ4NCwtMTI2MTEyMzk3MCwtODgyNDUzMDA1
 LC0yNTU0NDQwMDIsMTAxNjkzMTU4MiwtMTYyNjc3MjkzMCwxMT
 U2MjkyODU2LC0xMzIyMTAzMjk1LC03OTc2MDczNCwxNTIzNTA0
