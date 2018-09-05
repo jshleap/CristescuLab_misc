@@ -208,7 +208,7 @@ In our file, we get:
 #### Explain the figure above
 
 ## Overrepresented sequences
-This cool module shows you sequences that are present in over 0.1% of your total reads. The coolest thing about it is that it will run a search for common contaminants and reported
+This cool module shows you sequences that are present in over 0.1% of your total reads. The coolest thing about it is that it will run a search for common contaminants and report them. In a single species, diverse, uncontaminated library, you should expect not to have any overrepresented library
 
 ## Adapter Content
 
@@ -222,7 +222,7 @@ This cool module shows you sequences that are present in over 0.1% of your total
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MzA1NjY0MSwtMTYyNjc3MjkzMCwxMT
+eyJoaXN0b3J5IjpbMTAxNjkzMTU4MiwtMTYyNjc3MjkzMCwxMT
 U2MjkyODU2LC0xMzIyMTAzMjk1LC03OTc2MDczNCwxNTIzNTA0
 NDg1LDI3ODU4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMT
 M2NzU4MjI2MiwtMTUyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5
