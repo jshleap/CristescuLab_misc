@@ -278,14 +278,14 @@ ligated' reads must be for PE palindrome read alignment.
 >- simpleClipThreshold: specifies how accurate the match between any adapter etc.
 sequence must be against a read.
 
-![enter image description here](https://academic.oup.com/view-large/figure/84879043/btu170f1p.gif)
+![Adapter trimming]()
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTAyMTc0OTksLTk0OTg5NzY5MSwxNT
-A0NzU1MzAxLDg0MzY1ODE1LC01NzY4Mjc2ODIsNTczMzQyNDU5
-LDc2OTY0NTQ4NCwtMTI2MTEyMzk3MCwtODgyNDUzMDA1LC0yNT
-U0NDQwMDIsMTAxNjkzMTU4MiwtMTYyNjc3MjkzMCwxMTU2Mjky
-ODU2LC0xMzIyMTAzMjk1LC03OTc2MDczNCwxNTIzNTA0NDg1LD
-I3ODU4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMTM2NzU4
-MjI2Ml19
+eyJoaXN0b3J5IjpbLTg1NTU5OTU2OSwtOTQ5ODk3NjkxLDE1MD
+Q3NTUzMDEsODQzNjU4MTUsLTU3NjgyNzY4Miw1NzMzNDI0NTks
+NzY5NjQ1NDg0LC0xMjYxMTIzOTcwLC04ODI0NTMwMDUsLTI1NT
+Q0NDAwMiwxMDE2OTMxNTgyLC0xNjI2NzcyOTMwLDExNTYyOTI4
+NTYsLTEzMjIxMDMyOTUsLTc5NzYwNzM0LDE1MjM1MDQ0ODUsMj
+c4NTgyNzg3LDEyOTU0OTAxMjQsMjA5OTk4MjQ4NSwxMzY3NTgy
+MjYyXX0=
 -->
