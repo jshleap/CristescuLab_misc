@@ -278,14 +278,16 @@ ligated' reads must be for PE palindrome read alignment.
 >- simpleClipThreshold: specifies how accurate the match between any adapter etc.
 sequence must be against a read.
 
-![Adapter trimming]()
+![Adapter trimming](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/trimmomatic_adapter.png)
 
+As can be seen in the figure, there are 4 possible scenarios that trimmomatic cover:
+A. Technichal sequence is completely covere
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NTU5OTU2OSwtOTQ5ODk3NjkxLDE1MD
-Q3NTUzMDEsODQzNjU4MTUsLTU3NjgyNzY4Miw1NzMzNDI0NTks
-NzY5NjQ1NDg0LC0xMjYxMTIzOTcwLC04ODI0NTMwMDUsLTI1NT
-Q0NDAwMiwxMDE2OTMxNTgyLC0xNjI2NzcyOTMwLDExNTYyOTI4
-NTYsLTEzMjIxMDMyOTUsLTc5NzYwNzM0LDE1MjM1MDQ0ODUsMj
-c4NTgyNzg3LDEyOTU0OTAxMjQsMjA5OTk4MjQ4NSwxMzY3NTgy
-MjYyXX0=
+eyJoaXN0b3J5IjpbMTUxMjk3NjQsLTk0OTg5NzY5MSwxNTA0Nz
+U1MzAxLDg0MzY1ODE1LC01NzY4Mjc2ODIsNTczMzQyNDU5LDc2
+OTY0NTQ4NCwtMTI2MTEyMzk3MCwtODgyNDUzMDA1LC0yNTU0ND
+QwMDIsMTAxNjkzMTU4MiwtMTYyNjc3MjkzMCwxMTU2MjkyODU2
+LC0xMzIyMTAzMjk1LC03OTc2MDczNCwxNTIzNTA0NDg1LDI3OD
+U4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMTM2NzU4MjI2
+Ml19
 -->
