@@ -157,37 +157,24 @@ What can you tell about this file?
 
 ## Overrepresented sequences
 
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
-
 
 ## Adapter Content
 
 
-# Resolving some of the Issue
+# Resolving some of the Issues
 ## Trimming tail and head
 
 ## Adaptive quality trimming
 
 ## Removing adaptors and primers
 
-## SmartyPants
-
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
-
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
-
-
-
+## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY3MDg4OTQ4LDEzNjc1ODIyNjIsLTE1Mj
-c3NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5MjIz
-MzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2My
-w4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMy
-NDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOT
-EsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC0y
-MjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbLTEyMDAzNDc3MzYsMTM2NzU4MjI2MiwtMT
+UyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5MDc1MjUsLTQwNTky
+MjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2Mjc2Nj
+YzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMzc4LDE1
+MzI0MDgwOTYsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4OTQ2Nj
+M5MSwxMjExODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2NjY0MzAs
+LTIyOTE4ODM1NF19
 -->
