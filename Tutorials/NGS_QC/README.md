@@ -176,8 +176,12 @@ From FastQC documentation:
 Some sequencer technologies would produce an N when it cannot define which of the four bases it has confidence on based on the phenogram. Illumina does not produce this, and therefore the plot should be flat and the module should always pass.
 
 From FastQC documentation:
+>#### Warning
+>This module raises a warning if any position shows an N content of >5%.
+>#### Failure
+>This module will raise an error if any position shows an N content of >20%.
 
-
+Failure or warning in this module suggest that the sequencing should probably be repeated since a significant portion of your rea
 ## Sequence Length Distribution
 
 
@@ -199,11 +203,11 @@ From FastQC documentation:
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4OTYyODI1MCwxNTIzNTA0NDg1LDI3OD
-U4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMTM2NzU4MjI2
-MiwtMTUyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5MDc1MjUsLT
-QwNTkyMjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2
-Mjc2NjYzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMz
-c4LDE1MzI0MDgwOTYsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4
-OTQ2NjM5MV19
+eyJoaXN0b3J5IjpbNjM0MDUxMTIwLDE1MjM1MDQ0ODUsMjc4NT
+gyNzg3LDEyOTU0OTAxMjQsMjA5OTk4MjQ4NSwxMzY3NTgyMjYy
+LC0xNTI3NzYwNzcwLDEyMzExNTY1NjksMTY4NzkwNzUyNSwtND
+A1OTIyMzMyLC0xODE3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYy
+NzY2NjMsODQ3MzE1MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNz
+gsMTUzMjQwODA5NiwtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5
+NDY2MzkxXX0=
 -->
