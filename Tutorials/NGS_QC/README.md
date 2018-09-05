@@ -119,7 +119,9 @@ From FastQC documentation:
 
 ## Per sequence quality scores
 
-This module allows you to explore is a significant portion of your reads are of poor quality. Often times warnings occur when your sequence is shorter than your read length
+This module allows you to explore if a significant portion of your reads are of poor quality. Often times warnings occur when your sequence is shorter than your read length, and therefore the end of reads (or the end of the flowcell) is of poor quality.
+This is the case for our File1:
+
 
 ## Export a file
 
@@ -240,10 +242,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMjE1Mzc5NSwxNjg3OTA3NTI1LC00MD
-U5MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3
-NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OC
-wxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0
-NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2ND
-MwLC0yMjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbNjA2MjI2NTEwLDE2ODc5MDc1MjUsLTQwNT
+kyMjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2Mjc2
+NjYzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMzc4LD
+E1MzI0MDgwOTYsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4OTQ2
+NjM5MSwxMjExODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2NjY0Mz
+AsLTIyOTE4ODM1NF19
 -->
