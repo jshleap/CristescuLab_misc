@@ -173,7 +173,10 @@ From FastQC documentation:
 #### How would you explain the two modes (double peak)?
 
 ## Per base N content
-Some sequencer technologies would produce an N
+Some sequencer technologies would produce an N when it cannot define which of the four bases it has confidence on based on the phenogram. Illumina does not produce this, and therefore the plot should be flat and the module should always pass.
+
+From FastQC documentation:
+
 
 ## Sequence Length Distribution
 
@@ -196,11 +199,11 @@ Some sequencer technologies would produce an N
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTc3Mjg3MTAsMTUyMzUwNDQ4NSwyNz
-g1ODI3ODcsMTI5NTQ5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIy
-NjIsLTE1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC
-00MDU5MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3
-NjI3NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3Mj
-M3OCwxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4
-ODk0NjYzOTFdfQ==
+eyJoaXN0b3J5IjpbMTE4OTYyODI1MCwxNTIzNTA0NDg1LDI3OD
+U4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMTM2NzU4MjI2
+MiwtMTUyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5MDc1MjUsLT
+QwNTkyMjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2
+Mjc2NjYzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMz
+c4LDE1MzI0MDgwOTYsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4
+OTQ2NjM5MV19
 -->
