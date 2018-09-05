@@ -132,7 +132,6 @@ From FastQC documentation:
 
 ## Per base sequence content
 
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
 
 
 # Synchronization
@@ -249,10 +248,11 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNj
-g3OTA3NTI1LC00MDU5MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIw
-MzcwMTUsMTU3NjI3NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MT
-QsMTUxNjA3MjM3OCwxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1
-OTM4MzMxLDE4ODk0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzOD
-cwLC0xNTI4NjY2NDMwLC0yMjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbMTM2NzU4MjI2MiwtMTUyNzc2MDc3MCwxMj
+MxMTU2NTY5LDE2ODc5MDc1MjUsLTQwNTkyMjMzMiwtMTgxNzk2
+Mzk3NCwtMTIzMjAzNzAxNSwxNTc2Mjc2NjYzLDg0NzMxNTM1Ni
+wtMTEzOTI2NDUxNCwxNTE2MDcyMzc4LDE1MzI0MDgwOTYsLTQ3
+NjY0Nzg1Niw5MDU5MzgzMzEsMTg4OTQ2NjM5MSwxMjExODEwMj
+csLTIwNDA2MDM4NzAsLTE1Mjg2NjY0MzAsLTIyOTE4ODM1NF19
+
 -->
