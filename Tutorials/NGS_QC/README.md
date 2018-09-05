@@ -144,7 +144,7 @@ This module shows the proportion of bases in each position. In an unbiased libra
 What can you tell about this file?
 
 ## Per sequence GC content
-
+This module intends to show the proportion of GC content in the reads. The blue line represents a theoretical distr
 
 ## Per base N content
 
@@ -170,11 +170,11 @@ What can you tell about this file?
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5OTk4MjQ4NSwxMzY3NTgyMjYyLC0xNT
-I3NzYwNzcwLDEyMzExNTY1NjksMTY4NzkwNzUyNSwtNDA1OTIy
-MzMyLC0xODE3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYyNzY2Nj
-MsODQ3MzE1MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNzgsMTUz
-MjQwODA5NiwtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5NDY2Mz
-kxLDEyMTE4MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2NjQzMCwt
-MjI5MTg4MzU0XX0=
+eyJoaXN0b3J5IjpbMTAyMTc2Nzk4NywyMDk5OTgyNDg1LDEzNj
+c1ODIyNjIsLTE1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3
+NTI1LC00MDU5MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMT
+UsMTU3NjI3NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUx
+NjA3MjM3OCwxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4Mz
+MxLDE4ODk0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0x
+NTI4NjY2NDMwXX0=
 -->
