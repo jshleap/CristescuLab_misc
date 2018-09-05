@@ -266,9 +266,9 @@ The SLIDINGWINDOW option allows you to trimm reads based on their average qualit
 It takes two values like `SLIDINGWINDOW:4:15` which means  "Scan the read with a 4-base wide sliding window, cutting when the average quality per base drops below 15"
 
 ### Adapter trimming
-Finally, trimmomatic will take a file with  
+Finally, trimmomatic will take a file with the sequences  of your adapters and will trimm them out. It follows the following call: `
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTI2ODc3MCwxNTA0NzU1MzAxLDg0Mz
+eyJoaXN0b3J5IjpbMTQxMTMwNTkwNiwxNTA0NzU1MzAxLDg0Mz
 Y1ODE1LC01NzY4Mjc2ODIsNTczMzQyNDU5LDc2OTY0NTQ4NCwt
 MTI2MTEyMzk3MCwtODgyNDUzMDA1LC0yNTU0NDQwMDIsMTAxNj
 kzMTU4MiwtMTYyNjc3MjkzMCwxMTU2MjkyODU2LC0xMzIyMTAz
