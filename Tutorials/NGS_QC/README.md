@@ -103,7 +103,7 @@ This a feature that is exclusive to Illumina technologies. Their flow cells typi
 )
 Courtesy of http://zjuwhw.github.io/2016/08/13/Illumina_sequencer.html
 
-When systematic error occur in a tile, it can indicate sequencing error such as bubbles, smudges, or dirt. When the errors occur very sparsely and not too widespread, is often OK to overlook this error. When a full lane has a problem, oftentimes is a sequencing error and this cannot be fixed with bioinformatics.
+When systematic error occur in a tile, it can indicate sequencing error such as bubbles, smudges, or dirt. When the errors occur very sparsely and not too widespread, is often OK to overlook this error. When a full lane has a problem, oftentimes is a sequencing error and this cannot be fixed with bioinformatics. The problem can occur as as well when the flowcell is overloaded.
 In our case we have:
 ![Quality per tile](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_tile_quality.png)
 
@@ -118,7 +118,7 @@ From FastQC documentation:
 
 ## Per sequence quality scores
 
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
+
 
 ## Export a file
 
@@ -239,10 +239,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NzkwNzUyNSwtNDA1OTIyMzMyLC0xOD
-E3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1
-MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNzgsMTUzMjQwODA5Ni
-wtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5NDY2MzkxLDEyMTE4
-MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2NjQzMCwtMjI5MTg4Mz
-U0XX0=
+eyJoaXN0b3J5IjpbLTE5NDE3NDQwMTAsMTY4NzkwNzUyNSwtND
+A1OTIyMzMyLC0xODE3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYy
+NzY2NjMsODQ3MzE1MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNz
+gsMTUzMjQwODA5NiwtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5
+NDY2MzkxLDEyMTE4MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2Nj
+QzMCwtMjI5MTg4MzU0XX0=
 -->
