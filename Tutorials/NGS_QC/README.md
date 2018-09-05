@@ -208,7 +208,11 @@ In our file, we get:
 #### Explain the figure above
 
 ## Overrepresented sequences
-This cool module shows you sequences that are present in over 0.1% of your total reads. The coolest thing about it is that it will run a search for common contaminants and report them. In a single species, diverse, uncontaminated library, you should expect not to have any overrepresented library
+This cool module shows you sequences that are present in over 0.1% of your total reads. The coolest thing about it is that it will run a search for common contaminants and report them. In a single species, diverse, uncontaminated library, you should expect not to have any overrepresented library.
+
+Check your copy of the overrerpesented sequences in the html file. Here is a screenshot of the first par:
+!Overrepresented sequences](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/overrepresented.png)
+
 
 ## Adapter Content
 
@@ -222,11 +226,11 @@ This cool module shows you sequences that are present in over 0.1% of your total
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNjkzMTU4MiwtMTYyNjc3MjkzMCwxMT
-U2MjkyODU2LC0xMzIyMTAzMjk1LC03OTc2MDczNCwxNTIzNTA0
-NDg1LDI3ODU4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMT
-M2NzU4MjI2MiwtMTUyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5
-MDc1MjUsLTQwNTkyMjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAzNz
-AxNSwxNTc2Mjc2NjYzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwx
-NTE2MDcyMzc4XX0=
+eyJoaXN0b3J5IjpbMTY5NDI4MDQ1LDEwMTY5MzE1ODIsLTE2Mj
+Y3NzI5MzAsMTE1NjI5Mjg1NiwtMTMyMjEwMzI5NSwtNzk3NjA3
+MzQsMTUyMzUwNDQ4NSwyNzg1ODI3ODcsMTI5NTQ5MDEyNCwyMD
+k5OTgyNDg1LDEzNjc1ODIyNjIsLTE1Mjc3NjA3NzAsMTIzMTE1
+NjU2OSwxNjg3OTA3NTI1LC00MDU5MjIzMzIsLTE4MTc5NjM5Nz
+QsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4NDczMTUzNTYsLTEx
+MzkyNjQ1MTRdfQ==
 -->
