@@ -170,10 +170,10 @@ From FastQC documentation:
 
 ![Per sequence GC contentent](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_sequence_gc_content.png)
 
-###
+#### How would you explain the two modes (double peak)?
 
 ## Per base N content
-
+Some sequencer technologies would produce an N
 
 ## Sequence Length Distribution
 
@@ -196,11 +196,11 @@ From FastQC documentation:
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2ODc4MDc0NiwxNTIzNTA0NDg1LDI3OD
-U4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMTM2NzU4MjI2
-MiwtMTUyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5MDc1MjUsLT
-QwNTkyMjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2
-Mjc2NjYzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMz
-c4LDE1MzI0MDgwOTYsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4
-OTQ2NjM5MV19
+eyJoaXN0b3J5IjpbLTIxMTc3Mjg3MTAsMTUyMzUwNDQ4NSwyNz
+g1ODI3ODcsMTI5NTQ5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIy
+NjIsLTE1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC
+00MDU5MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3
+NjI3NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3Mj
+M3OCwxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4
+ODk0NjYzOTFdfQ==
 -->
