@@ -102,7 +102,9 @@ This a feature that is exclusive to Illumina technologies. Their flow cells typi
 ![Flow cell pattern](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/illumina_flowcell.png)
 Courtesy of http://zjuwhw.github.io/2016/08/13/Illumina_sequencer.html
 
-When systematic error occur in a tile, it can indicate sequencing error such as bubbles, smudges, or dirt. 
+When systematic error occur in a tile, it can indicate sequencing error such as bubbles, smudges, or dirt. When the errors occur very sparsely and not too widespread, is often OK to overlook this error. When a full lane has a problem, oftentimes is a sequencing error and this cannot be fixed with bioinformatics.
+In our case we have:
+
 
 ## Delete a file
 
@@ -227,10 +229,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MDI5NjM4MCwtNDA1OTIyMzMyLC0xOD
-E3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1
-MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNzgsMTUzMjQwODA5Ni
-wtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5NDY2MzkxLDEyMTE4
-MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2NjQzMCwtMjI5MTg4Mz
-U0XX0=
+eyJoaXN0b3J5IjpbLTExMzIwODg0OTMsLTQwNTkyMjMzMiwtMT
+gxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2Mjc2NjYzLDg0NzMx
+NTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMzc4LDE1MzI0MDgwOT
+YsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4OTQ2NjM5MSwxMjEx
+ODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2NjY0MzAsLTIyOTE4OD
+M1NF19
 -->
