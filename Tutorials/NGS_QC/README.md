@@ -282,13 +282,14 @@ sequence must be against a read.
 
 As can be seen in the figure, there are 4 possible scenarios that trimmomatic cover:
 A. Technical sequence is completely covered by the read and therefore a simple alignment will identify it.
-B. Only a partial match between the technical sequence and the read, and therefor a short alignment is need
+B. Only a partial match between the technical sequence and the read, and therefor a short alignment is needed.
+C and D.  Both pair
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkwMjk4NzI2LC05NDk4OTc2OTEsMTUwND
-c1NTMwMSw4NDM2NTgxNSwtNTc2ODI3NjgyLDU3MzM0MjQ1OSw3
-Njk2NDU0ODQsLTEyNjExMjM5NzAsLTg4MjQ1MzAwNSwtMjU1ND
-Q0MDAyLDEwMTY5MzE1ODIsLTE2MjY3NzI5MzAsMTE1NjI5Mjg1
-NiwtMTMyMjEwMzI5NSwtNzk3NjA3MzQsMTUyMzUwNDQ4NSwyNz
-g1ODI3ODcsMTI5NTQ5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIy
-NjJdfQ==
+eyJoaXN0b3J5IjpbLTE4MDgxNjQ1NzgsLTk0OTg5NzY5MSwxNT
+A0NzU1MzAxLDg0MzY1ODE1LC01NzY4Mjc2ODIsNTczMzQyNDU5
+LDc2OTY0NTQ4NCwtMTI2MTEyMzk3MCwtODgyNDUzMDA1LC0yNT
+U0NDQwMDIsMTAxNjkzMTU4MiwtMTYyNjc3MjkzMCwxMTU2Mjky
+ODU2LC0xMzIyMTAzMjk1LC03OTc2MDczNCwxNTIzNTA0NDg1LD
+I3ODU4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMTM2NzU4
+MjI2Ml19
 -->
