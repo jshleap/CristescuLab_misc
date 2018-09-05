@@ -70,6 +70,7 @@ This table will give you basic information about your reads:
 7. **%GC**: Percentage of GC content
 
 For our file we get:
+
 ![Basic stats for File1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/Basic_stats.png)
 
 ### Encoding
@@ -215,6 +216,7 @@ Check your copy of the overrerpesented sequences in the html file. Here is a scr
 ![Overrepresented sequences for file1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/overrepresented.png)
 
 #### What can you tell me about it? How would you check if is OK or not? Do it!!!Overrepresented sequences
+
 ## Adapter Content
 
 
@@ -227,11 +229,11 @@ Check your copy of the overrerpesented sequences in the html file. Here is a scr
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NTQ0NDAwMiwxMDE2OTMxNTgyLC0xNj
-I2NzcyOTMwLDExNTYyOTI4NTYsLTEzMjIxMDMyOTUsLTc5NzYw
-NzM0LDE1MjM1MDQ0ODUsMjc4NTgyNzg3LDEyOTU0OTAxMjQsMj
-A5OTk4MjQ4NSwxMzY3NTgyMjYyLC0xNTI3NzYwNzcwLDEyMzEx
-NTY1NjksMTY4NzkwNzUyNSwtNDA1OTIyMzMyLC0xODE3OTYzOT
-c0LC0xMjMyMDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1MzU2LC0x
-MTM5MjY0NTE0XX0=
+eyJoaXN0b3J5IjpbLTE5NjczMzc3MzQsLTI1NTQ0NDAwMiwxMD
+E2OTMxNTgyLC0xNjI2NzcyOTMwLDExNTYyOTI4NTYsLTEzMjIx
+MDMyOTUsLTc5NzYwNzM0LDE1MjM1MDQ0ODUsMjc4NTgyNzg3LD
+EyOTU0OTAxMjQsMjA5OTk4MjQ4NSwxMzY3NTgyMjYyLC0xNTI3
+NzYwNzcwLDEyMzExNTY1NjksMTY4NzkwNzUyNSwtNDA1OTIyMz
+MyLC0xODE3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYyNzY2NjMs
+ODQ3MzE1MzU2XX0=
 -->
