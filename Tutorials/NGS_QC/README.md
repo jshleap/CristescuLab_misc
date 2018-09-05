@@ -196,7 +196,9 @@ Our dummy file (since is illumina) behaves as expected:
 ## Sequence Duplication Levels
 This module allows you to see the level of duplication of your library. Ideally, the blue (total sequences) and the red (deduplicated sequences) should match. This would mean that you had a diverse library, and that each sequence has been sequenced in the proper depth. However, this assumes that you are working with a genome of single species, and therefore the warnings and failures of this module should only be worrysome then, since it will show a bias (i.e. PCR artefacts, resequencing parts of genome). In enriched libraries, you would expect some level of duplication, especially when this module only takes the first 50 bases and the first 100K sequences to run the tests. In amplicon sequencing, we expect some degree of duplication, and we should not be too agressive in cleaning this up.
 
-In our Fil, we get:
+In our file, we get:
+
+![Dupication levels](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/duplication_levels.png)
 
 
 
@@ -215,11 +217,11 @@ In our Fil, we get:
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NjI5Mjg1NiwtMTMyMjEwMzI5NSwtNz
-k3NjA3MzQsMTUyMzUwNDQ4NSwyNzg1ODI3ODcsMTI5NTQ5MDEy
-NCwyMDk5OTgyNDg1LDEzNjc1ODIyNjIsLTE1Mjc3NjA3NzAsMT
-IzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5MjIzMzIsLTE4MTc5
-NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4NDczMTUzNT
-YsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4MDk2LC00
-NzY2NDc4NTZdfQ==
+eyJoaXN0b3J5IjpbLTEyMjgzNTU0NzUsMTE1NjI5Mjg1NiwtMT
+MyMjEwMzI5NSwtNzk3NjA3MzQsMTUyMzUwNDQ4NSwyNzg1ODI3
+ODcsMTI5NTQ5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIyNjIsLT
+E1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5
+MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3Nj
+Y2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwx
+NTMyNDA4MDk2XX0=
 -->
