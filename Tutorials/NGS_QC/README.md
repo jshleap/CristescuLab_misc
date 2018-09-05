@@ -259,13 +259,16 @@ Trimmomatic has the option MINLEN which will drop reads that fall under the spec
 -   MINLEN: Drop the read if it is below a specified length
 
 ### Adaptive quality trimming
+The SLIDINGWINDOW option allows you to trimm reads based on their average quality in a window:
+
+-   SLIDINGWINDOW: Perform a sliding window trimming, cutting once the average quality within the window falls below a threshold.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzA3MjU5NzQsMTUwNDc1NTMwMSw4ND
-M2NTgxNSwtNTc2ODI3NjgyLDU3MzM0MjQ1OSw3Njk2NDU0ODQs
-LTEyNjExMjM5NzAsLTg4MjQ1MzAwNSwtMjU1NDQ0MDAyLDEwMT
-Y5MzE1ODIsLTE2MjY3NzI5MzAsMTE1NjI5Mjg1NiwtMTMyMjEw
-MzI5NSwtNzk3NjA3MzQsMTUyMzUwNDQ4NSwyNzg1ODI3ODcsMT
-I5NTQ5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIyNjIsLTE1Mjc3
-NjA3NzBdfQ==
+eyJoaXN0b3J5IjpbOTYzOTE3MTE3LDE1MDQ3NTUzMDEsODQzNj
+U4MTUsLTU3NjgyNzY4Miw1NzMzNDI0NTksNzY5NjQ1NDg0LC0x
+MjYxMTIzOTcwLC04ODI0NTMwMDUsLTI1NTQ0NDAwMiwxMDE2OT
+MxNTgyLC0xNjI2NzcyOTMwLDExNTYyOTI4NTYsLTEzMjIxMDMy
+OTUsLTc5NzYwNzM0LDE1MjM1MDQ0ODUsMjc4NTgyNzg3LDEyOT
+U0OTAxMjQsMjA5OTk4MjQ4NSwxMzY3NTgyMjYyLC0xNTI3NzYw
+NzcwXX0=
 -->
