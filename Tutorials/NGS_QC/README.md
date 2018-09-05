@@ -94,10 +94,10 @@ From the documentation of this module:
 
 #### *Look at the figure above. What do you think is happening at the end? why?*
 
-## Rename a file
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
-
+## Per tile sequence quality
+![enter image description here](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/illumina_flowcell.png)
+Courtesy of http://zjuwhw.github.io/2016/08/13/Illumina_sequencer.html
 ## Delete a file
 
 You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
@@ -221,9 +221,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNTkyMjMzMiwtMTgxNzk2Mzk3NCwtMT
-IzMjAzNzAxNSwxNTc2Mjc2NjYzLDg0NzMxNTM1NiwtMTEzOTI2
-NDUxNCwxNTE2MDcyMzc4LDE1MzI0MDgwOTYsLTQ3NjY0Nzg1Ni
-w5MDU5MzgzMzEsMTg4OTQ2NjM5MSwxMjExODEwMjcsLTIwNDA2
-MDM4NzAsLTE1Mjg2NjY0MzAsLTIyOTE4ODM1NF19
+eyJoaXN0b3J5IjpbNTQ3OTg1NzI4LC00MDU5MjIzMzIsLTE4MT
+c5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4NDczMTUz
+NTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4MDk2LC
+00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMTIxMTgx
+MDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkxODgzNT
+RdfQ==
 -->
