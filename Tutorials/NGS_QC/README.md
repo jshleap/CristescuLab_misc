@@ -247,13 +247,18 @@ This options (and all the following on CAPS) must go after the input/output file
 
 ### Cropping
 Trimmomatic has several options that can be use simultaneously or not:
+-   LEADING: Cut bases off the start of a read, if below a threshold quality
+-   TRAILING: Cut bases off the end of a read, if below a threshold quality
+-   CROP: Cut the read to a specified length
+-   HEADCROP: Cut the specified number of bases from the start of the read
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDExODUxNzksLTU3NjgyNzY4Miw1Nz
-MzNDI0NTksNzY5NjQ1NDg0LC0xMjYxMTIzOTcwLC04ODI0NTMw
-MDUsLTI1NTQ0NDAwMiwxMDE2OTMxNTgyLC0xNjI2NzcyOTMwLD
-ExNTYyOTI4NTYsLTEzMjIxMDMyOTUsLTc5NzYwNzM0LDE1MjM1
-MDQ0ODUsMjc4NTgyNzg3LDEyOTU0OTAxMjQsMjA5OTk4MjQ4NS
-wxMzY3NTgyMjYyLC0xNTI3NzYwNzcwLDEyMzExNTY1NjksMTY4
-NzkwNzUyNV19
+eyJoaXN0b3J5IjpbMTQyNTMxMTYzNywtNTc2ODI3NjgyLDU3Mz
+M0MjQ1OSw3Njk2NDU0ODQsLTEyNjExMjM5NzAsLTg4MjQ1MzAw
+NSwtMjU1NDQ0MDAyLDEwMTY5MzE1ODIsLTE2MjY3NzI5MzAsMT
+E1NjI5Mjg1NiwtMTMyMjEwMzI5NSwtNzk3NjA3MzQsMTUyMzUw
+NDQ4NSwyNzg1ODI3ODcsMTI5NTQ5MDEyNCwyMDk5OTgyNDg1LD
+EzNjc1ODIyNjIsLTE1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNjg3
+OTA3NTI1XX0=
 -->
