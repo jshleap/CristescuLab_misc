@@ -1,5 +1,5 @@
 # NGS Quality Control Tutorial: Understanding QC
-
+This tutorial is intente
 ### Objectives / learning outcomes:
 
 At the end of this tutorial you shoud be able to:
@@ -239,10 +239,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDE3NDQwMTAsMTY4NzkwNzUyNSwtND
-A1OTIyMzMyLC0xODE3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYy
-NzY2NjMsODQ3MzE1MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNz
-gsMTUzMjQwODA5NiwtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5
-NDY2MzkxLDEyMTE4MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2Nj
-QzMCwtMjI5MTg4MzU0XX0=
+eyJoaXN0b3J5IjpbMTk4NDE0MTkyMywxNjg3OTA3NTI1LC00MD
+U5MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3
+NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OC
+wxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0
+NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2ND
+MwLC0yMjkxODgzNTRdfQ==
 -->
