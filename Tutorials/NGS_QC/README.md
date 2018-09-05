@@ -92,7 +92,7 @@ From the documentation of this module:
 > #### Failure
 > This module will raise a failure if the lower quartile for any base is less than 5 or if the median for any base is less than 20.
 
-Look at the figure above. What do you think is happening at the end? why?
+#### *Look at the figure above. What do you think is happening at the end? why?*
 
 
 ## Rename a file
@@ -222,7 +222,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDQ0NzU0NzYsLTEyMzIwMzcwMTUsMT
+eyJoaXN0b3J5IjpbLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMT
 U3NjI3NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3
 MjM3OCwxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLD
 E4ODk0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4
