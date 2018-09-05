@@ -59,10 +59,11 @@ This table will give you basic information about your reads:
 7. **%GC**: Percentage of GC content
 
 ### Encoding
-Encoding is the way the quality of the bases are written. There are many encodings, but the most popular are Sanger, Solexa, Ilumina 1.3+, Illumina 1.5+, and illumina 1.8+. 
+Encoding is the way the quality of the bases are written. There are many encodings, but the most popular are Sanger, Solexa, Ilumina 1.3+, Illumina 1.5+, and illumina 1.8+.  In summary, is a character that represents the confidence you have in a given base call.
 ![Phred Score encodings descriptions, from https://en.wikipedia.org/wiki/FASTQ_format#Encoding](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/fastq_phread-base.png)
 For more information check https://en.wikipedia.org/wiki/FASTQ_format#Encoding
 
+I am not going to enter the rest of the bas
 ## Switch to another file
 
 All your files are listed in the file explorer. You can switch from one to another by clicking a file in the list.
@@ -194,8 +195,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODU1NDMxOCwxNTMyNDA4MDk2LC00Nz
-Y2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMTIxMTgxMDI3
-LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkxODgzNTRdfQ
-==
+eyJoaXN0b3J5IjpbODgwMDcxMTcsMTUzMjQwODA5NiwtNDc2Nj
+Q3ODU2LDkwNTkzODMzMSwxODg5NDY2MzkxLDEyMTE4MTAyNywt
+MjA0MDYwMzg3MCwtMTUyODY2NjQzMCwtMjI5MTg4MzU0XX0=
 -->
