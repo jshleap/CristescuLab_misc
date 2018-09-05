@@ -63,6 +63,12 @@ Encoding is the way the quality of the bases are written. There are many encodin
 ![Phred Score encodings descriptions, from https://en.wikipedia.org/wiki/FASTQ_format#Encoding](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/fastq_phread-base.png)
 For more information check https://en.wikipedia.org/wiki/FASTQ_format#Encoding
 
+But what does a quality score means? It s related to the probability of an error:
+|  |  |
+|--|--|
+|  |  |
+
+
 I am not going to enter the rest of the basic statistics since they are self-explanatory.
 
 ### Per Base Sequence Quality
@@ -197,8 +203,8 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3MzE1MzU2LC0xMTM5MjY0NTE0LDE1MT
-YwNzIzNzgsMTUzMjQwODA5NiwtNDc2NjQ3ODU2LDkwNTkzODMz
-MSwxODg5NDY2MzkxLDEyMTE4MTAyNywtMjA0MDYwMzg3MCwtMT
-UyODY2NjQzMCwtMjI5MTg4MzU0XX0=
+eyJoaXN0b3J5IjpbMTU3NjI3NjY2Myw4NDczMTUzNTYsLTExMz
+kyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4MDk2LC00NzY2NDc4
+NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMTIxMTgxMDI3LC0yMD
+QwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkxODgzNTRdfQ==
 -->
