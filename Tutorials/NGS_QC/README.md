@@ -170,7 +170,7 @@ From FastQC documentation:
 
 ![Per sequence GC contentent](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_sequence_gc_content.png)
 
-
+###
 
 ## Per base N content
 
@@ -196,11 +196,11 @@ From FastQC documentation:
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMzUwNDQ4NSwyNzg1ODI3ODcsMTI5NT
-Q5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIyNjIsLTE1Mjc3NjA3
-NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5MjIzMzIsLT
-E4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4NDcz
-MTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4MD
-k2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMTIx
-MTgxMDI3XX0=
+eyJoaXN0b3J5IjpbMTA2ODc4MDc0NiwxNTIzNTA0NDg1LDI3OD
+U4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMTM2NzU4MjI2
+MiwtMTUyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5MDc1MjUsLT
+QwNTkyMjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2
+Mjc2NjYzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMz
+c4LDE1MzI0MDgwOTYsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4
+OTQ2NjM5MV19
 -->
