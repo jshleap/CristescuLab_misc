@@ -131,7 +131,7 @@ From FastQC documentation:
 >An error is raised if the most frequently observed mean quality is below 20 - this equates to a 1% error rate.
 
 ## Per base sequence content
-This module shows the proportion of bases in each position. In an unbiased library, the proportion of A, T, C, G, should run parallel to each other. If there is a bias, this could imply that the primers or 
+This module shows the proportion of bases in each position. In an unbiased library, the proportion of A, T, C, G, should run parallel to each other. If there is a bias, this could imply that the primers or adaptors were not remove, and therefore there would be a strong bias towards a certain composition. It could also mean that you have an over-fragmented library, creating over-represented k-mers, or 
 
 
 # Synchronization
@@ -248,11 +248,11 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NTgxMTU4MywxMzY3NTgyMjYyLC0xNT
-I3NzYwNzcwLDEyMzExNTY1NjksMTY4NzkwNzUyNSwtNDA1OTIy
-MzMyLC0xODE3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYyNzY2Nj
-MsODQ3MzE1MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNzgsMTUz
-MjQwODA5NiwtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5NDY2Mz
-kxLDEyMTE4MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2NjQzMCwt
-MjI5MTg4MzU0XX0=
+eyJoaXN0b3J5IjpbMTk5MDQ0MTc5LDEzNjc1ODIyNjIsLTE1Mj
+c3NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5MjIz
+MzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2My
+w4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMy
+NDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOT
+EsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC0y
+MjkxODgzNTRdfQ==
 -->
