@@ -68,7 +68,7 @@ I am not going to enter the rest of the basic statistics since they are self-exp
 ### Per Base Sequence Quality
 
 It's name is self explanatory. This module evaluates the quality at each base for all reads. FastQC gives you a box plot of the qualities, representing the inter-quartile range (25-75%) (yellow box), the extremes 10 and 90th percentiles are represented by the whiskers, the median value by a red line, and the mean quality by the blue line.
-
+![per-base quality of file 1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_base_quality.png)
 
 ## Rename a file
 
@@ -197,8 +197,8 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNT
-MyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYz
-OTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC
-0yMjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbODQ3MzE1MzU2LC0xMTM5MjY0NTE0LDE1MT
+YwNzIzNzgsMTUzMjQwODA5NiwtNDc2NjQ3ODU2LDkwNTkzODMz
+MSwxODg5NDY2MzkxLDEyMTE4MTAyNywtMjA0MDYwMzg3MCwtMT
+UyODY2NjQzMCwtMjI5MTg4MzU0XX0=
 -->
