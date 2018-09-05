@@ -15,7 +15,7 @@ This tutorial assumes that you have a basic knowledge in bash, and that you have
 1. [To start: A couple of things we need before we start the tutorial](#to-start)
 2. [Getting the statistics with fastqc](#getting-the-statistics-with-fastqc)
 3. [Basic Statistics](#basic-statistics)
-4. 
+4. [Per Base Sequence Quality](#per-base-sequence-quality)
 
 ## To start
 
@@ -80,7 +80,7 @@ As a rule of thumb a Phred score above 20 (99% chances to be right) is considere
 
 I am not going to enter the rest of the basic statistics since they are self-explanatory.
 
-### Per Base Sequence Quality
+## Per Base Sequence Quality
 
 It's name is self explanatory. This module evaluates the quality at each base for all reads. FastQC gives you a box plot of the qualities, representing the inter-quartile range (25-75%) (yellow box), the extremes 10 and 90th percentiles are represented by the whiskers, the median value by a red line, and the mean quality by the blue line.
 ![per-base quality of file 1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_base_quality.png)
@@ -222,9 +222,9 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMT
-U3NjI3NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3
-MjM3OCwxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLD
-E4ODk0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4
-NjY2NDMwLC0yMjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbLTg5NjI2MDA0MiwtMTgxNzk2Mzk3NCwtMT
+IzMjAzNzAxNSwxNTc2Mjc2NjYzLDg0NzMxNTM1NiwtMTEzOTI2
+NDUxNCwxNTE2MDcyMzc4LDE1MzI0MDgwOTYsLTQ3NjY0Nzg1Ni
+w5MDU5MzgzMzEsMTg4OTQ2NjM5MSwxMjExODEwMjcsLTIwNDA2
+MDM4NzAsLTE1Mjg2NjY0MzAsLTIyOTE4ODM1NF19
 -->
