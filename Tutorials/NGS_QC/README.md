@@ -23,6 +23,7 @@ This tutorial assumes that you have a basic knowledge in bash, and that you have
 8. [Per sequence GC content](#per-sequence-gc-content)
 9. [Per base N content](#per-base-n-content)
 10. [Sequence Length Distribution](#sequence-length-distribution)
+11. [Sequence Duplication Levels](#sequence-duplication-levels)
 
 ## To start
 
@@ -143,22 +144,14 @@ What can you tell about this file?
 ## Per sequence GC content
 
 
-
 ## Per base N content
-
 
 
 ## Sequence Length Distribution
 
-You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
 
-## Synchronize a file
+## Sequence Duplication Levels
 
-Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
-
-If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.
-
-> **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.
 
 ## Manage file synchronization
 
@@ -246,11 +239,11 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI0OTU4NjM2LDEzNjc1ODIyNjIsLTE1Mj
-c3NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5MjIz
-MzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2My
-w4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMy
-NDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOT
-EsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC0y
-MjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbLTE1NDQ1NjY0OTgsMTM2NzU4MjI2MiwtMT
+UyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5MDc1MjUsLTQwNTky
+MjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2Mjc2Nj
+YzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMzc4LDE1
+MzI0MDgwOTYsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4OTQ2Nj
+M5MSwxMjExODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2NjY0MzAs
+LTIyOTE4ODM1NF19
 -->
