@@ -123,6 +123,7 @@ This module allows you to explore if a significant portion of your reads are of 
 This is the case for our File1:
 ![Per sequence quality scores of File1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_sequence_quality.png)
 
+This warning can therefore be dealt with some tail-trimming
 ## Export a file
 
 You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
@@ -242,10 +243,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NjQ4ODcyNiwxNjg3OTA3NTI1LC00MD
-U5MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3
-NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OC
-wxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0
-NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2ND
-MwLC0yMjkxODgzNTRdfQ==
+eyJoaXN0b3J5IjpbLTE0MjAxMTA3OTMsMTY4NzkwNzUyNSwtND
+A1OTIyMzMyLC0xODE3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYy
+NzY2NjMsODQ3MzE1MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNz
+gsMTUzMjQwODA5NiwtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5
+NDY2MzkxLDEyMTE4MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2Nj
+QzMCwtMjI5MTg4MzU0XX0=
 -->
