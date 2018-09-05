@@ -144,7 +144,7 @@ This module shows the proportion of bases in each position. In an unbiased libra
 What can you tell about this file?
 
 ## Per sequence GC content
-This module intends to show the proportion of GC content in the reads. The blue line represents a theoretical distr
+This module intends to show the proportion of GC content in the reads. The blue line represents a theoretical distribution (Normal) of your observed data. Deviations from this theoretical distribution often implies contamination of some kind (adapter/primer dimers, multiple species in the run). FastQC assumes that you are analy
 
 ## Per base N content
 
@@ -170,11 +170,11 @@ This module intends to show the proportion of GC content in the reads. The blue 
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMTc2Nzk4NywyMDk5OTgyNDg1LDEzNj
-c1ODIyNjIsLTE1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3
-NTI1LC00MDU5MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMT
-UsMTU3NjI3NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUx
-NjA3MjM3OCwxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4Mz
-MxLDE4ODk0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0x
-NTI4NjY2NDMwXX0=
+eyJoaXN0b3J5IjpbLTExNjU4Njc4MTAsMjA5OTk4MjQ4NSwxMz
+Y3NTgyMjYyLC0xNTI3NzYwNzcwLDEyMzExNTY1NjksMTY4Nzkw
+NzUyNSwtNDA1OTIyMzMyLC0xODE3OTYzOTc0LC0xMjMyMDM3MD
+E1LDE1NzYyNzY2NjMsODQ3MzE1MzU2LC0xMTM5MjY0NTE0LDE1
+MTYwNzIzNzgsMTUzMjQwODA5NiwtNDc2NjQ3ODU2LDkwNTkzOD
+MzMSwxODg5NDY2MzkxLDEyMTE4MTAyNywtMjA0MDYwMzg3MCwt
+MTUyODY2NjQzMF19
 -->
