@@ -1,4 +1,4 @@
-# NGS Quality Control Tutorial
+# NGS Quality Control Tutorial: Understanding QC
 
 ### Objectives / learning outcomes:
 
@@ -16,6 +16,7 @@ This tutorial assumes that you have a basic knowledge in bash, and that you have
 2. [Getting the statistics with fastqc](#getting-the-statistics-with-fastqc)
 3. [Basic Statistics](#basic-statistics)
 4. [Per Base Sequence Quality](#per-base-sequence-quality)
+5. [Per tile sequence quality](#per-tile-sequence-quality)
 
 ## To start
 
@@ -96,7 +97,8 @@ From the documentation of this module:
 
 
 ## Per tile sequence quality
-![enter image description here](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/illumina_flowcell.png)
+This a feature 
+![Flow cell pattern](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/illumina_flowcell.png)
 Courtesy of http://zjuwhw.github.io/2016/08/13/Illumina_sequencer.html
 ## Delete a file
 
@@ -221,10 +223,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ3OTg1NzI4LC00MDU5MjIzMzIsLTE4MT
-c5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4NDczMTUz
-NTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4MDk2LC
-00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMTIxMTgx
-MDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkxODgzNT
-RdfQ==
+eyJoaXN0b3J5IjpbLTQzMDQ1Mzg3MiwtNDA1OTIyMzMyLC0xOD
+E3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1
+MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNzgsMTUzMjQwODA5Ni
+wtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5NDY2MzkxLDEyMTE4
+MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2NjQzMCwtMjI5MTg4Mz
+U0XX0=
 -->
