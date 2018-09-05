@@ -85,8 +85,12 @@ I am not going to enter the rest of the basic statistics since they are self-exp
 It's name is self explanatory. This module evaluates the quality at each base for all reads. FastQC gives you a box plot of the qualities, representing the inter-quartile range (25-75%) (yellow box), the extremes 10 and 90th percentiles are represented by the whiskers, the median value by a red line, and the mean quality by the blue line.
 ![per-base quality of file 1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_base_quality.png)
 
-From the documentation of 
+From the documentation of this module:
 
+> #### Warning 
+> A warning will be issued if the lower quartile for any base is less than 10, or if the median for any base is less than 25.
+> #### Failure
+> This module will raise a failure if the lower quartile for any base is less than 5 or if the median for any base is less than 20.
 
 Look at the figure above. What do you think is happening at the end? why?
 
@@ -218,9 +222,9 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MTI4MTE5MSwtMTIzMjAzNzAxNSwxNT
-c2Mjc2NjYzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcy
-Mzc4LDE1MzI0MDgwOTYsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMT
-g4OTQ2NjM5MSwxMjExODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2
-NjY0MzAsLTIyOTE4ODM1NF19
+eyJoaXN0b3J5IjpbLTE4NDQ0NzU0NzYsLTEyMzIwMzcwMTUsMT
+U3NjI3NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3
+MjM3OCwxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLD
+E4ODk0NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4
+NjY2NDMwLC0yMjkxODgzNTRdfQ==
 -->
