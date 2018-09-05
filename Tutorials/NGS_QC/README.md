@@ -119,7 +119,7 @@ From FastQC documentation:
 
 ## Per sequence quality scores
 
-This module allows you to explore is a significant portion of your reads are of poor quality. 
+This module allows you to explore is a significant portion of your reads are of poor quality. Often times warnings occur when your sequence is shorter than your read length
 
 ## Export a file
 
@@ -240,10 +240,10 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzU0NDU3OTksMTY4NzkwNzUyNSwtND
-A1OTIyMzMyLC0xODE3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYy
-NzY2NjMsODQ3MzE1MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNz
-gsMTUzMjQwODA5NiwtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5
-NDY2MzkxLDEyMTE4MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2Nj
-QzMCwtMjI5MTg4MzU0XX0=
+eyJoaXN0b3J5IjpbLTUzMjE1Mzc5NSwxNjg3OTA3NTI1LC00MD
+U5MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3
+NjY2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OC
+wxNTMyNDA4MDk2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0
+NjYzOTEsMTIxMTgxMDI3LC0yMDQwNjAzODcwLC0xNTI4NjY2ND
+MwLC0yMjkxODgzNTRdfQ==
 -->
