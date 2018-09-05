@@ -149,17 +149,12 @@ From FastQC documentation:
 >This module issues a warning if the difference between A and T, or G and C is greater than 10% in any position.
 >#### Failure
 >This module will fail if the difference between A and T, or G and C is greater than 20% in any position.
->#### Common reasons for warnings
->There are a number of common scenarios which would ellicit a warning or error from this module.
->1.  Overrepresented sequences: If there is any evidence of overrepresented sequences such as adapter dimers or rRNA in a sample then these sequences may bias the overall composition and their sequence will emerge from this plot.
->2.  Biased fragmentation: Any library which is generated based on the ligation of random hexamers or through tagmentation should theoretically have good diversity through the sequence, but experience has shown that these libraries always have a selection bias in around the first 12bp of each run. This is due to a biased selection of random primers, but doesn't represent any individually biased sequences. Nearly all RNA-Seq libraries will fail this module because of this bias, but this is not a problem which can be fixed by processing, and it doesn't seem to adversely affect the ablity to measure expression.
-3.  Biased composition libraries: Some libraries are inherently biased in their sequence composition. The most obvious example would be a library which has been treated with sodium bisulphite which will then have converted most of the cytosines to thymines, meaning that the base composition will be almost devoid of cytosines and will thus trigger an error, despite this being entirely normal for that type of library
-4.  If you are analysing a library which has been aggressivley adapter trimmed then you will naturally introduce a composition bias at the end of the reads as sequences which happen to match short stretches of adapter are removed, leaving only sequences which do not match. Sudden deviations in composition at the end of libraries which have undergone aggressive trimming are therefore likely to be spurious.
+
  Let's take a look at file1:
 
 ![Per sequence base content for file1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_base_sequence_content.png)
 
-What can you tell about this file?
+#### What can you tell about this file?
 
 ## Per sequence GC content
 This module intends to show the proportion of GC content in the reads. The blue line represents a theoretical distribution (Normal) of your observed data. Deviations from this theoretical distribution often implies contamination of some kind (adapter/primer dimers, multiple species in the run). FastQC assumes that you are analyzing a  single genome, and therefore will issue a warning in multispecies libraries.
@@ -201,11 +196,11 @@ From FastQC documentation:
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAzMzExMjc5LDI3ODU4Mjc4NywxMjk1ND
-kwMTI0LDIwOTk5ODI0ODUsMTM2NzU4MjI2MiwtMTUyNzc2MDc3
-MCwxMjMxMTU2NTY5LDE2ODc5MDc1MjUsLTQwNTkyMjMzMiwtMT
-gxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2Mjc2NjYzLDg0NzMx
-NTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMzc4LDE1MzI0MDgwOT
-YsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4OTQ2NjM5MSwxMjEx
-ODEwMjddfQ==
+eyJoaXN0b3J5IjpbMTUyMzUwNDQ4NSwyNzg1ODI3ODcsMTI5NT
+Q5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIyNjIsLTE1Mjc3NjA3
+NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5MjIzMzIsLT
+E4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4NDcz
+MTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4MD
+k2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMTIx
+MTgxMDI3XX0=
 -->
