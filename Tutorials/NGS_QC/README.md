@@ -191,7 +191,7 @@ It self explanatory title describes well this module. It plots the distribution 
 
 Our dummy file (since is illumina) behaves as expected:
 
-![Length distribution of fi](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/sequence_length_distribution.png)  
+![Length distribution of file1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/sequence_length_distribution.png)  
 
 ## Sequence Duplication Levels
 
@@ -211,11 +211,11 @@ Our dummy file (since is illumina) behaves as expected:
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE1NjIyNjczLC03OTc2MDczNCwxNTIzNT
-A0NDg1LDI3ODU4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUs
-MTM2NzU4MjI2MiwtMTUyNzc2MDc3MCwxMjMxMTU2NTY5LDE2OD
-c5MDc1MjUsLTQwNTkyMjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAz
-NzAxNSwxNTc2Mjc2NjYzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNC
-wxNTE2MDcyMzc4LDE1MzI0MDgwOTYsLTQ3NjY0Nzg1Niw5MDU5
-MzgzMzFdfQ==
+eyJoaXN0b3J5IjpbLTEzMjIxMDMyOTUsLTc5NzYwNzM0LDE1Mj
+M1MDQ0ODUsMjc4NTgyNzg3LDEyOTU0OTAxMjQsMjA5OTk4MjQ4
+NSwxMzY3NTgyMjYyLC0xNTI3NzYwNzcwLDEyMzExNTY1NjksMT
+Y4NzkwNzUyNSwtNDA1OTIyMzMyLC0xODE3OTYzOTc0LC0xMjMy
+MDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1MzU2LC0xMTM5MjY0NT
+E0LDE1MTYwNzIzNzgsMTUzMjQwODA5NiwtNDc2NjQ3ODU2LDkw
+NTkzODMzMV19
 -->
