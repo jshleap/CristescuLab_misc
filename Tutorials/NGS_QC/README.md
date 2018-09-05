@@ -163,30 +163,12 @@ Since one file can be synced with multiple locations, you can list and manage sy
 ## Adapter Content
 
 
-# Re
+# Resolving some of the Issue
+## Trimming tail and head
 
-You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:
+## Adaptive quality trimming
 
-- Markdown: publish the Markdown text on a website that can interpret it (**GitHub** for instance),
-- HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).
-
-## Update a publication
-
-After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.
-
-> **Note:** The **Publish now** button is disabled if your file has not been published yet.
-
-## Manage file publication
-
-Since one file can be published to multiple locations, you can list and manage publish locations by clicking **File publication** in the **Publish** sub-menu. This allows you to list and remove publication locations that are linked to your file.
-
-
-# Markdown extensions
-
-StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.
-
-> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
-
+## Removing adaptors and primers
 
 ## SmartyPants
 
@@ -238,11 +220,11 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTgyMDY3MTYsMTM2NzU4MjI2MiwtMT
-UyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5MDc1MjUsLTQwNTky
-MjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2Mjc2Nj
-YzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMzc4LDE1
-MzI0MDgwOTYsLTQ3NjY0Nzg1Niw5MDU5MzgzMzEsMTg4OTQ2Nj
-M5MSwxMjExODEwMjcsLTIwNDA2MDM4NzAsLTE1Mjg2NjY0MzAs
-LTIyOTE4ODM1NF19
+eyJoaXN0b3J5IjpbMTk2Nzc4NDI1MSwxMzY3NTgyMjYyLC0xNT
+I3NzYwNzcwLDEyMzExNTY1NjksMTY4NzkwNzUyNSwtNDA1OTIy
+MzMyLC0xODE3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYyNzY2Nj
+MsODQ3MzE1MzU2LC0xMTM5MjY0NTE0LDE1MTYwNzIzNzgsMTUz
+MjQwODA5NiwtNDc2NjQ3ODU2LDkwNTkzODMzMSwxODg5NDY2Mz
+kxLDEyMTE4MTAyNywtMjA0MDYwMzg3MCwtMTUyODY2NjQzMCwt
+MjI5MTg4MzU0XX0=
 -->
