@@ -144,11 +144,21 @@ This module shows the proportion of bases in each position. In an unbiased libra
 What can you tell about this file?
 
 ## Per sequence GC content
-This module intends to show the proportion of GC content in the reads. The blue line represents a theoretical distribution (Normal) of your observed data. Deviations from this theoretical distribution often implies contamination of some kind (adapter/primer dimers, multiple species in the run). FastQC assumes that you are analyzing a  single genome, and therefore will issue a warning in multispecies libraries. Let's take a look at out file1:
+This module intends to show the proportion of GC content in the reads. The blue line represents a theoretical distribution (Normal) of your observed data. Deviations from this theoretical distribution often implies contamination of some kind (adapter/primer dimers, multiple species in the run). FastQC assumes that you are analyzing a  single genome, and therefore will issue a warning in multispecies libraries.
+From FastQC documentation:
+>#### Warning
+>A warning is raised if the sum of the deviations from the normal distribution represents more than 15% of the reads.
+>#### Failure
+>This module will indicate a failure if the sum of the deviations from the normal distribution represents more than 30% of the reads.
+>#### Common reasons for warnings
+>Warnings in this module usually indicate a problem with the library. Sharp peaks on an otherwise smooth distribution are normally the result of a specific contaminant (adapter dimers for example), which may well be picked up by the overrepresented sequences module. Broader peaks may represent contamination with a different species.
+
+ Let's take a look at out file1:
 
 ![Per sequence GC contentent](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/per_sequence_gc_content.png)
 
-This two mode observed distribution could mean that there are multiple groups/species with markedly different GC composition (e.g bacteria and eukariotes)
+
+
 ## Per base N content
 
 
@@ -173,11 +183,11 @@ This two mode observed distribution could mean that there are multiple groups/sp
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc4NTgyNzg3LDEyOTU0OTAxMjQsMjA5OT
-k4MjQ4NSwxMzY3NTgyMjYyLC0xNTI3NzYwNzcwLDEyMzExNTY1
-NjksMTY4NzkwNzUyNSwtNDA1OTIyMzMyLC0xODE3OTYzOTc0LC
-0xMjMyMDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1MzU2LC0xMTM5
-MjY0NTE0LDE1MTYwNzIzNzgsMTUzMjQwODA5NiwtNDc2NjQ3OD
-U2LDkwNTkzODMzMSwxODg5NDY2MzkxLDEyMTE4MTAyNywtMjA0
-MDYwMzg3MF19
+eyJoaXN0b3J5IjpbMjA4MTU4MjEyOSwyNzg1ODI3ODcsMTI5NT
+Q5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIyNjIsLTE1Mjc3NjA3
+NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5MjIzMzIsLT
+E4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4NDcz
+MTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4MD
+k2LC00NzY2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMTIx
+MTgxMDI3XX0=
 -->
