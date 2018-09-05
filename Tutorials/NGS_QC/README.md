@@ -200,7 +200,7 @@ In our file, we get:
 
 ![Dupication levels](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/duplication_levels.png)
 
-
+#### Explain the figure above
 
 ## Overrepresented sequences
 
@@ -217,11 +217,11 @@ In our file, we get:
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjgzNTU0NzUsMTE1NjI5Mjg1NiwtMT
-MyMjEwMzI5NSwtNzk3NjA3MzQsMTUyMzUwNDQ4NSwyNzg1ODI3
-ODcsMTI5NTQ5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIyNjIsLT
-E1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5
-MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3Nj
-Y2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwx
-NTMyNDA4MDk2XX0=
+eyJoaXN0b3J5IjpbMjEzMTk5ODQwMCwxMTU2MjkyODU2LC0xMz
+IyMTAzMjk1LC03OTc2MDczNCwxNTIzNTA0NDg1LDI3ODU4Mjc4
+NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMTM2NzU4MjI2MiwtMT
+UyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5MDc1MjUsLTQwNTky
+MjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAzNzAxNSwxNTc2Mjc2Nj
+YzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwxNTE2MDcyMzc4LDE1
+MzI0MDgwOTZdfQ==
 -->
