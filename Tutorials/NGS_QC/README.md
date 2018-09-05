@@ -35,7 +35,7 @@ To start, let's download [this file](https://github.com/jshleap/CristescuLab_mis
 module load fastqc/0.11.5
 module load trimmomatic/0.36
 ```
- The file you downloaded is a real dataset from eDNA water samples. It is amplicon sequencing of a fragment of the 12S gene using Illumina's Nextera Libraries. The PCR amplification should have an average length of 130, however, is highly variable due to the multi species composition of the sample.
+ The file you downloaded is a real dataset from eDNA water samples. It is amplicon sequencing of a fragment of the 12S gene using Illumina's Nextera Libraries. The PCR amplification should have an average length of 163-185, however, is highly variable due to the multi species composition of the sample.
  
 ## Getting the statistics with fastqc
 
@@ -235,11 +235,11 @@ There are many programs to do QC, and many specific tools for each one. For now 
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIzNjQwNDk1LDU3MzM0MjQ1OSw3Njk2ND
-U0ODQsLTEyNjExMjM5NzAsLTg4MjQ1MzAwNSwtMjU1NDQ0MDAy
-LDEwMTY5MzE1ODIsLTE2MjY3NzI5MzAsMTE1NjI5Mjg1NiwtMT
-MyMjEwMzI5NSwtNzk3NjA3MzQsMTUyMzUwNDQ4NSwyNzg1ODI3
-ODcsMTI5NTQ5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIyNjIsLT
-E1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5
-MjIzMzJdfQ==
+eyJoaXN0b3J5IjpbLTIxODY5NjMwNiw1NzMzNDI0NTksNzY5Nj
+Q1NDg0LC0xMjYxMTIzOTcwLC04ODI0NTMwMDUsLTI1NTQ0NDAw
+MiwxMDE2OTMxNTgyLC0xNjI2NzcyOTMwLDExNTYyOTI4NTYsLT
+EzMjIxMDMyOTUsLTc5NzYwNzM0LDE1MjM1MDQ0ODUsMjc4NTgy
+Nzg3LDEyOTU0OTAxMjQsMjA5OTk4MjQ4NSwxMzY3NTgyMjYyLC
+0xNTI3NzYwNzcwLDEyMzExNTY1NjksMTY4NzkwNzUyNSwtNDA1
+OTIyMzMyXX0=
 -->
