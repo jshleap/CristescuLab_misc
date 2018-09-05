@@ -60,7 +60,7 @@ This table will give you basic information about your reads:
 
 ### Encoding
 Encoding is the way the quality of the bases are written. There are many encodings, but the most popular are Sanger
-
+![Phred Score encodings descriptions, from ](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/images/fastq_phread-base.png)
 https://en.wikipedia.org/wiki/FASTQ_format#Encoding
 
 ## Switch to another file
@@ -194,7 +194,8 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMjQwODA5NiwtNDc2NjQ3ODU2LDkwNT
-kzODMzMSwxODg5NDY2MzkxLDEyMTE4MTAyNywtMjA0MDYwMzg3
-MCwtMTUyODY2NjQzMCwtMjI5MTg4MzU0XX0=
+eyJoaXN0b3J5IjpbMTU5MjExODEwNCwxNTMyNDA4MDk2LC00Nz
+Y2NDc4NTYsOTA1OTM4MzMxLDE4ODk0NjYzOTEsMTIxMTgxMDI3
+LC0yMDQwNjAzODcwLC0xNTI4NjY2NDMwLC0yMjkxODgzNTRdfQ
+==
 -->
