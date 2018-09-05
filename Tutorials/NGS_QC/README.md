@@ -194,7 +194,7 @@ Our dummy file (since is illumina) behaves as expected:
 ![Length distribution of file1](https://github.com/jshleap/CristescuLab_misc/raw/master/Tutorials/NGS_QC/files/file1_R1_fastqc/Images/sequence_length_distribution.png)  
 
 ## Sequence Duplication Levels
-
+This m
 
 ## Overrepresented sequences
 
@@ -211,11 +211,11 @@ Our dummy file (since is illumina) behaves as expected:
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjIxMDMyOTUsLTc5NzYwNzM0LDE1Mj
-M1MDQ0ODUsMjc4NTgyNzg3LDEyOTU0OTAxMjQsMjA5OTk4MjQ4
-NSwxMzY3NTgyMjYyLC0xNTI3NzYwNzcwLDEyMzExNTY1NjksMT
-Y4NzkwNzUyNSwtNDA1OTIyMzMyLC0xODE3OTYzOTc0LC0xMjMy
-MDM3MDE1LDE1NzYyNzY2NjMsODQ3MzE1MzU2LC0xMTM5MjY0NT
-E0LDE1MTYwNzIzNzgsMTUzMjQwODA5NiwtNDc2NjQ3ODU2LDkw
-NTkzODMzMV19
+eyJoaXN0b3J5IjpbMTg3OTQ0MDI3OCwtMTMyMjEwMzI5NSwtNz
+k3NjA3MzQsMTUyMzUwNDQ4NSwyNzg1ODI3ODcsMTI5NTQ5MDEy
+NCwyMDk5OTgyNDg1LDEzNjc1ODIyNjIsLTE1Mjc3NjA3NzAsMT
+IzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5MjIzMzIsLTE4MTc5
+NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4NDczMTUzNT
+YsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwxNTMyNDA4MDk2LC00
+NzY2NDc4NTZdfQ==
 -->
