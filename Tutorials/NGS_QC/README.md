@@ -218,7 +218,7 @@ Check your copy of the overrerpesented sequences in the html file. Here is a scr
 #### What can you tell me about it? How would you check if is OK or not? Do it!!!Overrepresented sequences
 
 ## Adapter Content
-
+Another self-explanatory module. Here, the most commonly used adapters for illumina
 
 # Resolving some of the Issues
 ## Trimming tail and head
@@ -229,11 +229,11 @@ Check your copy of the overrerpesented sequences in the html file. Here is a scr
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjczMzc3MzQsLTI1NTQ0NDAwMiwxMD
-E2OTMxNTgyLC0xNjI2NzcyOTMwLDExNTYyOTI4NTYsLTEzMjIx
-MDMyOTUsLTc5NzYwNzM0LDE1MjM1MDQ0ODUsMjc4NTgyNzg3LD
-EyOTU0OTAxMjQsMjA5OTk4MjQ4NSwxMzY3NTgyMjYyLC0xNTI3
-NzYwNzcwLDEyMzExNTY1NjksMTY4NzkwNzUyNSwtNDA1OTIyMz
-MyLC0xODE3OTYzOTc0LC0xMjMyMDM3MDE1LDE1NzYyNzY2NjMs
-ODQ3MzE1MzU2XX0=
+eyJoaXN0b3J5IjpbLTkwODg3MTgxNCwtMjU1NDQ0MDAyLDEwMT
+Y5MzE1ODIsLTE2MjY3NzI5MzAsMTE1NjI5Mjg1NiwtMTMyMjEw
+MzI5NSwtNzk3NjA3MzQsMTUyMzUwNDQ4NSwyNzg1ODI3ODcsMT
+I5NTQ5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIyNjIsLTE1Mjc3
+NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5MjIzMz
+IsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3NjY2Myw4
+NDczMTUzNTZdfQ==
 -->
