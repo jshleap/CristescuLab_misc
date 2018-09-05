@@ -254,12 +254,13 @@ Trimmomatic has several options that can be use simultaneously or not:
 
 LEADING and TRAILING are adaptive cropping. That means that they will cut your read's head and/or tail if they fail the specified quality. This differs from CROP and HEADCROP, which would cut at an specified length or specified number of bases respectively. For the latter two, the program will perform the cropping for all reads
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQzNjU4MTUsLTU3NjgyNzY4Miw1NzMzND
-I0NTksNzY5NjQ1NDg0LC0xMjYxMTIzOTcwLC04ODI0NTMwMDUs
-LTI1NTQ0NDAwMiwxMDE2OTMxNTgyLC0xNjI2NzcyOTMwLDExNT
-YyOTI4NTYsLTEzMjIxMDMyOTUsLTc5NzYwNzM0LDE1MjM1MDQ0
-ODUsMjc4NTgyNzg3LDEyOTU0OTAxMjQsMjA5OTk4MjQ4NSwxMz
-Y3NTgyMjYyLC0xNTI3NzYwNzcwLDEyMzExNTY1NjksMTY4Nzkw
-NzUyNV19
+eyJoaXN0b3J5IjpbMTUwNDc1NTMwMSw4NDM2NTgxNSwtNTc2OD
+I3NjgyLDU3MzM0MjQ1OSw3Njk2NDU0ODQsLTEyNjExMjM5NzAs
+LTg4MjQ1MzAwNSwtMjU1NDQ0MDAyLDEwMTY5MzE1ODIsLTE2Mj
+Y3NzI5MzAsMTE1NjI5Mjg1NiwtMTMyMjEwMzI5NSwtNzk3NjA3
+MzQsMTUyMzUwNDQ4NSwyNzg1ODI3ODcsMTI5NTQ5MDEyNCwyMD
+k5OTgyNDg1LDEzNjc1ODIyNjIsLTE1Mjc3NjA3NzAsMTIzMTE1
+NjU2OV19
 -->
