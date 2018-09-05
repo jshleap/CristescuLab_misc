@@ -208,7 +208,7 @@ In our file, we get:
 #### Explain the figure above
 
 ## Overrepresented sequences
-
+This cool module shows you sequences that are present in over 0.1% of your total reads. The coolest thing about it is that it will run a search for common contaminants and reported
 
 ## Adapter Content
 
@@ -222,11 +222,11 @@ In our file, we get:
 
 ## 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjY3NzI5MzAsMTE1NjI5Mjg1NiwtMT
-MyMjEwMzI5NSwtNzk3NjA3MzQsMTUyMzUwNDQ4NSwyNzg1ODI3
-ODcsMTI5NTQ5MDEyNCwyMDk5OTgyNDg1LDEzNjc1ODIyNjIsLT
-E1Mjc3NjA3NzAsMTIzMTE1NjU2OSwxNjg3OTA3NTI1LC00MDU5
-MjIzMzIsLTE4MTc5NjM5NzQsLTEyMzIwMzcwMTUsMTU3NjI3Nj
-Y2Myw4NDczMTUzNTYsLTExMzkyNjQ1MTQsMTUxNjA3MjM3OCwx
-NTMyNDA4MDk2XX0=
+eyJoaXN0b3J5IjpbMTY0MzA1NjY0MSwtMTYyNjc3MjkzMCwxMT
+U2MjkyODU2LC0xMzIyMTAzMjk1LC03OTc2MDczNCwxNTIzNTA0
+NDg1LDI3ODU4Mjc4NywxMjk1NDkwMTI0LDIwOTk5ODI0ODUsMT
+M2NzU4MjI2MiwtMTUyNzc2MDc3MCwxMjMxMTU2NTY5LDE2ODc5
+MDc1MjUsLTQwNTkyMjMzMiwtMTgxNzk2Mzk3NCwtMTIzMjAzNz
+AxNSwxNTc2Mjc2NjYzLDg0NzMxNTM1NiwtMTEzOTI2NDUxNCwx
+NTE2MDcyMzc4XX0=
 -->
