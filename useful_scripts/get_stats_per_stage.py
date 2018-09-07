@@ -2,7 +2,9 @@ import pandas as pd
 from io import StringIO
 from subprocess import Popen, PIPE
 from difflib import SequenceMatcher
-from glob import iglob
+from glob import glob
+from joblib import Parallel, delayed
+import tqdm
 import sys
 
 def get_prefix(lis):
@@ -13,11 +15,8 @@ def get_prefix(lis):
         first_el = first_el[match.a: match.a + match.size]
     return first_el
 
-dirs = iglob('%s*/' % sys.argv[1])
-
-alldfs = []
-for d in dirs:
-    line = 'seqkit stats %s*.fast*' % d
+def loop(d):
+    line = 'seqkit %d stats %s*.fast*' % d
     seqkit = Popen(line, shell=True, stdout=PIPE, stderr=PIPE)
     o, e = seqkit.communicate()
     df = pd.read_table(StringIO(o.decode()), delim_whitespace=True)
@@ -26,7 +25,12 @@ for d in dirs:
     df = df.reindex(columns = 'prefix type num_seqs min_len avg_len max_len'.split())
     df = pd.pivot_table(df, values='num_seqs  min_len  avg_len  max_len'.split(),
                         index='prefix', columns=['type'])
-    alldfs.append(df)
-df = pd.concat(df)
+    return df
+
+
+dirs = glob('%s*/' % sys.argv[1])
+cpus = int(sys.argv[2])
+alldfs = Parallel(n_jobs=cpus)(delayed(loop)(d) for d in tqdm(dirs))
+df = pd.concat(alldfs)
 for i in 'min_len avg_len max_len'.split():
     df.to_csv('%s_%s.tsv' % (sys.argv[1], i), sep='\t')
