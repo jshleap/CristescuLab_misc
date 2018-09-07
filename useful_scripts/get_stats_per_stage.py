@@ -32,11 +32,15 @@ def loop(d):
                         index='prefix', columns=['type'])
     return df
 
+def writedf(df, col):
+    df.to_csv('%s_%s.tsv' % (sys.argv[1], col), sep='\t')
+
 
 dirs = glob('%s*/' % sys.argv[1])
 cpus = int(sys.argv[2])
-alldfs = Parallel(n_jobs=cpus)(delayed(loop)(d) for d in tqdm(dirs))
+alldfs = Parallel(n_jobs=cpus)(delayed(loop)(d) for d in tqdm(dirs, desc='Getting stats:'))
 
 df = pd.concat(alldfs)
-for i in 'min_len avg_len max_len'.split():
-    df.to_csv('%s_%s.tsv' % (sys.argv[1], i), sep='\t')
+cols = 'min_len avg_len max_len'.split()
+Parallel(n_jobs=cpus)(delayed(writedf)(df, col) for col in tqdm(cols, desc='Writing to file:'))
+
