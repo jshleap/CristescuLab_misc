@@ -4,8 +4,9 @@ from subprocess import Popen, PIPE
 from difflib import SequenceMatcher
 from glob import glob
 from joblib import Parallel, delayed
-import tqdm
+from tqdm import tqdm
 import sys
+
 
 def get_prefix(lis):
     first_el = lis.pop(0)
@@ -16,8 +17,8 @@ def get_prefix(lis):
     return first_el
 
 def loop(d):
-    line = 'seqkit %d stats %s*.fast*' % d
-    seqkit = Popen(line, shell=True, stdout=PIPE, stderr=PIPE)
+    line = 'seqkit stats %s*.fast*' % d
+    seqkit = Popen(line, shell=True, stdout=PIPE)
     o, e = seqkit.communicate()
     df = pd.read_table(StringIO(o.decode()), delim_whitespace=True)
     df['prefix'] = get_prefix(df.file)
@@ -31,6 +32,7 @@ def loop(d):
 dirs = glob('%s*/' % sys.argv[1])
 cpus = int(sys.argv[2])
 alldfs = Parallel(n_jobs=cpus)(delayed(loop)(d) for d in tqdm(dirs))
+
 df = pd.concat(alldfs)
 for i in 'min_len avg_len max_len'.split():
     df.to_csv('%s_%s.tsv' % (sys.argv[1], i), sep='\t')
