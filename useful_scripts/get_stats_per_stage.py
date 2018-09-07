@@ -1,11 +1,12 @@
 import pandas as pd
 from io import StringIO
-from subprocess import Popen, PIPE
+from subprocess import Popen, PIPE, check_output
 from difflib import SequenceMatcher
 from glob import glob
 from joblib import Parallel, delayed
 from tqdm import tqdm
 import sys
+
 
 
 def get_prefix(lis):
@@ -16,10 +17,13 @@ def get_prefix(lis):
         first_el = first_el[match.a: match.a + match.size]
     return first_el
 
+
 def loop(d):
     line = 'seqkit stats %s*.fast*' % d
-    seqkit = Popen(line, shell=True, stdout=PIPE)
-    o, e = seqkit.communicate()
+    #seqkit = Popen(line, shell=True, stdout=PIPE)
+    #o, e = seqkit.communicate()
+    files = glob('%s/*.fast?' % d)
+    o = check_output(['seqkit', 'stats'] + files)
     df = pd.read_table(StringIO(o.decode()), delim_whitespace=True)
     df['prefix'] = get_prefix(df.file)
     df['type'] = df.file.apply(lambda x: '.'.join(x.split('.')[-2:]))
