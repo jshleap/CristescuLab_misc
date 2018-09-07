@@ -41,6 +41,6 @@ cpus = int(sys.argv[2])
 alldfs = Parallel(n_jobs=cpus)(delayed(loop)(d) for d in tqdm(dirs, desc='Getting stats'))
 
 df = pd.concat(alldfs)
-cols = 'min_len avg_len max_len'.split()
+cols = 'min_len avg_len max_len num_seqs'.split()
 Parallel(n_jobs=cpus)(delayed(writedf)(df, col) for col in tqdm(cols, desc='Writing to file'))
 
