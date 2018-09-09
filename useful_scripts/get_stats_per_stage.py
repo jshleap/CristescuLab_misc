@@ -9,6 +9,7 @@ import sys
 
 COLS = 'prefix type num_seqs min_len avg_len max_len'.split()
 
+
 def get_prefix(lis):
     first_el = lis.pop(0)
     for i in lis:
@@ -24,11 +25,14 @@ def loop(d):
     #o, e = seqkit.communicate()
     files = glob('%s/*.fast*' % d)
     o = check_output(['seqkit', 'stats'] + files)
-    df = pd.read_table(StringIO(o.decode()), delim_whitespace=True, thousands=',')
-    df['prefix'] = get_prefix(df.file)
-    df['type'] = df.file.apply(lambda x: '.'.join(x.split('.')[-2:]))
+    df = pd.read_table(StringIO(o.decode()), delim_whitespace=True,
+                       thousands=',')
+    prefix = get_prefix(df.file)
+    df['prefix'] = prefix
+    df['type'] = df.file.apply(lambda x: x.replace(prefix, ''))
     df = df.reindex(columns=COLS)
-    df = pd.pivot_table(df, values=COLS[2:], index=['prefix'], columns=['type'])
+    df = pd.pivot_table(df, values=COLS[2:], index=['prefix'], columns=['type']
+                        )
     return df
 
 
@@ -38,9 +42,11 @@ def writedf(df, col):
 
 dirs = glob('%s*/' % sys.argv[1])
 cpus = int(sys.argv[2])
-alldfs = Parallel(n_jobs=cpus)(delayed(loop)(d) for d in tqdm(dirs, desc='Getting stats'))
+alldfs = Parallel(n_jobs=cpus)(delayed(loop)(d) for d in tqdm(
+    dirs, desc='Getting stats'))
 
 df = pd.concat(alldfs)
 cols = 'min_len avg_len max_len num_seqs'.split()
-Parallel(n_jobs=cpus)(delayed(writedf)(df, col) for col in tqdm(cols, desc='Writing to file'))
+Parallel(n_jobs=cpus)(delayed(writedf)(df, col) for col in tqdm(
+    cols, desc='Writing to file'))
 
