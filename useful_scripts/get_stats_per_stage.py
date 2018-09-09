@@ -22,7 +22,7 @@ def loop(d):
     line = 'seqkit stats %s*.fast*' % d
     #seqkit = Popen(line, shell=True, stdout=PIPE)
     #o, e = seqkit.communicate()
-    files = glob('%s/*.fast?' % d)
+    files = glob('%s/*.fast*' % d)
     o = check_output(['seqkit', 'stats'] + files)
     df = pd.read_table(StringIO(o.decode()), delim_whitespace=True, thousands=',')
     df['prefix'] = get_prefix(df.file)
