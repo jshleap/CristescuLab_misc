@@ -57,7 +57,7 @@ def gz_size(fname):
         size = os.stat(fname).st_size
     if size == 0:
         with open('emptyfiles.txt', 'a') as A:
-            A.write(fname)
+            A.write('%s\n' % fname)
     return size != 0
 
 
