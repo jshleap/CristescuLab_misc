@@ -6,6 +6,9 @@ from glob import glob
 from joblib import Parallel, delayed
 from tqdm import tqdm
 import sys
+import os
+import gzip
+import mimetypes
 
 COLS = 'prefix type num_seqs min_len avg_len max_len'.split()
 
@@ -24,7 +27,7 @@ def loop(d):
     #seqkit = Popen(line, shell=True, stdout=PIPE)
     #o, e = seqkit.communicate()
     files = glob('%s/*.fast*' % d)
-    o = check_output(['seqkit', 'stats'] + files)
+    o = check_output(['seqkit', 'stats'] + [f for f in files if gz_size(f)])
     df = pd.read_table(StringIO(o.decode()), delim_whitespace=True,
                        thousands=',')
     prefix = get_prefix(df.file)
@@ -38,6 +41,24 @@ def loop(d):
 
 def writedf(df, col):
     df.loc[:,col].to_csv('%s_%s.tsv' % (sys.argv[1], col), sep='\t')
+
+
+def gz_size(fname):
+    """
+    Taken and modified from https://stackoverflow.com/questions/37874936/how-to-check-empty-gzip-file-in-python
+    :param fname:
+    :return:
+    """
+    type1, type2 = mimetypes.guess_type(fname)
+    if type2 == 'gzip':
+        with gzip.open(fname, 'rb') as f:
+            size = f.seek(0, whence=2)
+    else:
+        size = os.stat(fname).st_size
+    if size == 0:
+        with open('emptyfiles.txt', 'a') as A:
+            A.write(fname)
+    return size != 0
 
 
 dirs = glob('%s*/' % sys.argv[1])
