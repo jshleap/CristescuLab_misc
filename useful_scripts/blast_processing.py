@@ -96,7 +96,7 @@ def parse_blast(fn, filters={}, top_n_hits=None, output_filtered=False,
     else:
         # Assume that species is in the first two fields of stitle
         # def get_sps(x): return ' '.join(x.strip().split()[:2])
-        df['species'] = df.stitle.apply(fnc[coi])
+        df.loc[:, 'species'] = df.stitle.apply(fnc[coi])
     if output_filtered:
         outfn = fn[:fn.rfind('.')]
         df.to_csv(outfn, sep='\t', index=False, header=False)
@@ -104,7 +104,7 @@ def parse_blast(fn, filters={}, top_n_hits=None, output_filtered=False,
     return df
 
 
-def get_reads_per_group(df, taxlevel='species', min_reads=10):
+def get_reads_per_group(df, prefix, taxlevel='species', min_reads=10):
     """
     Get the number of reads per taxonomic level and the number of unique taxa
     per read
@@ -116,13 +116,15 @@ def get_reads_per_group(df, taxlevel='species', min_reads=10):
     """
     # Get number of reads per taxonomic group
     cou = df.groupby(taxlevel)['qseqid'].count()
-    cou.to_csv('Numer_of_reads_in_%s.tsv' % taxlevel, sep='\t')
+    cou.to_csv('%s_Numer_of_reads_in_%s.tsv' % (prefix, taxlevel), sep='\t')
     # Get number of unique species per read
-    re = df.groupby('qseqid')[taxlevel].nunique()
-    re.to_csv('Numer_unique_species_per_read.tsv', sep='\t')
+    re = pd.concat([df.groupby('qseqid')[taxlevel].nunique().rename(
+        'No. unique taxa'), df.groupby('qseqid')[taxlevel].unique().rename(
+        'Unique taxa')], axis=1)
+    re.to_csv('%s_Numer_unique_species_per_read.tsv' %prefix, sep='\t')
     # List number of unique species above the min_reads
     sps = cou[cou > min_reads].index.unique().to_series()
-    sps.to_csv('List_unique_%s' % taxlevel, header=False, index=False)
+    sps.to_csv('%s_List_unique_%s' % (prefix, taxlevel), header=False, index=False)
 
 
 def plot_tax(df, n, taxlevel='species', tax_for_pattern=None, pattern=None,
@@ -160,7 +162,7 @@ def plot_tax(df, n, taxlevel='species', tax_for_pattern=None, pattern=None,
     plt.close()
 
 
-def main(blast_file, pident=None, eval=None, qcov=None, qlen=None, length=None,
+def main(blast_file, prefix, pident=None, eval=None, qcov=None, qlen=None, length=None,
          output_filtered=False, taxlevel='species', min_reads=0, plot=False,
          tax_for_pattern=None, pattern=None, suffix_for_plot=None, ntop=None,
          use_coi=False):
@@ -189,17 +191,21 @@ def main(blast_file, pident=None, eval=None, qcov=None, qlen=None, length=None,
     kwargs = dict(filters=filters, output_filtered=output_filtered,
                   top_n_hits=ntop, coi=use_coi)
     df = parse_blast(blast_file, **kwargs)
-    get_reads_per_group(df, taxlevel=taxlevel, min_reads=min_reads)
+    get_reads_per_group(df, prefix, taxlevel=taxlevel, min_reads=min_reads)
     if plot:
         plot_tax(df, ntop, taxlevel=taxlevel, tax_for_pattern=tax_for_pattern,
                  pattern=pattern, suffix=suffix_for_plot, min_reads=min_reads)
 
 
 if __name__ == '__main__':
-    opts = optparse.OptionParser(usage='%prog [options] blast_file')
+    intro='''%prog [options] blast_file prefix
+    If in Compute Canada (Graham/Cedar), use:
+    module load scipy-stack/2018b'''
+    opts = optparse.OptionParser(usage='%s' % intro)
     opts.add_option('--output_filtered', '-o', action='store_true',
                     default=False, help=('Output a TSV with the filtered table'
                                          ' [default: %default]'))
+
     opts.add_option('--pident', '-p', action='store', type=float, default=None,
                     help='Minimum percent identity [default: %default]')
     opts.add_option('--eval', '-e', action='store', type=float, default=None,
@@ -233,7 +239,7 @@ if __name__ == '__main__':
                           ' COI [default: %default]'))
 
     opt, arg = opts.parse_args()
-    main(arg[0], opt.pident, opt.eval, opt.qcov, opt.qlen, opt.length,
+    main(arg[0], arg[1], opt.pident, opt.eval, opt.qcov, opt.qlen, opt.length,
          opt.output_filtered, opt.taxlevel, opt.min_reads, opt.plot,
          opt.tax_for_pattern, opt.pattern, opt.suffix_for_plot, opt.ntop,
          opt.use_coi)
