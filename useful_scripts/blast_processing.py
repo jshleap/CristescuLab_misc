@@ -120,8 +120,8 @@ def get_reads_per_group(df, prefix, taxlevel='species', min_reads=10):
     # Get number of unique species per read
     re = pd.concat([df.groupby('qseqid')[taxlevel].nunique().rename(
         'No. unique taxa'), df.groupby('qseqid')[taxlevel].unique().rename(
-        'Unique taxa')], axis=1)
-    re.to_csv('%s_Numer_unique_species_per_read.tsv' %prefix, sep='\t')
+        'Unique taxa')], axis=1).sort_values(by='No. unix taxa', ascending=False)
+    re.to_csv('%s_Number_unique_species_per_read.tsv' %prefix, sep='\t')
     # List number of unique species above the min_reads
     sps = cou[cou > min_reads].index.unique().to_series()
     sps.to_csv('%s_List_unique_%s' % (prefix, taxlevel), header=False, index=False)
