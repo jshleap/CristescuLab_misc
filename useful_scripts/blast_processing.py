@@ -115,8 +115,9 @@ def get_reads_per_group(df, prefix, taxlevel='species', min_reads=10):
     :return:
     """
     # Get number of reads per taxonomic group
-    cou = df.groupby([taxlevel, 'qseqid'])['qseqid'].count()
-    cou.to_csv('%s_number_of_reads_in_%s.tsv' % (prefix, taxlevel), sep='\t')
+    #cou = df.groupby('qseqid')[taxlevel].unique()
+    cou = df.groupby([taxlevel])['qseqid'].nunique()
+    #cou.to_csv('%s_number_of_reads_in_%s.tsv' % (prefix, taxlevel), sep='\t')
     # Get number of unique species per read
     re = pd.concat([df.groupby('qseqid')[taxlevel].nunique().rename(
         'No. unique taxa'), df.groupby('qseqid')[taxlevel].unique().rename(
@@ -149,7 +150,7 @@ def plot_tax(df, n, taxlevel='species', tax_for_pattern=None, pattern=None,
     toplot = df.reindex(columns=cols)
     #ntaxa = toplot.loc[:, taxlevel].nunique()
     #color = matplotlib.cm.inferno_r(np.linspace(.0, 1., ntaxa))
-    toplot = toplot.groupby([taxlevel]).count()
+    toplot = toplot.groupby([taxlevel]).nunique()
     toplot = toplot[toplot.qseqid > min_reads]
     fig, ax = plt.subplots()
     toplot.plot(kind='barh', stacked=False, ax=ax, fontsize=12, legend=False)
