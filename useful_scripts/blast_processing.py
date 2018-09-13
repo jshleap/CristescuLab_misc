@@ -115,7 +115,7 @@ def get_reads_per_group(df, prefix, taxlevel='species', min_reads=10):
     :return:
     """
     # Get number of reads per taxonomic group
-    cou = df.groupby(taxlevel)['qseqid'].count()
+    cou = df.groupby([taxlevel, 'qseqid'])['qseqid'].count()
     cou.to_csv('%s_number_of_reads_in_%s.tsv' % (prefix, taxlevel), sep='\t')
     # Get number of unique species per read
     re = pd.concat([df.groupby('qseqid')[taxlevel].nunique().rename(
