@@ -12,6 +12,7 @@
 #   4. BOLD or NCBI
 # The accessiion2taxid lineages is a file mapping the accession numbers, tax id,and lineages
 
+set -e
 #get the fasta prefix
 acc2tax=$2
 cpus=$3
