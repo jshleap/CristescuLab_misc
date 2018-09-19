@@ -99,5 +99,17 @@ Now we have a .daa file (-f is the format, 100 is the binary output format) whic
 <p>Therefore if we want to include the KEGG annotations we will do:<br>
 <code>PATH/TO/daa2rma -i OUTFN.daa -o reads.rma -a2t prot_acc2tax-June2018X1.abin -a2kegg acc2kegg-Dec2017X1-ue.abin.zip -fun KEGG</code></p>
 <h3 id="lca-taxonomic-binning">LCA taxonomic binning</h3>
+<p>The LCA algorithm is explained in <a href="https://genome.cshlp.org/content/17/3/377.full">this paper</a>.<br>
+The LCA algorithm has three types: naive, weighted, longReads. The naive algorithm is nice and simple:</p>
+<p><img src="https://genome.cshlp.org/content/17/3/377/F2.large.jpg" alt="enter image description here"></p>
+<p>Basically,  each read is assigned to the lowest common ancestor (LCA) of the set of taxa that had a significant hit in the comparison, and these are binned on that LCA. The taxonomic assigments and the tree above are based exclusively in the NCBI taxonomy (you can add other taxonomies like SILVA). The naive approach bases its assignment solely in the prescence/absense of hits between reads.</p>
+<p>The weighted LCA has the similar simplicity in mind. However, not only the prescence/absense of hits between reads is taken into account, but the number of uniquely aligned hits (kind of similar to OTU abundances).</p>
+<p>The LongRead LCA is devised for longer reads and/or contigs. This is the newer development of MEGAN, explained in <a href="https://biologydirect.biomedcentral.com/articles/10.1186/s13062-018-0208-7">this paper</a>.<br>
+<img src="https://media.springernature.com/full/springer-static/image/art:10.1186/s13062-018-0208-7/MediaObjects/13062_2018_208_Fig1_HTML.gif" alt="enter image description here"><br>
+The read is split into intervals (regions) based on the alignment with regions in the reference database. Put in the authors’ words:</p>
+<blockquote>
+<p>a new interval starts wherever some alignment begins or ends.</p>
+</blockquote>
+<p>The significance of the alignment is defined  based on the best bitscore: “an alignment is significant if lies within the 10% of the best bit score”. This is a tunable parameter.</p>
 <h2 id="meganserver-connecting-a-linux-server-and-the-app">MEGANServer: Connecting a Linux server and the app</h2>
 
