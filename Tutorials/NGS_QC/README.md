@@ -310,13 +310,14 @@ Now test if everything went OK, by asking it for help like this:
 cutadapt -h
 ```
 
-![enter image description here](https://www.researchgate.net/profile/Xiangwu_Lu/publication/273445307/figure/fig5/AS:294851942862861@1447309589866/All-possible-alignments-of-Cutadapt-on-5-end-or-3-end-with-trimming-options-of-a-and_W640.jpg)
+![Cutadapt configurations](https://www.researchgate.net/profile/Xiangwu_Lu/publication/273445307/figure/fig5/AS:294851942862861@1447309589866/All-possible-alignments-of-Cutadapt-on-5-end-or-3-end-with-trimming-options-of-a-and_W640.jpg)
+taken from https://www.researchgate.net/profile/Xiangwu_Lu/publication/273445307/figure/fig5/AS:294851942862861@1447309589866/All-possible-alignments-of-Cutadapt-on-5-end-or-3-end-with-trimming-options-of-a-and_W640.jpg
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzOTMzMTcsLTE2MTM1ODA2NzgsLTQ2Nz
-A5MTc2MywxNDE3ODc2OTQ1LC04Njc5NjQ3MTMsLTk0OTg5NzY5
-MSwxNTA0NzU1MzAxLDg0MzY1ODE1LC01NzY4Mjc2ODIsNTczMz
-QyNDU5LDc2OTY0NTQ4NCwtMTI2MTEyMzk3MCwtODgyNDUzMDA1
-LC0yNTU0NDQwMDIsMTAxNjkzMTU4MiwtMTYyNjc3MjkzMCwxMT
-U2MjkyODU2LC0xMzIyMTAzMjk1LC03OTc2MDczNCwxNTIzNTA0
-NDg1XX0=
+eyJoaXN0b3J5IjpbMTE5OTU0ODk0MiwtMTYxMzU4MDY3OCwtND
+Y3MDkxNzYzLDE0MTc4NzY5NDUsLTg2Nzk2NDcxMywtOTQ5ODk3
+NjkxLDE1MDQ3NTUzMDEsODQzNjU4MTUsLTU3NjgyNzY4Miw1Nz
+MzNDI0NTksNzY5NjQ1NDg0LC0xMjYxMTIzOTcwLC04ODI0NTMw
+MDUsLTI1NTQ0NDAwMiwxMDE2OTMxNTgyLC0xNjI2NzcyOTMwLD
+ExNTYyOTI4NTYsLTEzMjIxMDMyOTUsLTc5NzYwNzM0LDE1MjM1
+MDQ0ODVdfQ==
 -->
