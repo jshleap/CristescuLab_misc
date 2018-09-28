@@ -310,14 +310,15 @@ Now test if everything went OK, by asking it for help like this:
 cutadapt -h
 ```
 
-![Cutadapt configurations](https://www.researchgate.net/profile/Xiangwu_Lu/publication/273445307/figure/fig5/AS:294851942862861@1447309589866/All-possible-alignments-of-Cutadapt-on-5-end-or-3-end-with-trimming-options-of-a-and_W640.jpg)
-<sup>taken from https://www.researchgate.net/profile/Xiangwu_Lu/publication/273445307/figure/fig5/AS:294851942862861@1447309589866/All-possible-alignments-of-Cutadapt-on-5-end-or-3-end-with-trimming-options-of-a-and_W640.jpg</sup>
+### Basic Usage
+Cutadapt first usage is to remove 3' primers from your reads:
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzMxNDQ0NTUsLTE2MTM1ODA2NzgsLT
-Q2NzA5MTc2MywxNDE3ODc2OTQ1LC04Njc5NjQ3MTMsLTk0OTg5
-NzY5MSwxNTA0NzU1MzAxLDg0MzY1ODE1LC01NzY4Mjc2ODIsNT
-czMzQyNDU5LDc2OTY0NTQ4NCwtMTI2MTEyMzk3MCwtODgyNDUz
-MDA1LC0yNTU0NDQwMDIsMTAxNjkzMTU4MiwtMTYyNjc3MjkzMC
-wxMTU2MjkyODU2LC0xMzIyMTAzMjk1LC03OTc2MDczNCwxNTIz
-NTA0NDg1XX0=
+eyJoaXN0b3J5IjpbLTEyOTA3NTI4NiwtMTYzMzE0NDQ1NSwtMT
+YxMzU4MDY3OCwtNDY3MDkxNzYzLDE0MTc4NzY5NDUsLTg2Nzk2
+NDcxMywtOTQ5ODk3NjkxLDE1MDQ3NTUzMDEsODQzNjU4MTUsLT
+U3NjgyNzY4Miw1NzMzNDI0NTksNzY5NjQ1NDg0LC0xMjYxMTIz
+OTcwLC04ODI0NTMwMDUsLTI1NTQ0NDAwMiwxMDE2OTMxNTgyLC
+0xNjI2NzcyOTMwLDExNTYyOTI4NTYsLTEzMjIxMDMyOTUsLTc5
+NzYwNzM0XX0=
 -->
