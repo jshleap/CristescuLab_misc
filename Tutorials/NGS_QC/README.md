@@ -310,8 +310,9 @@ Now test if everything went OK, by asking it for help like this:
 cutadapt -h
 ```
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDQwMTY4MjAsLTQ2NzA5MTc2MywxND
+eyJoaXN0b3J5IjpbLTE2MTM1ODA2NzgsLTQ2NzA5MTc2MywxND
 E3ODc2OTQ1LC04Njc5NjQ3MTMsLTk0OTg5NzY5MSwxNTA0NzU1
 MzAxLDg0MzY1ODE1LC01NzY4Mjc2ODIsNTczMzQyNDU5LDc2OT
 Y0NTQ4NCwtMTI2MTEyMzk3MCwtODgyNDUzMDA1LC0yNTU0NDQw
