@@ -296,12 +296,18 @@ Try it out with our previous dataset! Show me the result of a fastqc on the trim
 ## Cutadapt
 Cutadapt is an incredibly versatile tool to remove primers or in general oligos from the flanking regions of DNA. The user guide (which this tutorial is based on) is avalible [here](https://cutadapt.readthedocs.io/en/stable/guide.html).
 
+### Installation
+Cutadapt is based on virtual environments so it is better to have a local copy of it in your own home. To do so, type:
+```
+pip install --user --upgrade cutadapt
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NzA5MTc2MywxNDE3ODc2OTQ1LC04Nj
-c5NjQ3MTMsLTk0OTg5NzY5MSwxNTA0NzU1MzAxLDg0MzY1ODE1
-LC01NzY4Mjc2ODIsNTczMzQyNDU5LDc2OTY0NTQ4NCwtMTI2MT
-EyMzk3MCwtODgyNDUzMDA1LC0yNTU0NDQwMDIsMTAxNjkzMTU4
-MiwtMTYyNjc3MjkzMCwxMTU2MjkyODU2LC0xMzIyMTAzMjk1LC
-03OTc2MDczNCwxNTIzNTA0NDg1LDI3ODU4Mjc4NywxMjk1NDkw
-MTI0XX0=
+eyJoaXN0b3J5IjpbLTU0NDMwMDA3MiwtNDY3MDkxNzYzLDE0MT
+c4NzY5NDUsLTg2Nzk2NDcxMywtOTQ5ODk3NjkxLDE1MDQ3NTUz
+MDEsODQzNjU4MTUsLTU3NjgyNzY4Miw1NzMzNDI0NTksNzY5Nj
+Q1NDg0LC0xMjYxMTIzOTcwLC04ODI0NTMwMDUsLTI1NTQ0NDAw
+MiwxMDE2OTMxNTgyLC0xNjI2NzcyOTMwLDExNTYyOTI4NTYsLT
+EzMjIxMDMyOTUsLTc5NzYwNzM0LDE1MjM1MDQ0ODUsMjc4NTgy
+Nzg3XX0=
 -->
