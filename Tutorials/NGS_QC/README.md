@@ -313,12 +313,13 @@ cutadapt -h
 ### Basic Usage
 Cutadapt first usage is to remove 3' primers from your reads:
 
+![](https://www.google.com/imgres?imgurl=x-raw-image:///04d8f375e8e1a1ef24790b9d78933f90eaff30a5f25ae004a25190f13f048492&imgrefurl=https://support.illumina.com/content/dam/illumina-support/documents/documentation/chemistry_documentation/forenseq/forenseq-dna-signature-prep-guide-15049528-01.pdf&docid=3OdLzxELtR8yPM&tbnid=76Hh6HXz2ASivM:&vet=1&w=1042&h=433&bih=941&biw=1920&ved=0ahUKEwiQxYm11d7dAhWK5YMKHTWECZEQMwg_KAAwAA&iact=c&ictx=1)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTA3NTI4NiwtMTYzMzE0NDQ1NSwtMT
-YxMzU4MDY3OCwtNDY3MDkxNzYzLDE0MTc4NzY5NDUsLTg2Nzk2
-NDcxMywtOTQ5ODk3NjkxLDE1MDQ3NTUzMDEsODQzNjU4MTUsLT
-U3NjgyNzY4Miw1NzMzNDI0NTksNzY5NjQ1NDg0LC0xMjYxMTIz
-OTcwLC04ODI0NTMwMDUsLTI1NTQ0NDAwMiwxMDE2OTMxNTgyLC
-0xNjI2NzcyOTMwLDExNTYyOTI4NTYsLTEzMjIxMDMyOTUsLTc5
-NzYwNzM0XX0=
+eyJoaXN0b3J5IjpbLTgzMjk4NzMwNSwtMTI5MDc1Mjg2LC0xNj
+MzMTQ0NDU1LC0xNjEzNTgwNjc4LC00NjcwOTE3NjMsMTQxNzg3
+Njk0NSwtODY3OTY0NzEzLC05NDk4OTc2OTEsMTUwNDc1NTMwMS
+w4NDM2NTgxNSwtNTc2ODI3NjgyLDU3MzM0MjQ1OSw3Njk2NDU0
+ODQsLTEyNjExMjM5NzAsLTg4MjQ1MzAwNSwtMjU1NDQ0MDAyLD
+EwMTY5MzE1ODIsLTE2MjY3NzI5MzAsMTE1NjI5Mjg1NiwtMTMy
+MjEwMzI5NV19
 -->
