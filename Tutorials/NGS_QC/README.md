@@ -291,15 +291,16 @@ C and D.  Both pairs are tested at once, hence allowing for "is thus much more r
 ### Running trimmomatic
 `java -jar <path to trimmomatic.jar> PE [-threads <threads] [-phred33 | -phred64] [-trimlog <logFile>] <input 1> <input 2> <paired output 1> <unpaired output 1> <paired output 2> <unpaired output 2> <OPTIONS>`
 
+Try it out with our previous dataset! Show me the result of a fastqc on the trimmomatic results
 
 ## Cutadapt
-
+Cu
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNzg3Njk0NSwtODY3OTY0NzEzLC05ND
-k4OTc2OTEsMTUwNDc1NTMwMSw4NDM2NTgxNSwtNTc2ODI3Njgy
-LDU3MzM0MjQ1OSw3Njk2NDU0ODQsLTEyNjExMjM5NzAsLTg4Mj
-Q1MzAwNSwtMjU1NDQ0MDAyLDEwMTY5MzE1ODIsLTE2MjY3NzI5
-MzAsMTE1NjI5Mjg1NiwtMTMyMjEwMzI5NSwtNzk3NjA3MzQsMT
-UyMzUwNDQ4NSwyNzg1ODI3ODcsMTI5NTQ5MDEyNCwyMDk5OTgy
-NDg1XX0=
+eyJoaXN0b3J5IjpbLTYzOTQyNTIxOCwxNDE3ODc2OTQ1LC04Nj
+c5NjQ3MTMsLTk0OTg5NzY5MSwxNTA0NzU1MzAxLDg0MzY1ODE1
+LC01NzY4Mjc2ODIsNTczMzQyNDU5LDc2OTY0NTQ4NCwtMTI2MT
+EyMzk3MCwtODgyNDUzMDA1LC0yNTU0NDQwMDIsMTAxNjkzMTU4
+MiwtMTYyNjc3MjkzMCwxMTU2MjkyODU2LC0xMzIyMTAzMjk1LC
+03OTc2MDczNCwxNTIzNTA0NDg1LDI3ODU4Mjc4NywxMjk1NDkw
+MTI0XX0=
 -->
