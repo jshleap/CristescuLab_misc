@@ -323,9 +323,10 @@ Dealing with 3' primers, cutadapt uses the option `-a`, according to their docs:
 Assuming that your sequences are in `input.fastq` and are result of the amplification with the AACCGGTT.
 
 Let's assume that our sample was amplified with the primer pairs:
-* Forward primer: 
+* Forward primer: GTCGGTAAAACTCGTGCCAGC
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NTkzNzYzMywyMzg4MjgzMjYsLTgzMj
+eyJoaXN0b3J5IjpbMTI1MzU0NDYzMCwyMzg4MjgzMjYsLTgzMj
 k4NzMwNSwtMTI5MDc1Mjg2LC0xNjMzMTQ0NDU1LC0xNjEzNTgw
 Njc4LC00NjcwOTE3NjMsMTQxNzg3Njk0NSwtODY3OTY0NzEzLC
 05NDk4OTc2OTEsMTUwNDc1NTMwMSw4NDM2NTgxNSwtNTc2ODI3
