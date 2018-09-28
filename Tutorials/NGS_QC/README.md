@@ -320,13 +320,16 @@ Dealing with 3' primers, cutadapt uses the option `-a`, according to their docs:
 
 > `cutadapt -a AACCGGTT -o output.fastq input.fastq`
 
-Assuming that your sequences are in `input.fastq` and are result of the amplification with the 
+Assuming that your sequences are in `input.fastq` and are result of the amplification with the AACCGGTT.
+
+Let's assume that our sample was amplified with the primer pairs:
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM4ODI4MzI2LC04MzI5ODczMDUsLTEyOT
-A3NTI4NiwtMTYzMzE0NDQ1NSwtMTYxMzU4MDY3OCwtNDY3MDkx
-NzYzLDE0MTc4NzY5NDUsLTg2Nzk2NDcxMywtOTQ5ODk3NjkxLD
-E1MDQ3NTUzMDEsODQzNjU4MTUsLTU3NjgyNzY4Miw1NzMzNDI0
-NTksNzY5NjQ1NDg0LC0xMjYxMTIzOTcwLC04ODI0NTMwMDUsLT
-I1NTQ0NDAwMiwxMDE2OTMxNTgyLC0xNjI2NzcyOTMwLDExNTYy
-OTI4NTZdfQ==
+eyJoaXN0b3J5IjpbLTEyMDUwOTg3NjUsMjM4ODI4MzI2LC04Mz
+I5ODczMDUsLTEyOTA3NTI4NiwtMTYzMzE0NDQ1NSwtMTYxMzU4
+MDY3OCwtNDY3MDkxNzYzLDE0MTc4NzY5NDUsLTg2Nzk2NDcxMy
+wtOTQ5ODk3NjkxLDE1MDQ3NTUzMDEsODQzNjU4MTUsLTU3Njgy
+NzY4Miw1NzMzNDI0NTksNzY5NjQ1NDg0LC0xMjYxMTIzOTcwLC
+04ODI0NTMwMDUsLTI1NTQ0NDAwMiwxMDE2OTMxNTgyLC0xNjI2
+NzcyOTMwXX0=
 -->
