@@ -294,9 +294,9 @@ C and D.  Both pairs are tested at once, hence allowing for "is thus much more r
 Try it out with our previous dataset! Show me the result of a fastqc on the trimmomatic results
 
 ## Cutadapt
-Cu
+Cutadapt is an incredibly versatile tool to remove primers or in general oligos from the flanking regions of DNA. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzOTQyNTIxOCwxNDE3ODc2OTQ1LC04Nj
+eyJoaXN0b3J5IjpbLTI5MzYzOTI1NywxNDE3ODc2OTQ1LC04Nj
 c5NjQ3MTMsLTk0OTg5NzY5MSwxNTA0NzU1MzAxLDg0MzY1ODE1
 LC01NzY4Mjc2ODIsNTczMzQyNDU5LDc2OTY0NTQ4NCwtMTI2MT
 EyMzk3MCwtODgyNDUzMDA1LC0yNTU0NDQwMDIsMTAxNjkzMTU4
