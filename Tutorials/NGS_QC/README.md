@@ -324,13 +324,16 @@ Assuming that your sequences are in `input.fastq` and are result of the amplific
 
 Let's assume that our sample was amplified with the primer pairs:
 * Forward primer: GTCGGTAAAACTCGTGCCAGC
-* 
+* Reverse primer: CATAGTGGGGTATCTAATCCCAGTTTG
+
+**what would be the cutadapt command you would need to cast?**
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MzU0NDYzMCwyMzg4MjgzMjYsLTgzMj
-k4NzMwNSwtMTI5MDc1Mjg2LC0xNjMzMTQ0NDU1LC0xNjEzNTgw
-Njc4LC00NjcwOTE3NjMsMTQxNzg3Njk0NSwtODY3OTY0NzEzLC
-05NDk4OTc2OTEsMTUwNDc1NTMwMSw4NDM2NTgxNSwtNTc2ODI3
-NjgyLDU3MzM0MjQ1OSw3Njk2NDU0ODQsLTEyNjExMjM5NzAsLT
-g4MjQ1MzAwNSwtMjU1NDQ0MDAyLDEwMTY5MzE1ODIsLTE2MjY3
-NzI5MzBdfQ==
+eyJoaXN0b3J5IjpbNDI4NTE2MzY2LDIzODgyODMyNiwtODMyOT
+g3MzA1LC0xMjkwNzUyODYsLTE2MzMxNDQ0NTUsLTE2MTM1ODA2
+NzgsLTQ2NzA5MTc2MywxNDE3ODc2OTQ1LC04Njc5NjQ3MTMsLT
+k0OTg5NzY5MSwxNTA0NzU1MzAxLDg0MzY1ODE1LC01NzY4Mjc2
+ODIsNTczMzQyNDU5LDc2OTY0NTQ4NCwtMTI2MTEyMzk3MCwtOD
+gyNDUzMDA1LC0yNTU0NDQwMDIsMTAxNjkzMTU4MiwtMTYyNjc3
+MjkzMF19
 -->
