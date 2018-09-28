@@ -29,7 +29,7 @@ This tutorial assumes that you have a basic knowledge in bash, and that you have
 14. [Running FastQC in the paired file](#running-fastqc-in-the-paired-file)
 15. [Resolving some of the Issues](#resolving-some-of-the-issues)
 	- [Trimmomatic](#trimmomatic): remove adaptors and quality trimming
-	- 
+	- [Cutadapt](#cutadapt): removing primers
 
 ## To start
 
@@ -290,12 +290,16 @@ C and D.  Both pairs are tested at once, hence allowing for "is thus much more r
 
 ### Running trimmomatic
 `java -jar <path to trimmomatic.jar> PE [-threads <threads] [-phred33 | -phred64] [-trimlog <logFile>] <input 1> <input 2> <paired output 1> <unpaired output 1> <paired output 2> <unpaired output 2> <OPTIONS>`
+
+
+## Cutadapt
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjExNjUzODgsLTg2Nzk2NDcxMywtOT
-Q5ODk3NjkxLDE1MDQ3NTUzMDEsODQzNjU4MTUsLTU3NjgyNzY4
-Miw1NzMzNDI0NTksNzY5NjQ1NDg0LC0xMjYxMTIzOTcwLC04OD
-I0NTMwMDUsLTI1NTQ0NDAwMiwxMDE2OTMxNTgyLC0xNjI2Nzcy
-OTMwLDExNTYyOTI4NTYsLTEzMjIxMDMyOTUsLTc5NzYwNzM0LD
-E1MjM1MDQ0ODUsMjc4NTgyNzg3LDEyOTU0OTAxMjQsMjA5OTk4
-MjQ4NV19
+eyJoaXN0b3J5IjpbMTQxNzg3Njk0NSwtODY3OTY0NzEzLC05ND
+k4OTc2OTEsMTUwNDc1NTMwMSw4NDM2NTgxNSwtNTc2ODI3Njgy
+LDU3MzM0MjQ1OSw3Njk2NDU0ODQsLTEyNjExMjM5NzAsLTg4Mj
+Q1MzAwNSwtMjU1NDQ0MDAyLDEwMTY5MzE1ODIsLTE2MjY3NzI5
+MzAsMTE1NjI5Mjg1NiwtMTMyMjEwMzI5NSwtNzk3NjA3MzQsMT
+UyMzUwNDQ4NSwyNzg1ODI3ODcsMTI5NTQ5MDEyNCwyMDk5OTgy
+NDg1XX0=
 -->
