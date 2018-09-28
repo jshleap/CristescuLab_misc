@@ -330,16 +330,17 @@ Let's assume that our sample was amplified with the primer pairs:
 
 
 <details><summary>See result here</summary><p>
-`cutadapt -a GCTGGCACGAGTTTTACCGAC -o output.fastq input.fastq`
+<pre>cutadapt -a GCTGGCACGAGTTTTACCGAC -o output.fastq input.fastq</pre>
+
 can you explain why?
 </p></details>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MDU2NDg1MSwtNDEwMDQ1NzM4LDIzOD
-gyODMyNiwtODMyOTg3MzA1LC0xMjkwNzUyODYsLTE2MzMxNDQ0
-NTUsLTE2MTM1ODA2NzgsLTQ2NzA5MTc2MywxNDE3ODc2OTQ1LC
-04Njc5NjQ3MTMsLTk0OTg5NzY5MSwxNTA0NzU1MzAxLDg0MzY1
-ODE1LC01NzY4Mjc2ODIsNTczMzQyNDU5LDc2OTY0NTQ4NCwtMT
-I2MTEyMzk3MCwtODgyNDUzMDA1LC0yNTU0NDQwMDIsMTAxNjkz
-MTU4Ml19
+eyJoaXN0b3J5IjpbLTIxMTkyODIxNjAsLTQxMDA0NTczOCwyMz
+g4MjgzMjYsLTgzMjk4NzMwNSwtMTI5MDc1Mjg2LC0xNjMzMTQ0
+NDU1LC0xNjEzNTgwNjc4LC00NjcwOTE3NjMsMTQxNzg3Njk0NS
+wtODY3OTY0NzEzLC05NDk4OTc2OTEsMTUwNDc1NTMwMSw4NDM2
+NTgxNSwtNTc2ODI3NjgyLDU3MzM0MjQ1OSw3Njk2NDU0ODQsLT
+EyNjExMjM5NzAsLTg4MjQ1MzAwNSwtMjU1NDQ0MDAyLDEwMTY5
+MzE1ODJdfQ==
 -->
