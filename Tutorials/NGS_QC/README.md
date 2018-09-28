@@ -289,9 +289,9 @@ B. Only a partial match between the technical sequence and the read, and therefo
 C and D.  Both pairs are tested at once, hence allowing for "is thus much more reliable than the short alignment in B, and allows adapter read-though to be detected even when only one base of the adapter has been sequenced."
 
 ### Running trimmomatic
-```bash
+`
 java -jar <path to trimmomatic.jar> PE [-threads <threads] [-phred33 | -phred64] [-trimlog <logFile>] <input 1> <input 2> <paired output 1> <unpaired output 1> <paired output 2> <unpaired output 2> <OPTIONS>
-```
+`
 
 Try it out with our previous dataset! Show me the result of a fastqc on the trimmomatic results
 
@@ -307,14 +307,15 @@ If you know what you are doing you can use your superuser priveledges insted of 
 
 Now test if everything went OK, by asking it for help like this:
 ```bash
+cutadapt -h
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMTcxMDA0NSwtNDY3MDkxNzYzLDE0MT
-c4NzY5NDUsLTg2Nzk2NDcxMywtOTQ5ODk3NjkxLDE1MDQ3NTUz
-MDEsODQzNjU4MTUsLTU3NjgyNzY4Miw1NzMzNDI0NTksNzY5Nj
-Q1NDg0LC0xMjYxMTIzOTcwLC04ODI0NTMwMDUsLTI1NTQ0NDAw
-MiwxMDE2OTMxNTgyLC0xNjI2NzcyOTMwLDExNTYyOTI4NTYsLT
-EzMjIxMDMyOTUsLTc5NzYwNzM0LDE1MjM1MDQ0ODUsMjc4NTgy
-Nzg3XX0=
+eyJoaXN0b3J5IjpbLTE2NDQwMTY4MjAsLTQ2NzA5MTc2MywxND
+E3ODc2OTQ1LC04Njc5NjQ3MTMsLTk0OTg5NzY5MSwxNTA0NzU1
+MzAxLDg0MzY1ODE1LC01NzY4Mjc2ODIsNTczMzQyNDU5LDc2OT
+Y0NTQ4NCwtMTI2MTEyMzk3MCwtODgyNDUzMDA1LC0yNTU0NDQw
+MDIsMTAxNjkzMTU4MiwtMTYyNjc3MjkzMCwxMTU2MjkyODU2LC
+0xMzIyMTAzMjk1LC03OTc2MDczNCwxNTIzNTA0NDg1LDI3ODU4
+Mjc4N119
 -->
