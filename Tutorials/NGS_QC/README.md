@@ -316,9 +316,11 @@ Cutadapt first usage is to remove 3' primers from your reads:
 ![Illumina prep](https://www.researchgate.net/profile/Matthieu_Leray/publication/305673701/figure/fig1/AS:613889758752770@1523374132022/Scheme-for-Illumina-MiSeq-multiplex-library-preparation-using-the-tailed-PCR-primers-and_W640.jpg)
 <sup>[Preparation of Amplicon Libraries for Metabarcoding of Marine Eukaryotes Using Illumina MiSeq: The Adapter Ligation Method](https://www.researchgate.net/profile/Matthieu_Leray/publication/305673701_Preparation_of_Amplicon_Libraries_for_Metabarcoding_of_Marine_Eukaryotes_Using_Illumina_MiSeq_The_Adapter_Ligation_Method/links/5b2a97acaca27209f3787901/Preparation-of-Amplicon-Libraries-for-Metabarcoding-of-Marine-Eukaryotes-Using-Illumina-MiSeq-The-Adapter-Ligation-Method.pdf?_sg%5B0%5D=801TQTR2Nl0IB87mhwV75mBwgZlISr-9jH3OVdoOK-t1F-CTfdrp-_CnGkRa2KcJOHPsUrnzkIhhdA1lfOeecQ.Ip_RNVnvRFVy7IIJSD-PCdvGRzR85JJyn9RtEp2LPabwkVhMu3o94QCk05m2Ch3qCCO9LwGUP6bJr0v7JIARFg&_sg%5B1%5D=ka7xYaIUiIwMRQzy6GagSIdVcqky9OfkrDcHRzYG0Ta1fd1IMR0CWC8o53gILQFqRC0NT9RwowQeA4t-Jj7vGlt_pyKq_zllFEhjFGnfibjt.Ip_RNVnvRFVy7IIJSD-PCdvGRzR85JJyn9RtEp2LPabwkVhMu3o94QCk05m2Ch3qCCO9LwGUP6bJr0v7JIARFg&_iepl=)</sup>
 
-Dealing with 3' primers, cutada
+Dealing with 3' primers, cutadapt uses the option `-a`, according to their docs:
+
+> 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MDUxNzgxNSwtODMyOTg3MzA1LC0xMj
+eyJoaXN0b3J5IjpbMjEzODMwNDA2NSwtODMyOTg3MzA1LC0xMj
 kwNzUyODYsLTE2MzMxNDQ0NTUsLTE2MTM1ODA2NzgsLTQ2NzA5
 MTc2MywxNDE3ODc2OTQ1LC04Njc5NjQ3MTMsLTk0OTg5NzY5MS
 wxNTA0NzU1MzAxLDg0MzY1ODE1LC01NzY4Mjc2ODIsNTczMzQy
