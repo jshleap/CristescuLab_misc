@@ -329,23 +329,16 @@ Let's assume that our sample was amplified with the primer pairs:
 **what would be the cutadapt command you would need to cast?**
 
 
-<details><summary>stuff with *mark* **down**</summary><p>
-
-## _formatted_ **heading** with [a](link)
-
----
-{{standard 3-backtick code block omitted from here due to escaping issues}}
----
-
-Collapsible until here.
+<details><summary>See result here</summary><p>
+`cutadapt -a AACCGGTT -o output.fastq input.fastq`
 </p></details>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMDA0NTczOCwyMzg4MjgzMjYsLTgzMj
-k4NzMwNSwtMTI5MDc1Mjg2LC0xNjMzMTQ0NDU1LC0xNjEzNTgw
-Njc4LC00NjcwOTE3NjMsMTQxNzg3Njk0NSwtODY3OTY0NzEzLC
-05NDk4OTc2OTEsMTUwNDc1NTMwMSw4NDM2NTgxNSwtNTc2ODI3
-NjgyLDU3MzM0MjQ1OSw3Njk2NDU0ODQsLTEyNjExMjM5NzAsLT
-g4MjQ1MzAwNSwtMjU1NDQ0MDAyLDEwMTY5MzE1ODIsLTE2MjY3
-NzI5MzBdfQ==
+eyJoaXN0b3J5IjpbNTc4ODQwMDgyLC00MTAwNDU3MzgsMjM4OD
+I4MzI2LC04MzI5ODczMDUsLTEyOTA3NTI4NiwtMTYzMzE0NDQ1
+NSwtMTYxMzU4MDY3OCwtNDY3MDkxNzYzLDE0MTc4NzY5NDUsLT
+g2Nzk2NDcxMywtOTQ5ODk3NjkxLDE1MDQ3NTUzMDEsODQzNjU4
+MTUsLTU3NjgyNzY4Miw1NzMzNDI0NTksNzY5NjQ1NDg0LC0xMj
+YxMTIzOTcwLC04ODI0NTMwMDUsLTI1NTQ0NDAwMiwxMDE2OTMx
+NTgyXX0=
 -->
