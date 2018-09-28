@@ -329,8 +329,9 @@ Let's assume that our sample was amplified with the primer pairs:
 **what would be the cutadapt command you would need to cast?**
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMDk1MzAyMCwyMzg4MjgzMjYsLTgzMj
+eyJoaXN0b3J5IjpbLTkxNDQxMDAwNiwyMzg4MjgzMjYsLTgzMj
 k4NzMwNSwtMTI5MDc1Mjg2LC0xNjMzMTQ0NDU1LC0xNjEzNTgw
 Njc4LC00NjcwOTE3NjMsMTQxNzg3Njk0NSwtODY3OTY0NzEzLC
 05NDk4OTc2OTEsMTUwNDc1NTMwMSw4NDM2NTgxNSwtNTc2ODI3
