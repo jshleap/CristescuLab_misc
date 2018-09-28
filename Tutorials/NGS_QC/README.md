@@ -318,13 +318,15 @@ Cutadapt first usage is to remove 3' primers from your reads:
 
 Dealing with 3' primers, cutadapt uses the option `-a`, according to their docs:
 
-> 
+> `cutadapt -a AACCGGTT -o output.fastq input.fastq`
+
+Assuming that your sequences are in `input.fastq` and are result of the amplification with the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzODMwNDA2NSwtODMyOTg3MzA1LC0xMj
-kwNzUyODYsLTE2MzMxNDQ0NTUsLTE2MTM1ODA2NzgsLTQ2NzA5
-MTc2MywxNDE3ODc2OTQ1LC04Njc5NjQ3MTMsLTk0OTg5NzY5MS
-wxNTA0NzU1MzAxLDg0MzY1ODE1LC01NzY4Mjc2ODIsNTczMzQy
-NDU5LDc2OTY0NTQ4NCwtMTI2MTEyMzk3MCwtODgyNDUzMDA1LC
-0yNTU0NDQwMDIsMTAxNjkzMTU4MiwtMTYyNjc3MjkzMCwxMTU2
-MjkyODU2XX0=
+eyJoaXN0b3J5IjpbMjM4ODI4MzI2LC04MzI5ODczMDUsLTEyOT
+A3NTI4NiwtMTYzMzE0NDQ1NSwtMTYxMzU4MDY3OCwtNDY3MDkx
+NzYzLDE0MTc4NzY5NDUsLTg2Nzk2NDcxMywtOTQ5ODk3NjkxLD
+E1MDQ3NTUzMDEsODQzNjU4MTUsLTU3NjgyNzY4Miw1NzMzNDI0
+NTksNzY5NjQ1NDg0LC0xMjYxMTIzOTcwLC04ODI0NTMwMDUsLT
+I1NTQ0NDAwMiwxMDE2OTMxNTgyLC0xNjI2NzcyOTMwLDExNTYy
+OTI4NTZdfQ==
 -->
