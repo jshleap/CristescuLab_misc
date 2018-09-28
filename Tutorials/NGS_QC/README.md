@@ -301,13 +301,14 @@ Cutadapt is based on virtual environments so it is better to have a local copy o
 ```
 pip install --user --upgrade cutadapt
 ```
+If you know what you are doing you can use your superuser priveledges insted of `--user`. If you are in the compute canada clusters `graham` or `cedar`, first you have to load the module `scipy-stack/2018b`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NDMwMDA3MiwtNDY3MDkxNzYzLDE0MT
-c4NzY5NDUsLTg2Nzk2NDcxMywtOTQ5ODk3NjkxLDE1MDQ3NTUz
-MDEsODQzNjU4MTUsLTU3NjgyNzY4Miw1NzMzNDI0NTksNzY5Nj
-Q1NDg0LC0xMjYxMTIzOTcwLC04ODI0NTMwMDUsLTI1NTQ0NDAw
-MiwxMDE2OTMxNTgyLC0xNjI2NzcyOTMwLDExNTYyOTI4NTYsLT
-EzMjIxMDMyOTUsLTc5NzYwNzM0LDE1MjM1MDQ0ODUsMjc4NTgy
-Nzg3XX0=
+eyJoaXN0b3J5IjpbMzYwNzE4MDk5LC00NjcwOTE3NjMsMTQxNz
+g3Njk0NSwtODY3OTY0NzEzLC05NDk4OTc2OTEsMTUwNDc1NTMw
+MSw4NDM2NTgxNSwtNTc2ODI3NjgyLDU3MzM0MjQ1OSw3Njk2ND
+U0ODQsLTEyNjExMjM5NzAsLTg4MjQ1MzAwNSwtMjU1NDQ0MDAy
+LDEwMTY5MzE1ODIsLTE2MjY3NzI5MzAsMTE1NjI5Mjg1NiwtMT
+MyMjEwMzI5NSwtNzk3NjA3MzQsMTUyMzUwNDQ4NSwyNzg1ODI3
+ODddfQ==
 -->
