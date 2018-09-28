@@ -27,7 +27,9 @@ This tutorial assumes that you have a basic knowledge in bash, and that you have
 12. [Overrepresented sequences](#overrepresented-sequences)
 13. [Adapter Content](#adapter-content)
 14. [Running FastQC in the paired file](#running-fastqc-in-the-paired-file)
-15. [Resolving some of the Issues](#resolving-some-of-the-issues
+15. [Resolving some of the Issues](#resolving-some-of-the-issues)
+	- [Trimmomatic](#trimmomatic): remove adaptors and quality trimming
+	- 
 
 ## To start
 
@@ -289,7 +291,7 @@ C and D.  Both pairs are tested at once, hence allowing for "is thus much more r
 ### Running trimmomatic
 `java -jar <path to trimmomatic.jar> PE [-threads <threads] [-phred33 | -phred64] [-trimlog <logFile>] <input 1> <input 2> <paired output 1> <unpaired output 1> <paired output 2> <unpaired output 2> <OPTIONS>`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mzg1NzI3NzYsLTg2Nzk2NDcxMywtOT
+eyJoaXN0b3J5IjpbLTExNjExNjUzODgsLTg2Nzk2NDcxMywtOT
 Q5ODk3NjkxLDE1MDQ3NTUzMDEsODQzNjU4MTUsLTU3NjgyNzY4
 Miw1NzMzNDI0NTksNzY5NjQ1NDg0LC0xMjYxMTIzOTcwLC04OD
 I0NTMwMDUsLTI1NTQ0NDAwMiwxMDE2OTMxNTgyLC0xNjI2Nzcy
